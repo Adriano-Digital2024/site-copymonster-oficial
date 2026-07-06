@@ -110,10 +110,6 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
   actions: [{ text: 'Free Trial', href: 'https://app.copymonster.me/', target: '_blank' }],
 };
