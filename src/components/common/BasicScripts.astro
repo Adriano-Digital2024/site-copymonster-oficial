@@ -75,15 +75,20 @@ import { UI } from 'astrowind:config';
       localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     });
 
-    attachEvent('[aria-label="Toggle Language"]', 'click', function () {
+    attachEvent('.lang-option', 'click', function (e, elem) {
+      const targetLang = elem.getAttribute('data-lang');
       const scriptId = 'google-translate-script';
       
-      // Define initialization function globally
+      // Update UI label
+      const currentLangLabel = document.getElementById('current-lang');
+      if (currentLangLabel) currentLangLabel.innerText = targetLang;
+
       window.googleTranslateElementInit = function() {
         new google.translate.TranslateElement({
           pageLanguage: 'en',
+          includedLanguages: 'en,pt,es',
           layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: true,
+          autoDisplay: false,
         }, 'google_translate_element');
       };
 
@@ -92,19 +97,27 @@ import { UI } from 'astrowind:config';
         script.id = scriptId;
         script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
         document.body.appendChild(script);
-      } else {
-        // Toggle the Google Translate bar if it already exists
-        const frame = document.querySelector('.goog-te-banner-frame');
-        if (frame) {
-          frame.style.display = frame.style.display === 'none' ? 'block' : 'none';
-        } else {
-          // If script loaded but frame not visible, try to re-init or show widget
-          const widget = document.getElementById('google_translate_element');
-          if (widget) {
-            widget.style.display = widget.style.display === 'none' ? 'block' : 'none';
-          }
-        }
       }
+
+      const checkAndTranslate = setInterval(() => {
+        const select = document.querySelector('.goog-te-combo');
+        if (select) {
+          select.value = targetLang;
+          select.dispatchEvent(new Event('change'));
+          clearInterval(checkAndTranslate);
+          
+          // Force hide the Google bar
+          const style = document.createElement('style');
+          style.innerHTML = `
+            .goog-te-banner-frame { display: none !important; }
+            body { top: 0 !important; }
+            .goog-tooltip { display: none !important; }
+            .goog-tooltip:hover { display: none !important; }
+            .goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
+          `;
+          document.head.appendChild(style);
+        }
+      }, 100);
     });
 
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {

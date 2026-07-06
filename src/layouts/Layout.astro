@@ -40,6 +40,34 @@ const { language, textDirection } = I18N;
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
+
+    <style is:global>
+      /* Premium Language Selector & Google Translate Cleanup */
+      .goog-te-banner-frame, 
+      .goog-te-balloon-frame,
+      #goog-gt-tt,
+      .goog-te-balloon-frame-active {
+        display: none !important;
+      }
+      
+      body {
+        top: 0 !important;
+      }
+
+      .goog-text-highlight {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+
+      .goog-tooltip {
+        display: none !important;
+      }
+      
+      .goog-tooltip:hover {
+        display: none !important;
+      }
+    </style>
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
