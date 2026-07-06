@@ -14,31 +14,14 @@ const metadata = {
 
   <HeroText tagline="Contact" title="Connect with the Monster!" />
 
-  <ContactUs
-    id="form"
-    title="Scale your Brand Intelligence"
-    subtitle="Have questions about Brand DNA, Multi-agent AI, or Enterprise solutions? Our strategic team is ready to help you unlock the next level of your business identity."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to our privacy policy regarding the collection of business data.',
-    }}
-    description="Our strategic agents typically respond within 24 business hours."
-  />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-12 text-center">
+    <h2 class="text-3xl font-bold mb-4">Scale your Brand Intelligence</h2>
+    <p class="text-muted mb-8">Have questions about Brand DNA, Multi-agent AI, or Enterprise solutions? Our strategic team is ready to help you unlock the next level of your business identity.</p>
+    <div class="mautic-form-container bg-white dark:bg-slate-900 p-8 rounded-lg shadow-xl border border-gray-200 dark:border-slate-800">
+      <script type="text/javascript" src="https://mautic.integridadedigital.com.br/form/generate.js?id=1"></script>
+    </div>
+    <p class="mt-4 text-sm text-muted">Our strategic agents typically respond within 24 business hours.</p>
+  </section>
 
   <!-- Features2 Widget ************** -->
 

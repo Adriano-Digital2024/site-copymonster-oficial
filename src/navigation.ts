@@ -8,15 +8,15 @@ export const headerData = {
         { text: 'Features', href: getPermalink('/#features') },
         { text: 'AI Agents', href: getPermalink('/services') },
         { text: 'Pricing', href: getPermalink('/pricing') },
-        { text: 'Enterprise', href: getPermalink('/pricing') },
+        { text: 'Enterprise', href: getPermalink('/contact') },
       ],
     },
     {
       text: 'Resources',
       links: [
         { text: 'Monster Blog', href: getBlogPermalink() },
-        { text: 'Docs (Permanent Memory)', href: '#' },
-        { text: 'Success Stories', href: '#' },
+        { text: 'Docs (Permanent Memory)', href: getPermalink('/about') },
+        { text: 'Success Stories', href: getPermalink('/services') },
       ],
     },
     {
@@ -55,8 +55,8 @@ export const footerData = {
       links: [
         { text: 'Monster Blog', href: getBlogPermalink() },
         { text: 'MIT Open Core', href: 'https://github.com/Adriano-Digital2024/CopyMonster' },
-        { text: 'Strategy Documentation', href: '#' },
-        { text: 'Market Radar', href: '#' },
+        { text: 'Strategy Documentation', href: getPermalink('/about') },
+        { text: 'Market Radar', href: getPermalink('/pricing') },
       ],
     },
     {
