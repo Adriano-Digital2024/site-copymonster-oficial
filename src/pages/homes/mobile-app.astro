@@ -31,14 +31,14 @@ const metadata = {
     <Header
       position="left"
       links={[
-        { text: 'Services', href: '#' },
-        { text: 'Features', href: '#' },
-        { text: 'About', href: '#' },
+        { text: 'Features', href: '#features' },
+        { text: 'Pricing', href: '/pricing' },
+        { text: 'About', href: '/about' },
       ]}
       actions={[
         {
-          text: 'Download',
-          href: '#download',
+          text: 'Free Trial',
+          href: 'https://app.copymonster.me',
         },
       ]}
       isSticky
@@ -49,31 +49,31 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Mobile App Web Demo"
+    tagline="CopyMonster App"
     image={{
       src: 'https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'AstroWind Hero Image',
+      alt: 'CopyMonster Mobile Experience',
     }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white">AstroWind App</span>: <br /> professional websites <span
-        class="hidden xl:inline">made easy</span
+      <span class="text-accent dark:text-white">CopyMonster Mobile</span>: <br /> Brand DNA <span
+        class="hidden xl:inline">on the go</span
       >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Unlock boundless creativity at your fingertips: your gateway to innovative design.
+        Access your strategic brand identity and deploy AI agents from anywhere.
       </span>
-      Download now and embark on a journey to elevate your projects like never before.
+      The world's first mobile-first Brand DNA operating system. Identity never sleeps.
     </Fragment>
 
     <div slot="actions" class="flex max-w-sm gap-4">
-      <Button variant="link" href={appStoreDownloadLink}>
+      <Button variant="link" href="https://app.copymonster.me">
         <Image src={appStoreImg} alt="App Store Image" width={200} format="webp" />
       </Button>
 
-      <Button variant="link" href={googlePlayDownloadLink}>
+      <Button variant="link" href="https://app.copymonster.me">
         <Image src={googlePlayImg} alt="Google Play Image" width={200} format="webp" />
       </Button>
     </div>
@@ -83,36 +83,36 @@ const metadata = {
 
   <Features3
     id="features"
-    title="How to use our app?"
-    subtitle="Tired of spending hours crafting documents from scratch? Our app offers an innovative solution. With a wide array of professionally designed templates, you can now create stunning documents in minutes. Explore our templates now and experience the difference."
-    tagline="Step-by-step guide"
+    title="How the Monster works?"
+    subtitle="Built for the modern solopreneur who lives on their phone. Manage your 12-block DNA map, chat with specialized agents, and track campaign performance in real-time."
+    tagline="Strategic Workflow"
     columns={2}
     items={[
       {
-        title: 'Download and install the app',
-        description: `Begin your journey by downloading our user-friendly app from your device's app store or our official website.`,
+        title: 'Define DNA Mobile',
+        description: `Answer our 12 strategic questions through a conversational mobile interface. No desktop needed.`,
         icon: 'tabler:square-number-1',
       },
       {
-        title: 'Sign up',
+        title: 'Sync with Agents',
         description:
-          'Create your account by providing the necessary information, enabling you to access our full range of features.',
+          'Your DNA is instantly synced to all agents (WhatsApp, Ads, Email). Deploy them with one tap.',
         icon: 'tabler:square-number-2',
       },
       {
-        title: 'Browse templates',
-        description: 'Explore our diverse collection of website templates, categorized for easy navigation.',
+        title: 'Monitor Insights',
+        description: 'Track Meta and Instagram performance directly in the app. Data-driven brand evolution.',
         icon: 'tabler:square-number-3',
       },
       {
-        title: 'Preview and select a template',
-        description: `Visualize the potential of each template through previews, then choose the one that aligns best with your project's needs.`,
+        title: 'Scale Globally',
+        description: `Active in 132 countries. Manage your global brand empire from the palm of your hand.`,
         icon: 'tabler:square-number-4',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
-      alt: 'Colorful Image',
+      alt: 'Mobile Strategy',
     }}
   />
 
