@@ -28,39 +28,49 @@ const metadata = {
     subtitle="Choose the perfect 'Monster' to scale your brand identity"
     prices={[
       {
-        title: 'Starter Monster',
-        subtitle: 'Ideal for creators building and validating their first product',
+        title: 'Core (MIT)',
+        subtitle: 'Devs, indies, self-hosted teams',
+        price: 0,
+        period: 'Forever',
+        items: [
+          { description: 'Access to core DNA engine' },
+          { description: 'Community-driven updates' },
+          { description: 'Self-hosting support' },
+          { description: 'MIT License transparency' },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get on GitHub',
+          href: 'https://github.com/Adriano-Digital2024/CopyMonster',
+        },
+      },
+      {
+        title: 'Starter Cloud',
+        subtitle: 'Freelance copywriters',
         price: 47,
         period: 'Per Month',
         items: [
           { description: '1,000 credits per month' },
-          { description: '1 Brand DNA (1 product / 1 brand)' },
+          { description: '1 Brand DNA' },
           { description: 'Access to all 8 AI agents' },
           { description: 'Positioning Diagnosis' },
-          { description: 'Version history with revert' },
-          { description: 'AI Support Chat (automated)' },
-          { description: 'Community Support' },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Start Now',
+          text: 'Start Free Trial',
           href: 'https://app.copymonster.me',
         },
       },
       {
-        title: 'Pro Monster',
-        subtitle: 'For businesses scaling multiple products with data-driven optimization',
+        title: 'Pro Cloud',
+        subtitle: 'Small agencies',
         price: 97,
         period: 'Per Month',
         items: [
           { description: '5,000 credits per month' },
           { description: 'Up to 10 Brand DNAs' },
-          { description: 'Everything in Starter' },
           { description: 'Ads Intelligence Dashboard' },
-          { description: 'Market Radar' },
-          { description: 'DNA Intelligence Engine' },
-          { description: 'Smart Version generation' },
-          { description: 'Priority AI + Email Support' },
+          { description: 'Market Radar access' },
         ],
         callToAction: {
           target: '_blank',
@@ -70,19 +80,24 @@ const metadata = {
         hasRibbon: true,
         ribbonTitle: 'popular',
       },
+    ]}
+  />
+
+  <!-- Enterprise & Scaling ******************* -->
+
+  <Prices
+    title="Scale & Enterprise"
+    subtitle="High-performance solutions for growing organizations"
+    prices={[
       {
-        title: 'Legend Monster',
-        subtitle: 'For brands and agencies operating at scale',
+        title: 'Legend Cloud',
+        subtitle: 'Mid-size agencies',
         price: 197,
         period: 'Per Month',
         items: [
           { description: '15,000 credits per month' },
           { description: 'Up to 50 Brand DNAs' },
-          { description: 'Everything in Pro' },
-          { description: 'Advanced Intelligence signals' },
-          { description: 'Agent Training (Custom Instructions)' },
-          { description: 'Early access to new features' },
-          { description: 'Dedicated human support' },
+          { description: 'Agent Training (Custom)' },
           { description: 'VIP WhatsApp Support' },
         ],
         callToAction: {
@@ -91,8 +106,43 @@ const metadata = {
           href: 'https://app.copymonster.me',
         },
       },
+      {
+        title: 'Enterprise Cloud',
+        subtitle: 'Holdings, in-house teams',
+        price: '1,500+',
+        period: 'Per Month',
+        items: [
+          { description: 'Unlimited credits' },
+          { description: 'Unlimited Brand DNAs' },
+          { description: 'SSO & Advanced Security' },
+          { description: 'Dedicated account manager' },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Contact Sales',
+          href: 'https://app.copymonster.me',
+        },
+      },
+      {
+        title: 'Enterprise Self-Hosted',
+        subtitle: 'Compliance / data-sensitive orgs',
+        price: '8k–20k',
+        period: 'Per Year',
+        items: [
+          { description: 'On-premise deployment' },
+          { description: 'Full data sovereignty' },
+          { description: 'Custom integration support' },
+          { description: 'Annual maintenance included' },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Request Quote',
+          href: 'https://app.copymonster.me',
+        },
+      },
     ]}
   />
+
 
 
   <!-- Pricing Widget ******************* -->
@@ -305,13 +355,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Ready to scale your Brand DNA?"
+    subtitle="Join thousands of entrepreneurs turning generic AI text into strategic intelligence."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'Start Free Trial',
+        href: 'https://app.copymonster.me',
       },
     ]}
   />
