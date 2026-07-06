@@ -65,5 +65,5 @@ Notwithstanding any damages that You might incur, the entire liability of the Co
 
 If you have any questions about these Terms and Conditions, You can contact us:
 
-- By email: contact@bruxus.me
+- By email: contato@copymonster.me
 

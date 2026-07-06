@@ -38,4 +38,4 @@ By using CopyMonster, you acknowledge that your data may be processed by various
 
 If you have any questions about this Privacy Policy, You can contact us:
 
-- By email: contact@bruxus.me
+- By email: contato@copymonster.me
