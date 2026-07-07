@@ -75,49 +75,49 @@ import { UI } from 'astrowind:config';
       localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     });
 
-    attachEvent('.lang-option', 'click', function (e, elem) {
-      const targetLang = elem.getAttribute('data-lang');
+    // Premium Language Selector Logic
+    function initGoogleTranslate() {
       const scriptId = 'google-translate-script';
-      
-      // Update UI label
-      const currentLangLabel = document.getElementById('current-lang');
-      if (currentLangLabel) currentLangLabel.innerText = targetLang;
-
-      window.googleTranslateElementInit = function() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'en,pt,es',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false,
-        }, 'google_translate_element');
-      };
-
       if (!document.getElementById(scriptId)) {
+        window.googleTranslateElementInit = function() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,pt,es',
+            autoDisplay: false,
+          }, 'google_translate_element');
+        };
         const script = document.createElement('script');
         script.id = scriptId;
         script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
         document.body.appendChild(script);
       }
+    }
 
-      const checkAndTranslate = setInterval(() => {
-        const select = document.querySelector('.goog-te-combo');
-        if (select) {
-          select.value = targetLang;
-          select.dispatchEvent(new Event('change'));
-          clearInterval(checkAndTranslate);
-          
-          // Force hide the Google bar
-          const style = document.createElement('style');
-          style.innerHTML = `
-            .goog-te-banner-frame { display: none !important; }
-            body { top: 0 !important; }
-            .goog-tooltip { display: none !important; }
-            .goog-tooltip:hover { display: none !important; }
-            .goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
-          `;
-          document.head.appendChild(style);
-        }
-      }, 100);
+    // Run init
+    initGoogleTranslate();
+
+    attachEvent('.lang-option', 'click', function (e, elem) {
+      const targetLang = elem.getAttribute('data-lang');
+      const currentLangLabel = document.getElementById('current-lang');
+      
+      // 1. Update UI immediately
+      if (currentLangLabel) currentLangLabel.innerText = targetLang.toUpperCase();
+
+      // 2. Set Google Translate Cookie (The most reliable way)
+      // Format: /source/target (e.g., /en/pt)
+      const cookieValue = `/en/${targetLang}`;
+      document.cookie = `googtrans=${cookieValue}; path=/; domain=${window.location.hostname}`;
+      document.cookie = `googtrans=${cookieValue}; path=/;`; // Fallback for some environments
+
+      // 3. Trigger translation if Google Widget is ready
+      const translateControl = document.querySelector('.goog-te-combo');
+      if (translateControl) {
+        translateControl.value = targetLang;
+        translateControl.dispatchEvent(new Event('change'));
+      } else {
+        // If not ready, reload to let the cookie do the work (very reliable)
+        window.location.reload();
+      }
     });
 
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
