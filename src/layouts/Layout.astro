@@ -42,16 +42,20 @@ const { language, textDirection } = I18N;
     <ClientRouter fallback="swap" />
 
     <style is:global>
-      /* Premium Language Selector & Google Translate Cleanup */
+      /* Premium Language Selector & Google Translate Total Ban */
       .goog-te-banner-frame, 
       .goog-te-balloon-frame,
       #goog-gt-tt,
-      .goog-te-balloon-frame-active {
+      .goog-te-balloon-frame-active,
+      .goog-te-banner,
+      .skiptranslate {
         display: none !important;
+        visibility: hidden !important;
       }
       
       body {
         top: 0 !important;
+        position: static !important;
       }
 
       .goog-text-highlight {
@@ -65,6 +69,11 @@ const { language, textDirection } = I18N;
       }
       
       .goog-tooltip:hover {
+        display: none !important;
+      }
+
+      /* Hide the actual google translate element that might be injected */
+      #google_translate_element, .goog-te-gadget {
         display: none !important;
       }
     </style>
