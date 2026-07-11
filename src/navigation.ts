@@ -55,7 +55,7 @@ export const footerData = {
       links: [
         { text: 'Monster Blog', href: getBlogPermalink() },
         { text: 'MIT Open Core', href: 'https://github.com/Adriano-Digital2024/CopyMonster' },
-        { text: 'Strategy Documentation', href: getPermalink('/about') },
+        { text: 'Affiliate Program', href: getPermalink('/affiliate') },
         { text: 'Market Radar', href: getPermalink('/pricing') },
       ],
     },

@@ -1,0 +1,307 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Affiliate Program — CopyMonster Partners',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Join now',
+        href: 'https://app.copymonster.me/auth',
+        target: '_blank',
+        icon: 'tabler:user-plus',
+      },
+      { text: 'Log in', href: 'https://app.copymonster.me/auth' },
+    ]}
+    image={{ src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'CopyMonster Partners' }}
+  >
+    <Fragment slot="title">
+      Welcome, Partner. <br />Let's build <span class="text-accent dark:text-white">Brand Intelligence</span>.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Show up and serve your audience with the first Brand DNA Operating System for AI. <br class="hidden md:inline" />
+      Earn a flat <span class="font-semibold">30% commission</span> with the CopyMonster Partner Program. You in?
+    </Fragment>
+  </Hero>
+
+  <!-- Benefits Widget *************** -->
+
+  <Features
+    id="benefits"
+    title="Grow your reach, revenue, and reputation."
+    subtitle="Unlock exclusive rewards while helping brands find their true identity."
+    items={[
+      {
+        title: 'Earn a flat 30% commission',
+        description:
+          "It's time to secure the bag. With us, you earn a solid 30% commission for the first 12 months of a customer's subscription. No complex tiers, just pure, uncapped revenue.",
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Become a bonafide Brand Authority',
+        description:
+          'Position yourself as an expert thought-leader in the world of AI branding and strategic positioning. Our program is designed to enhance your reach and reputation!',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Connect with your audience',
+        description:
+          'Introduce your audience to the proven way to escape generic AI. They’ll finally build an AI memory that thinks exactly like their brand. They’ll love you for it! 😉',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'Early access to tools and features',
+        description:
+          'Gain skip-the-line VIP access to our exclusive training, workshops, and masterclasses to grow faster without the roadblocks.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- Commission Calculator (Stats) ****************** -->
+
+  <Stats
+    title="Calculate your future commission"
+    subtitle="Earn big. Turn your influence into income with our industry-leading 30% revenue share. With our uncapped commission model, there’s no ceiling on how much you can earn!"
+    stats={[
+      { title: 'Sign-ups', amount: '300' },
+      { title: 'Earnings', amount: '$50,760' },
+      { title: 'Share', amount: '30%' },
+      { title: 'Flat Rate', amount: 'Flat' },
+    ]}
+  />
+
+  <div class="flex justify-center -mt-8 mb-16">
+    <p class="text-sm text-muted dark:text-slate-400 italic">
+      Note: Based on $47/mo subscription for 12 months
+    </p>
+  </div>
+
+  <!-- Social Proof (Placeholder Grid) **************** -->
+
+  <Features2
+    title="Backed by the confidence of a community"
+    subtitle="Comprising creators and brands—that promises limitless growth in the coming years."
+    columns={4}
+    items={[
+      { icon: 'tabler:user-circle', title: 'Creator A', description: 'Influencer' },
+      { icon: 'tabler:user-circle', title: 'Brand B', description: 'Enterprise' },
+      { icon: 'tabler:user-circle', title: 'Agency C', description: 'Marketing' },
+      { icon: 'tabler:user-circle', title: 'Expert D', description: 'AI Specialist' },
+    ]}
+  />
+
+  <!-- What this is not (Content) **************** -->
+
+  <Content
+    title="What this is not."
+    items={[
+      {
+        title: 'Not another generic generator',
+        description:
+          'This isn’t about promoting another generic AI text generator. This is about a platform that transforms how brands protect their essence.',
+      },
+      {
+        title: 'Not a disappearing fad',
+        description:
+          'This is about teaming up with a platform that scales messaging in the AI era. We’re going to help you every step of the way.',
+      },
+      {
+        title: 'Not tiny returns for hard work',
+        description:
+          'This is about a partnership that respects your pace and passion. It’s about reaching more people with true Brand Intelligence.',
+      },
+      {
+        title: 'Not your mom’s affiliate program',
+        description:
+          'Please. This is about real rewards, early VIP access, and private meetings with CopyMonster decision-makers.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
+      alt: 'Quality over quantity',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">We value creativity and commitment</h3>
+      We are building a community of authorities, not just a list of links.
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Loved by our users. Easy to sell."
+    subtitle="It’s more than just a partnership."
+    testimonials={[
+      {
+        testimonial: `CopyMonster is king and has saved me so much time. The Brand DNA engine ensures every agent speaks with my exact voice. No more generic AI!`,
+        name: '@course_creator_01',
+        job: 'Course Creator',
+        image: { src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80', alt: 'User' },
+      },
+      {
+        testimonial: `Total game changer! The 12-block strategic map completely transformed how we launch. Thank you 🙏`,
+        name: '@marketing_expert_02',
+        job: 'Marketing Expert',
+        image: { src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80', alt: 'User' },
+      },
+      {
+        testimonial: `CopyMonster changes my social media marketing! The Market Radar found angles I never thought of. 🔥🔥`,
+        name: '@digital_strategist_03',
+        job: 'Digital Strategist',
+        image: { src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80', alt: 'User' },
+      },
+      {
+        testimonial: `Absolutely loving the Multi-Agent Orchestration. I launched a campaign last night and the consistency was flawless. 200+ leads in one day!`,
+        name: '@agency_owner_04',
+        job: 'Agency Owner',
+        image: { src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=988&q=80', alt: 'User' },
+      },
+      {
+        testimonial: `LOVE CopyMonster. It’s a HUGE support. I don’t know how to function without the Brand DNA. I’m 100% serious!`,
+        name: '@copywriter_05',
+        job: 'Copywriter',
+        image: { src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80', alt: 'User' },
+      },
+    ]}
+  />
+
+  <!-- Features3 (More than just a partnership) -->
+  <Features2
+    title="Everything you need to scale"
+    subtitle="We provide the tools, you provide the voice."
+    items={[
+      {
+        title: 'Marketing resources and sales support',
+        description: 'Access everything you need to create content and get dedicated support from our team.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Uncapped commissions',
+        description: 'Earn thousands every month promoting the ultimate Brand OS with a solid 30% share.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Exclusive collaborations',
+        description: 'Take center stage in our podcasts, guest contributions, and promotional materials.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Influence product development',
+        description: 'Join exclusive groups to test features and speak directly with key decision-makers.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Beautiful co-branded landing pages',
+        description: 'Coming soon! We are building custom landing pages for our top-performing partners.',
+        icon: 'tabler:layout',
+      },
+    ]}
+  />
+
+  <!-- Steps Widget (How it works) ****************** -->
+
+  <Steps
+    title="3 steps to start earning."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Sign up</span>',
+        description:
+          "Fill out the registration form. It only takes a few minutes. Simple, practical, and fast.",
+        icon: 'tabler:user-plus',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Promote</span>',
+        description:
+          "Get access to CopyMonster to generate scripts and content. Share your link and show your results!",
+        icon: 'tabler:broadcast',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Earn</span>',
+        description:
+          'Receive 30% of referred payments for the first 12 months. Payouts are processed monthly.',
+        icon: 'tabler:cash',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Steps Image',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Everything you need to know about the CopyMonster Partner Program."
+    tagline="FAQs"
+    items={[
+      {
+        title: 'What is the CopyMonster Partner Program and how can I get started?',
+        description:
+          'Designed for creators and marketers to share our Brand DNA OS. Click "Join now" to apply and start your journey.',
+      },
+      {
+        title: 'What counts as a successful referral?',
+        description:
+          'When a new user signs up via your link and upgrades to a paid plan within 90 days.',
+      },
+      {
+        title: 'How much do I earn for paid signups?',
+        description:
+          'A flat 30% commission on every paid subscription for the first 12 months. No complex tiers.',
+      },
+      {
+        title: 'What if my referral upgrades their CopyMonster plan?',
+        description:
+          'Your commission grows with them! You earn 30% on the new amount for the remainder of the 12 months.',
+      },
+      {
+        title: 'How and when will I receive my affiliate commissions?',
+        description:
+          'Tracked in real-time. Payouts processed monthly via PayPal once you reach the $100 threshold.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Join now',
+        href: 'https://app.copymonster.me/auth',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to build the future of <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Brand Intelligence?</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Join the CopyMonster Partner Program today and start earning.
+    </Fragment>
+  </CallToAction>
+</Layout>
