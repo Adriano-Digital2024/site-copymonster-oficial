@@ -65,6 +65,7 @@ export const footerData = {
         { text: 'About CopyMonster', href: getPermalink('/about') },
         { text: 'Contact Us', href: getPermalink('/contact') },
         { text: 'Security', href: getPermalink('/security') },
+        { text: 'AI Policy', href: getPermalink('/ai-policy') },
         { text: 'Privacy Policy', href: getPermalink('/privacy') },
         { text: 'Terms of Service', href: getPermalink('/terms') },
       ],
@@ -72,7 +73,8 @@ export const footerData = {
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Privacy', href: getPermalink('/privacy') },
+    { text: 'AI Policy', href: getPermalink('/ai-policy') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },

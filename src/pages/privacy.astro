@@ -1,0 +1,55 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/Headline.astro';
+
+const metadata = {
+  title: 'Privacy Policy — CopyMonster',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+    <HeroText title="Privacy Policy" subtitle="Last Updated: July 12, 2026" />
+    
+    <div
+      class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
+    >
+      <h2>1. INTRODUCTION</h2>
+      <p>
+        CopyMonster ("we", "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our Brand DNA Operating System. We comply with the GDPR (Europe), CCPA (California), and LGPD (Brazil).
+      </p>
+
+      <h2>2. INFORMATION WE COLLECT</h2>
+      <ul>
+        <li><strong>Account Data:</strong> Name, email, billing information.</li>
+        <li><strong>Brand DNA Data:</strong> The strategic answers, market positioning, and identity data you provide in the 12-block mapping process.</li>
+        <li><strong>Usage Data:</strong> Logs of AI Agent interactions, Market Radar queries, and system performance metrics.</li>
+      </ul>
+
+      <h2>3. HOW WE USE YOUR BRAND DNA</h2>
+      <p>
+        <strong>Zero-Training Guarantee:</strong> Your Brand DNA is encrypted and used solely to power your specific AI Agents. We do not use your proprietary Brand DNA, strategies, or generated copy to train our foundational AI models or the models of any third party. Your brand's essence remains entirely isolated to your Workspace.
+      </p>
+
+      <h2>4. THIRD-PARTY AI PROCESSORS</h2>
+      <p>
+        To generate copy, our system routes prompts through secure, enterprise-grade APIs of foundational AI models (e.g., OpenAI, Anthropic, Qwen). These providers are contractually bound by strict Data Processing Agreements (DPAs) and are prohibited from using your API data to train their public models.
+      </p>
+
+      <h2>5. DATA SECURITY</h2>
+      <p>
+        We implement enterprise-grade encryption (in transit and at rest) to protect your Brand DNA and business strategies. However, no internet transmission is 100% secure.
+      </p>
+
+      <h2>6. YOUR PRIVACY RIGHTS</h2>
+      <p>
+        Depending on your jurisdiction, you have the right to access, correct, delete, or export your personal data. To exercise these rights, contact us at contato@copymonster.me.
+      </p>
+
+      <h2>7. COOKIES</h2>
+      <p>
+        We use essential cookies to maintain your session and secure your account. We do not sell your personal data to third-party advertisers.
+      </p>
+    </div>
+  </section>
+</Layout>

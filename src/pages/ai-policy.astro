@@ -1,0 +1,48 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/Headline.astro';
+
+const metadata = {
+  title: 'AI Acceptable Use Policy — CopyMonster',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+    <HeroText title="AI Acceptable Use Policy (AUP)" subtitle="Last Updated: July 12, 2026" />
+    
+    <div
+      class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
+    >
+      <h2>1. PURPOSE</h2>
+      <p>
+        This Acceptable Use Policy ("AUP") applies to all users of CopyMonster's AI Agents, Market Radar, and Brand DNA Engine. It outlines the boundaries of responsible AI usage.
+      </p>
+
+      <h2>2. USER RESPONSIBILITY FOR AI OUTPUT</h2>
+      <p>
+        CopyMonster utilizes advanced Large Language Models (LLMs). You acknowledge that AI can occasionally produce "hallucinations" (inaccurate facts), biased language, or legally non-compliant statements. You are the final publisher. You must review all AI-Generated Output for accuracy, truthfulness, and compliance with local advertising laws (e.g., FTC guidelines in the US, CONAR in Brazil) before deploying it to the public.
+      </p>
+
+      <h2>3. STRICTLY PROHIBITED AI USES</h2>
+      <p>You may not use CopyMonster to generate:</p>
+      <ul>
+        <li><strong>Deceptive Content:</strong> Fake testimonials, fabricated reviews, or misleading claims about products/services.</li>
+        <li><strong>Regulated Advice:</strong> Unauthorized medical, legal, or financial advice.</li>
+        <li><strong>Spam & Manipulation:</strong> Mass unsolicited emails (violating CAN-SPAM/GDPR) or coordinated inauthentic behavior on social media.</li>
+        <li><strong>Malicious Code:</strong> Scripts designed to harm, scrape, or exploit third-party systems.</li>
+        <li><strong>Hate Speech & Harassment:</strong> Content that promotes violence, discrimination, or abuse against individuals or groups.</li>
+      </ul>
+
+      <h2>4. ENFORCEMENT</h2>
+      <p>
+        CopyMonster employs automated and manual monitoring to detect severe violations of this AUP. We reserve the right to immediately suspend or terminate accounts that use the AI Agents to generate prohibited content, without refund.
+      </p>
+
+      <h2>5. INDEMNIFICATION</h2>
+      <p>
+        You agree to indemnify and hold CopyMonster harmless from any claims, fines, or damages arising from your deployment of AI-Generated Output that violates laws, third-party rights, or this AUP.
+      </p>
+    </div>
+  </section>
+</Layout>
