@@ -42,7 +42,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Alternative Homes',
+      title: 'Use Cases',
       links: [
         { text: 'For SaaS', href: getPermalink('/homes/saas') },
         { text: 'For Startups', href: getPermalink('/homes/startup') },
