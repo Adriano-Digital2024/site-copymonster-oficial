@@ -96,7 +96,7 @@ import { UI } from 'astrowind:config';
     // Run init
     initGoogleTranslate();
 
-    attachEvent('.lang-option', 'click', function (e, elem) {
+    attachEvent('.lang-option', 'click', function (_e, elem) {
       const targetLang = elem.getAttribute('data-lang');
       const currentLangLabel = document.getElementById('current-lang');
       
