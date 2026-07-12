@@ -64,6 +64,7 @@ export const footerData = {
       links: [
         { text: 'About CopyMonster', href: getPermalink('/about') },
         { text: 'Contact Us', href: getPermalink('/contact') },
+        { text: 'Security', href: getPermalink('/security') },
         { text: 'Privacy Policy', href: getPermalink('/privacy') },
         { text: 'Terms of Service', href: getPermalink('/terms') },
       ],

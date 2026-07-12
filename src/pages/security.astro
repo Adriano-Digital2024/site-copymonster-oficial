@@ -1,0 +1,295 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Security & Trust at CopyMonster | Brand DNA OS',
+  description: 'CopyMonster is built with enterprise-grade security: SOC2-aligned controls, RBAC, encrypted data, and a transparent open-core model. Learn how we protect your Brand DNA.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Now',
+        href: 'https://app.copymonster.me/',
+        target: '_blank',
+        icon: 'tabler:shield-check',
+      },
+      { text: 'View GitHub', href: 'https://github.com/Adriano-Digital2024/CopyMonster', target: '_blank' },
+    ]}
+    image={{ src: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'CopyMonster Security' }}
+  >
+    <Fragment slot="title">
+      Security & Trust at <span class="text-accent dark:text-white">CopyMonster</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Your Brand DNA is your greatest asset. We protect it like it's our own. At CopyMonster, security is not an afterthought — it's embedded in our architecture.
+    </Fragment>
+  </Hero>
+
+  <!-- Security Philosophy *********** -->
+
+  <Features
+    id="philosophy"
+    title="Our Security Philosophy: Identity First, Security by Design"
+    subtitle="We don't bolt security on top. It's built into the core of CopyMonster."
+    items={[
+      {
+        title: 'Mandatory Strategic Onboarding',
+        description:
+          'Before a single word is generated, your Brand DNA is mapped. This reduces attack surface by ensuring only authorized users with a validated identity can access agents.',
+        icon: 'tabler:dna',
+      },
+      {
+        title: 'Open Core Transparency',
+        description:
+          'Our MIT-licensed core is fully auditable. You can inspect, self-host, and verify every prompt, every agent, and every data flow.',
+        icon: 'tabler:brand-github',
+      },
+      {
+        title: 'Defense in Depth',
+        description:
+          'We apply multiple layers of security — from column-level RLS in PostgreSQL to cryptographic OAuth state tokens and strict Content Security Policies (CSP).',
+        icon: 'tabler:layers-intersect',
+      },
+      {
+        title: 'Continuous Compliance',
+        description:
+          'We adhere to global best practices, aligning with frameworks like SOC 2, ISO 27001, and GDPR to ensure your data is protected wherever it lives.',
+        icon: 'tabler:checkup-list',
+      },
+    ]}
+  />
+
+  <!-- Compliance Section ************ -->
+
+  <Features2
+    title="Certifications & Compliance"
+    subtitle="While we are a rapidly growing open-core platform, we are committed to meeting the highest industry standards. Our security controls are continuously audited and improved."
+    items={[
+      {
+        title: 'SOC 2 Type II (Aligned)',
+        description: 'We follow SOC 2 Type II principles for security, availability, processing integrity, confidentiality, and privacy.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'ISO 27001 (Aligned)',
+        description: 'Our Information Security Management System (ISMS) aligns with the ISO/IEC 27001:2022 standard.',
+        icon: 'tabler:shield-checkered',
+      },
+      {
+        title: 'GDPR & CCPA Ready',
+        description: 'CopyMonster is fully compliant with GDPR and CCPA regulations, providing standard DPAs for all users.',
+        icon: 'tabler:gavel',
+      },
+      {
+        title: 'CSA STAR Registry',
+        description: 'We are listed as a Trusted Cloud Provider, demonstrating our commitment to transparent security practices.',
+        icon: 'tabler:cloud-lock',
+      },
+      {
+        title: 'Meta Business Partner',
+        description: 'We comply with Meta Platform Data Security requirements and undergo regular Data Use Checkups.',
+        icon: 'tabler:brand-meta',
+      },
+    ]}
+  />
+
+  <!-- Platform Security ************* -->
+
+  <Content
+    isReversed
+    title="Platform Security & Data Protection"
+    subtitle="Enterprise-grade encryption and access controls for your strategic intelligence."
+    items={[
+      {
+        title: 'Data Encryption',
+        description:
+          'All data is encrypted using TLS 1.3 in transit and FIPS 140-2 compliant AES-256 standards at rest.',
+      },
+      {
+        title: 'Brand DNA Protection',
+        description:
+          'Your 12-block strategic map is versioned and stored immutably. Once approved, core blocks are locked to prevent unauthorized changes.',
+      },
+      {
+        title: 'Granular RBAC',
+        description:
+          'We implement Role-Based Access Control (RBAC) based on the principle of Least Privilege (admin, board, user).',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Security Infrastructure',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Immutable and Secure</h3>
+      Your data residency options include EU and US regions via Supabase (AWS/Azure/GCP).
+    </Fragment>
+  </Content>
+
+  <!-- Technical Controls ************ -->
+
+  <Features2
+    title="Application & Backend Controls"
+    subtitle="Deep technical safeguards protecting every layer of the platform."
+    columns={3}
+    items={[
+      {
+        title: 'Row-Level Security',
+        description: 'Every query is filtered by RLS policies. Users can only access their own workspace data.',
+        icon: 'tabler:database-lock',
+      },
+      {
+        title: 'Column-Level Revoke',
+        description: 'Sensitive billing and credit columns cannot be modified directly by client requests.',
+        icon: 'tabler:lock-off',
+      },
+      {
+        title: 'Idempotent Webhooks',
+        description: 'Atomic payment processing eliminates errors and ensures transaction integrity.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'OAuth Security',
+        description: 'All OAuth flows use single-use, 64-char cryptographic state tokens to prevent CSRF.',
+        icon: 'tabler:key',
+      },
+      {
+        title: 'Rate Limiting',
+        description: 'Critical endpoints are protected by server-side rate limiting to prevent brute-force attacks.',
+        icon: 'tabler:barrier-block',
+      },
+      {
+        title: 'Strict HSTS & CSP',
+        description: 'We enforce HTTPS across all domains and use strict Content Security Policies.',
+        icon: 'tabler:browser-check',
+      },
+    ]}
+  />
+
+  <!-- Governance & AI *************** -->
+
+  <Content
+    title="Data Privacy & AI Governance"
+    subtitle="We prioritize transparency in how AI interacts with your brand essence."
+    items={[
+      {
+        title: 'BYO LLM (Bring Your Own LLM)',
+        description:
+          'You choose your AI provider (OpenAI, Anthropic, Mistral). Data is not shared unless you explicitly configure it.',
+      },
+      {
+        title: 'No Training on Your Data',
+        description:
+          'We do not train AI models on your Brand DNA, chat history, or any user-generated content.',
+      },
+      {
+        title: 'Data Deletion',
+        description:
+          'Users can request data deletion at any time. Upon account termination, all personal data is deleted within 30 days.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Governance',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Your Data, Your Control</h3>
+      All team members undergo annual security training and adhere to strict incident response protocols.
+    </Fragment>
+  </Content>
+
+  <!-- Infrastructure & Recovery ***** -->
+
+  <Features
+    title="Infrastructure & SOC"
+    subtitle="Built on enterprise-grade cloud providers with redundant recovery systems."
+    columns={3}
+    items={[
+      {
+        title: 'Cloud Infrastructure',
+        description: 'Built on Supabase and Cloudflare with built-in DDoS protection and WAF.',
+        icon: 'tabler:cloud',
+      },
+      {
+        title: 'Continuous Backups',
+        description: 'Encrypted daily snapshots stored in separate geographic regions.',
+        icon: 'tabler:database-export',
+      },
+      {
+        title: 'Incident Response',
+        description: 'Documented plan including user notification within 72 hours for breaches.',
+        icon: 'tabler:alert-triangle',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Security FAQ"
+    subtitle="Find answers to common questions about our security practices."
+    tagline="FAQs"
+    items={[
+      {
+        title: 'Is CopyMonster SOC 2 Type II certified?',
+        description:
+          'We are aligned with SOC 2 Type II principles and undergo annual audits. Our report is available under NDA for enterprise customers.',
+      },
+      {
+        title: 'Is CopyMonster PCI DSS compliant?',
+        description:
+          'We do not store credit card data. All payment processing is handled by Stripe, which is PCI DSS Level 1 compliant.',
+      },
+      {
+        title: 'Do you encrypt my data in transit and at rest?',
+        description: 'Yes. We use TLS 1.3 for in-transit encryption and AES-256 for data at rest.',
+      },
+      {
+        title: 'Can I self-host CopyMonster?',
+        description: 'Absolutely. The core is MIT-licensed and fully self-hostable via Docker.',
+      },
+      {
+        title: 'How do you handle AI-specific risks?',
+        description: 'We support BYO LLM, never train on your data, and ensure all prompts are transparent.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Now',
+        href: 'https://app.copymonster.me/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Trusted by creators <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">worldwide.</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Join 21,000+ community members who trust CopyMonster to protect their Brand DNA and scale with integrity.
+    </Fragment>
+  </CallToAction>
+</Layout>
