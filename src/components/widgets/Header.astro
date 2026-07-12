@@ -76,30 +76,41 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       </a>
       <div class="flex items-center md:hidden">
         <div class="relative dropdown group mr-2">
-            <button
-              type="button"
-              class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 inline-flex items-center"
-              aria-label="Language Selector"
-            >
-              <Icon name="tabler:language" class="w-6 h-6" />
-            </button>
-            <ul class="dropdown-menu absolute right-0 rtl:right-auto rtl:left-0 hidden group-hover:block pt-2 md:backdrop-blur-md dark:md:bg-dark rounded shadow-xl border border-gray-200 dark:border-slate-800 bg-white/90 min-w-[140px] z-50">
-              <li>
-                <button class="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 text-base flex items-center transition-colors lang-option" data-lang="en">
-                  <span class="mr-3 text-xl">🇺🇸</span> English
-                </button>
-              </li>
-              <li>
-                <button class="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 text-base flex items-center transition-colors lang-option" data-lang="pt">
-                  <span class="mr-3 text-xl">🇧🇷</span> Português
-                </button>
-              </li>
-              <li>
-                <button class="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 text-base flex items-center transition-colors lang-option" data-lang="es">
-                  <span class="mr-3 text-xl">🇪🇸</span> Español
-                </button>
-              </li>
-            </ul>
+          <button
+            type="button"
+            class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 inline-flex items-center"
+            aria-label="Language Selector"
+          >
+            <Icon name="tabler:language" class="w-6 h-6" />
+          </button>
+          <ul
+            class="dropdown-menu absolute right-0 rtl:right-auto rtl:left-0 hidden group-hover:block pt-2 md:backdrop-blur-md dark:md:bg-dark rounded shadow-xl border border-gray-200 dark:border-slate-800 bg-white/90 min-w-[140px] z-50"
+          >
+            <li>
+              <button
+                class="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 text-base flex items-center transition-colors lang-option"
+                data-lang="en"
+              >
+                <span class="mr-3 text-xl">🇺🇸</span> English
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 text-base flex items-center transition-colors lang-option"
+                data-lang="pt"
+              >
+                <span class="mr-3 text-xl">🇧🇷</span> Português
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 text-base flex items-center transition-colors lang-option"
+                data-lang="es"
+              >
+                <span class="mr-3 text-xl">🇪🇸</span> Español
+              </button>
+            </li>
+          </ul>
         </div>
         <ToggleMenu />
       </div>

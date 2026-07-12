@@ -99,7 +99,7 @@ import { UI } from 'astrowind:config';
     attachEvent('.lang-option', 'click', function (_e, elem) {
       const targetLang = elem.getAttribute('data-lang');
       const currentLangLabel = document.getElementById('current-lang');
-      
+
       // 1. Update UI immediately
       if (currentLangLabel) currentLangLabel.innerText = targetLang.toUpperCase();
 
