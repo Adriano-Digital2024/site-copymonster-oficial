@@ -11,7 +11,7 @@ metadata:
   title:
     default: CopyMonster
     template: '%s — CopyMonster'
-  description: "Brand DNA Operating System for AI. Orchestrate specialized agents, MCPs, and workflows from a single versioned brand foundation."
+  description: "Brand DNA Operating System for AI. Organize strategic brand knowledge to guide consistent marketing workflows."
   robots:
     index: true
     follow: true

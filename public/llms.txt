@@ -6,13 +6,12 @@
 - [Home](https://copymonster.co/): System overview and architecture
 - [Brand DNA Engine](https://copymonster.co/dna/): The 12 strategic blocks and persistent versioning
 - [AI Agents](https://copymonster.co/agents/): Specialized agents for copy, launches, funnels, and workflows
-- [MCP Directory](https://copymonster.co/mcps/): Model Context Protocol server connectors
-- [Integrations](https://copymonster.co/integrations/): GitHub, Stripe, WhatsApp, Notion, and Supabase
+- [Integrations](https://copymonster.co/integrations/): Conceptual overview of shared brand context across marketing workflows
 - [Use Cases](https://copymonster.co/use-cases/): Frameworks for infopreneurs, high-ticket mentors, and marketing agencies
 - [Pricing](https://copymonster.co/pricing/): Subscription plans and trial details
 - [Technical Blog](https://copymonster.co/blog/): Deep-dive guides on GEO, AI orchestration, and direct-response systems
 
 ## Core Capabilities
 - Versioned Brand Memory (v1, v2, v3): Never overwritten, zero hallucination drift.
-- Multi-Agent Orchestration: Shared brand context across all operational tools.
+- Specialized AI roles: A conceptual view of different marketing tasks guided by shared brand context.
 - Open Core Architecture: Built with transparency and enterprise data sovereignty.

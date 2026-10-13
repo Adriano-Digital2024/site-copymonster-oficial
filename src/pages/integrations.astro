@@ -8,7 +8,7 @@ import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
   title: 'Integrations & Connectors — CopyMonster',
-  description: 'Connect CopyMonster Brand DNA to GitHub, Claude Desktop, Cursor, Supabase, Notion, Stripe, and direct messaging channels.',
+  description: 'A conceptual overview of how consistent brand context can support connected marketing workflows.',
 };
 ---
 
@@ -17,8 +17,8 @@ const metadata = {
 
   <HeroText
     tagline="Ecosystem Connectivity"
-    title="Integrate CopyMonster With Your Production Stack"
-    subtitle="Embed your Brand DNA Operating System into your daily workflow, development environments, databases, and messaging channels."
+    title="Connect Brand Context to Your Workflows"
+    subtitle="Explore how a shared Brand DNA can inform work across the tools and processes your team chooses to use."
     callToAction={{
       variant: 'primary',
       text: 'Start 7-Day Free Trial',
@@ -28,47 +28,32 @@ const metadata = {
     }}
     callToAction2={{
       text: 'See How It Works',
-      href: getPermalink('/mcps'),
+      href: getPermalink('/dna'),
     }}
   />
 
   <!-- Features2 Widget (Connectors) ** -->
 
   <Features2
-    tagline="Supported Connectors"
-    title="Production-Ready Integrations"
-    subtitle="Direct, authenticated data bridges designed for privacy, performance, and continuous synchronization."
+    tagline="Connected Workflows"
+    title="A Consistent Brand Context Across Your Work"
+    subtitle="Conceptually, connected workflows can help teams apply the same brand foundation across different kinds of work."
     columns={3}
     items={[
       {
-        title: 'Claude Desktop & Cursor',
-        description: 'Native Model Context Protocol (MCP) support to query versioned Brand DNA in your favorite AI workspaces.',
-        icon: 'tabler:terminal-2',
+        title: 'Content Creation',
+        description: 'Use a shared brand foundation as a reference when planning and creating marketing content.',
+        icon: 'tabler:article',
       },
       {
-        title: 'GitHub & GitOps',
-        description: 'Two-way sync and audit trails for your Brand DNA releases, ensuring complete developer governance.',
-        icon: 'tabler:brand-github',
+        title: 'Campaign Planning',
+        description: 'Keep positioning, audience context, and offer details in view as campaigns are planned.',
+        icon: 'tabler:route',
       },
       {
-        title: 'Supabase & Postgres',
-        description: 'Connect enterprise data warehouses and vector stores directly to feed performance telemetry to your DNA.',
-        icon: 'tabler:database',
-      },
-      {
-        title: 'Notion & Docs',
-        description: 'Bi-directional ingestion of brand guidelines, interview transcripts, and customer research notes.',
-        icon: 'tabler:notebook',
-      },
-      {
-        title: 'Stripe & Billing Webhooks',
-        description: 'Trigger customer lifecycle and retention copy sequences based on real-time subscription events.',
-        icon: 'tabler:credit-card',
-      },
-      {
-        title: 'WhatsApp & Slack',
-        description: 'Deploy copy generation and approval workflows straight into team channels and client chat threads.',
-        icon: 'tabler:brand-whatsapp',
+        title: 'Team Collaboration',
+        description: 'Give collaborators a common reference for discussing and reviewing brand-related work.',
+        icon: 'tabler:users-group',
       },
     ]}
   />
@@ -77,25 +62,25 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Enterprise Security"
-    title="Data Sovereignty and Scoped Access"
+    tagline="Shared Context"
+    title="A Common Reference for Brand Decisions"
     items={[
       {
-        title: 'Role-Based Connector Permissions',
+        title: 'Consistent Brand Context',
         description:
-          'Control exactly which team members and external tools have read or write access to specific Brand DNA blocks.',
+          'A clearly documented Brand DNA can help teams refer to the same positioning, audience, and offer information.',
         icon: 'tabler:lock',
       },
       {
-        title: 'Audit Logging & Revisions',
+        title: 'Purposeful Collaboration',
         description:
-          'Every integration call, DNA parameter update, and agent invocation is recorded with immutable timestamps.',
+          'Teams can use their shared brand foundation to align discussions and creative reviews.',
         icon: 'tabler:file-text',
       },
       {
-        title: 'Self-Hosted or Cloud',
+        title: 'Flexible Workflows',
         description:
-          'Run integrations via CopyMonster Cloud or deploy the open-source MIT core on your own isolated infrastructure.',
+          'Choose the tools and processes that fit your team; this page does not describe specific technical connectors.',
         icon: 'tabler:server',
       },
     ]}
@@ -105,8 +90,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Built for Scaled Marketing Teams</h3>
-      Connect CopyMonster once, and keep your entire tech stack aligned around a single, immutable brand intelligence layer.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Start With a Shared Brand Foundation</h3>
+      Brand DNA can serve as a consistent reference point when teams coordinate marketing work across their chosen tools.
     </Fragment>
 
     <Fragment slot="bg">
@@ -127,16 +112,16 @@ const metadata = {
       },
       {
         text: 'See How It Works',
-        href: getPermalink('/mcps'),
+        href: getPermalink('/dna'),
       },
     ]}
   >
     <Fragment slot="title">
-      Unify Your Brand Stack Today
+      Bring Your Brand Context Into the Work
     </Fragment>
 
     <Fragment slot="subtitle">
-      Connect your tools and run AI agents with persistent, unified brand context.
+      Use your Brand DNA as a common reference across the workflows your team chooses to build.
     </Fragment>
   </CallToAction>
 </Layout>

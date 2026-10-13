@@ -7,7 +7,6 @@ export const headerData = {
       links: [
         { text: 'Brand DNA Engine', href: getPermalink('/dna') },
         { text: 'AI Agents', href: getPermalink('/agents') },
-        { text: 'MCP Directory', href: getPermalink('/mcps') },
         { text: 'Integrations', href: getPermalink('/integrations') },
         { text: 'Platform Features', href: getPermalink('/#features') },
         { text: 'Pricing', href: getPermalink('/pricing') },
@@ -39,7 +38,6 @@ export const footerData = {
       links: [
         { text: 'Brand DNA Engine', href: getPermalink('/dna') },
         { text: 'AI Agents', href: getPermalink('/agents') },
-        { text: 'MCP Directory', href: getPermalink('/mcps') },
         { text: 'Integrations', href: getPermalink('/integrations') },
         { text: 'Pricing Plans', href: getPermalink('/pricing') },
       ],
