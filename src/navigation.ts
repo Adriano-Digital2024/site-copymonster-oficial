@@ -7,6 +7,9 @@ export const headerData = {
       links: [
         { text: 'Brand DNA Engine', href: getPermalink('/dna') },
         { text: 'AI Agents', href: getPermalink('/agents') },
+        { text: 'Use Cases', href: getPermalink('/use-cases') },
+        { text: 'Launch', href: getPermalink('/launch') },
+        { text: 'Marketing Automation', href: getPermalink('/automation') },
         { text: 'Integrations', href: getPermalink('/integrations') },
         { text: 'Platform Features', href: getPermalink('/#features') },
         { text: 'Pricing', href: getPermalink('/pricing') },
@@ -45,6 +48,9 @@ export const footerData = {
     {
       title: 'Use Cases',
       links: [
+        { text: 'Use Cases', href: getPermalink('/use-cases') },
+        { text: 'Infoproduct Launch', href: getPermalink('/launch') },
+        { text: 'Marketing Automation', href: getPermalink('/automation') },
         { text: 'For SaaS', href: getPermalink('/homes/saas') },
         { text: 'For Startups', href: getPermalink('/homes/startup') },
         { text: 'Mobile Experience', href: getPermalink('/homes/mobile-app') },

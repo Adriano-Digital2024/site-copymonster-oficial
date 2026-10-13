@@ -1,0 +1,24 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
+const metadata = { title: 'Brand DNA Use Cases and Personas | CopyMonster', description: 'See how solo creators, experts, agencies, and publishers can use structured Brand DNA to keep marketing copy aligned with their brand.' };
+---
+<Layout metadata={metadata}>
+  <HeroText tagline="Use Cases" title="Brand DNA for Different Marketing Teams" subtitle="Different operators face different copy production constraints. A shared, structured brand foundation helps keep their work consistent." callToAction={{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }} callToAction2={{ text: 'See How It Works', href: getPermalink('/dna') }} />
+  <Features tagline="Solo creators" title="Solo Infopreneurs" subtitle="Build campaign assets without re-entering the same strategic context for every task." items={[{ title: 'Challenge', description: 'Working alone means repeatedly explaining the offer, audience, and voice to general-purpose AI tools.', icon: 'tabler:alert-triangle' }, { title: 'Brand DNA role', description: 'Keep audience, positioning, offer, and voice information in a structured foundation for repeatable copy work.', icon: 'tabler:dna' }]} />
+  <Features tagline="Experts" title="High-Ticket Mentors and Experts" subtitle="Keep positioning and expertise recognizable across customer-facing materials." items={[{ title: 'Challenge', description: 'Generic drafts can flatten specialist language and make a premium offer sound interchangeable.', icon: 'tabler:alert-triangle' }, { title: 'Brand DNA role', description: 'Record the offer, audience, proof points, and voice boundaries that should inform future drafts.', icon: 'tabler:shield-check' }]} />
+  <Features tagline="Agencies" title="Marketing Agencies" subtitle="Give teams a consistent reference when producing work for distinct clients." items={[{ title: 'Challenge', description: 'Writers and strategists need to keep each client’s positioning and voice separate.', icon: 'tabler:folders' }, { title: 'Brand DNA role', description: 'Use structured brand information as a reference during client content production and review.', icon: 'tabler:users' }]} />
+  <Features tagline="Publishers" title="Content Creators and Publishers" subtitle="Maintain a recognizable editorial point of view across recurring content." items={[{ title: 'Challenge', description: 'Higher publishing cadence can make it harder to preserve a distinct voice and editorial stance.', icon: 'tabler:alert-triangle' }, { title: 'Brand DNA role', description: 'Keep editorial principles, audience context, and terminology available as a reusable reference.', icon: 'tabler:feather' }]} />
+  <FAQs title="Frequently Asked Questions" items={[{ title: 'Can Brand DNA support different types of marketing work?', description: 'Brand DNA provides structured brand context that can inform copy and content across different marketing tasks.' }, { title: 'Does Brand DNA replace editorial review?', description: 'No. It provides a consistent reference for generating drafts; people should review and approve customer-facing content.' }]} />
+
+  <CallToAction actions={[{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }, { text: 'See How It Works', href: getPermalink('/dna') }]}>
+    <Fragment slot="title">Build from a consistent brand foundation</Fragment>
+    <Fragment slot="subtitle">Explore how structured Brand DNA supports your marketing work.</Fragment>
+  </CallToAction>
+</Layout>

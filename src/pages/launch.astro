@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
+const metadata = { title: 'Infoproduct Launch Planning with Brand DNA', description: 'Plan launch messaging with a consistent Brand DNA foundation across pre-launch content, event materials, and follow-up copy.' };
+---
+<Layout metadata={metadata}>
+  <HeroText tagline="Launch planning" title="A Consistent Foundation for Infoproduct Launches" subtitle="Keep launch messaging connected to your audience, offer, and positioning from early content through follow-up." callToAction={{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }} callToAction2={{ text: 'See How It Works', href: getPermalink('/dna') }} />
+  <Content tagline="The challenge" title="Launch Assets Need a Shared Strategic Context" items={[{ title: 'Disconnected drafts', description: 'When each asset is developed from scratch, the central offer and positioning can drift between content, event materials, and follow-up.', icon: 'tabler:files' }, { title: 'Repeated context', description: 'Teams may spend time re-entering audience details, offer language, and brand voice in each new drafting session.', icon: 'tabler:repeat' }]}><Fragment slot="content"><h2 class="text-2xl font-bold">Keep the launch anchored to your brand</h2><p>Brand DNA provides a structured reference for the messages and offer details used in launch content.</p></Fragment></Content>
+  <Steps tagline="Workflow" title="A Brand DNA Launch Workflow" subtitle="A practical sequence for preparing launch materials around a consistent foundation." items={[{ title: '1. Define the foundation', description: 'Record your audience, positioning, offer, and brand voice in Brand DNA.', icon: 'tabler:dna' }, { title: '2. Prepare launch content', description: 'Use that reference while drafting pre-launch and event materials.', icon: 'tabler:file-text' }, { title: '3. Review message alignment', description: 'Check that key claims and offer details remain consistent across assets.', icon: 'tabler:check' }, { title: '4. Refine from feedback', description: 'Update the underlying brand context when your positioning or offer changes.', icon: 'tabler:refresh' }]} />
+  <FAQs title="Frequently Asked Questions" items={[{ title: 'Does this automatically run a launch campaign?', description: 'This page describes a content-planning workflow. It does not promise campaign scheduling or delivery automation.' }, { title: 'What launch materials can use Brand DNA?', description: 'The structured brand context can inform drafts for pre-launch content, event materials, and follow-up copy.' }]} />
+
+  <CallToAction actions={[{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }, { text: 'See How It Works', href: getPermalink('/dna') }]}>
+    <Fragment slot="title">Build from a consistent brand foundation</Fragment>
+    <Fragment slot="subtitle">Explore how structured Brand DNA supports your marketing work.</Fragment>
+  </CallToAction>
+</Layout>
