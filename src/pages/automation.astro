@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
+const metadata = { title: 'Marketing Operations and Brand DNA | CopyMonster', description: 'Use structured Brand DNA as a consistent reference for recurring marketing content and coordinated copy production.' };
+---
+<Layout metadata={metadata}>
+  <HeroText tagline="Marketing operations" title="A Consistent Brand Foundation for Marketing Operations" subtitle="Bring structured brand context into recurring content and copy workflows without losing sight of your positioning." callToAction={{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }} callToAction2={{ text: 'See How It Works', href: getPermalink('/dna') }} />
+  <Content tagline="The challenge" title="Unstructured Context Makes Repeatable Work Harder" items={[{ title: 'Context is scattered', description: 'Offer details, audience information, and voice guidance may live across documents and individual drafting sessions.', icon: 'tabler:database' }, { title: 'Outputs can drift', description: 'Without a shared reference, recurring content may describe the same brand and offer in inconsistent ways.', icon: 'tabler:arrows-shuffle' }]}><Fragment slot="content"><h2 class="text-2xl font-bold">Use Brand DNA as a shared reference</h2><p>Organize strategic brand information so it can inform repeated marketing tasks and content reviews.</p></Fragment></Content>
+  <Features tagline="Capabilities" title="Marketing Workflows Brand DNA Can Inform" subtitle="These are conceptual use cases, not claims of automatic delivery or integration." items={[{ title: 'Recurring content drafts', description: 'Keep audience and voice context available when preparing newsletters, articles, and other recurring content.', icon: 'tabler:news' }, { title: 'Campaign copy variations', description: 'Use consistent positioning as a reference when exploring different copy angles.', icon: 'tabler:copy' }, { title: 'Voice review', description: 'Compare draft language with recorded voice guidelines and terminology.', icon: 'tabler:check' }, { title: 'Cross-asset consistency', description: 'Review whether related assets describe the offer and its audience consistently.', icon: 'tabler:link' }]} />
+  <FAQs title="Frequently Asked Questions" items={[{ title: 'Does this connect to external marketing tools?', description: 'This page does not describe a specific external tool integration. Check the product’s integrations information for supported connections.' }, { title: 'Does Brand DNA automatically publish content?', description: 'No automatic publishing capability is promised here. Brand DNA provides structured context for marketing work.' }]} />
+
+  <CallToAction actions={[{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }, { text: 'See How It Works', href: getPermalink('/dna') }]}>
+    <Fragment slot="title">Build from a consistent brand foundation</Fragment>
+    <Fragment slot="subtitle">Explore how structured Brand DNA supports your marketing work.</Fragment>
+  </CallToAction>
+</Layout>
