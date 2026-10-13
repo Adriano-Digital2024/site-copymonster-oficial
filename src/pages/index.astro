@@ -1,6 +1,5 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -8,8 +7,9 @@ import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
 
-  const metadata = {
+const metadata = {
   title: 'CopyMonster — Brand DNA Operating System for AI',
   ignoreTitleTemplate: true,
 };
@@ -22,25 +22,25 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
     actions={[
       {
         variant: 'primary',
-        text: 'Start Branding',
-        href: 'https://app.copymonster.me',
+        text: 'Deploy Brand OS',
+        href: 'https://app.copymonster.co/',
         target: '_blank',
-        icon: 'tabler:rocket',
+        icon: 'tabler:cpu',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'See How It Works', href: getPermalink('/dna') },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'CopyMonster Hero Image' }}
   >
     <Fragment slot="title">
-      The first <span class="text-accent dark:text-white">Brand DNA</span> Operating System for AI
+      The <span class="text-accent dark:text-white">Brand DNA</span> Operating System for AI
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        While the world uses AI to write generic text, <span class="font-semibold">CopyMonster</span> polishes, empowers, and positions your brand's essence before a single word is written.
+        Orchestrate specialized AI agents, MCPs, and marketing workflows from a single versioned brand foundation.
       </span>
       <span class="block mb-1 sm:hidden font-bold text-blue-600">CopyMonster: Identity first.</span>
-      Stop generating generic content. Build an AI memory that thinks exactly like your brand.
+      Stop prompt drift. Build persistent strategic memory that powers every AI touchpoint.
     </Fragment>
   </Hero>
 
@@ -52,7 +52,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 
   <Features
     id="features"
-    tagline="Features"
+    tagline="Platform Architecture"
     title="What you get with CopyMonster"
     subtitle="A complete infrastructure for strategic intelligence and brand identity in the AI era."
     items={[
@@ -61,40 +61,60 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
         description:
           'Transform your identity into permanent strategic memory. Our 12-block map ensures your AI never forgets who you are.',
         icon: 'tabler:dna',
+        callToAction: {
+          text: 'Explore DNA Engine',
+          href: getPermalink('/dna'),
+        },
       },
       {
         title: 'Multi-Agent Orchestration',
         description:
-          'Deploy dozens of specialized agents that share the same brain. Consistency across every channel, every time.',
+          'Deploy specialized agents that share the same brain. Consistency across copy, email, launches, and ads.',
         icon: 'tabler:users-group',
+        callToAction: {
+          text: 'View AI Agents',
+          href: getPermalink('/agents'),
+        },
       },
       {
-        title: 'Strategic Performance Loop',
+        title: 'MCP Server Directory',
         description:
-          'Campaign results feed back into your DNA, allowing your brand identity to evolve and improve automatically.',
-        icon: 'tabler:refresh',
+          'Connect your versioned Brand DNA directly to Claude Desktop, Cursor, Zed, and custom agentic frameworks.',
+        icon: 'tabler:plug-connected',
+        callToAction: {
+          text: 'Inspect MCPs',
+          href: getPermalink('/mcps'),
+        },
+      },
+      {
+        title: 'External Integrations',
+        description:
+          'Seamless connection with GitHub, Stripe, Supabase, Notion, and WhatsApp for end-to-end automation.',
+        icon: 'tabler:puzzle',
+        callToAction: {
+          text: 'Browse Integrations',
+          href: getPermalink('/integrations'),
+        },
       },
       {
         title: 'Open Core (MIT)',
         description:
-          'A transparent, developer-friendly foundation. Build, modify, and host your own agents with our open-source core.',
+          'A transparent, developer-friendly foundation. Build, inspect, and host your own agents with our open-source core.',
         icon: 'tabler:brand-github',
+        callToAction: {
+          text: 'GitHub Repository',
+          href: 'https://github.com/Adriano-Digital2024/CopyMonster',
+          target: '_blank',
+        },
       },
       {
-        title: 'Market Radar',
+        title: 'Strategic Performance Loop',
         description:
-          "AI-driven scanning for market gaps and opportunities that reinforce your brand's unique essence.",
-        icon: 'tabler:radar',
-      },
-      {
-        title: 'Agentic Infrastructure',
-        description:
-          'Not just a tool, but the infrastructure where all communication for your business is born.',
-        icon: 'tabler:network',
+          'Campaign metrics feed back into your DNA, allowing your brand intelligence to evolve with market feedback.',
+        icon: 'tabler:refresh',
       },
     ]}
   />
-
 
   <!-- Content Widget **************** -->
 
@@ -106,17 +126,17 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
       {
         title: 'The AI Paradox',
         description:
-          'AI democratized content, but also democratized generic output. Without a clear DNA, your brand becomes invisible.',
+          'AI democratized content creation, but also democratized generic output. Without a clear DNA, your brand sounds identical to competitors.',
       },
       {
         title: 'Prompt vs. Memory',
         description:
-          "Stop relying on temporary prompts. Build a permanent strategic memory that grows with your business.",
+          'Stop relying on temporary prompts and fragile chat sessions. Build a permanent strategic memory that grows with your business.',
       },
       {
         title: 'Unified Identity',
         description:
-          'Ensure every AI agent — from sales to support — speaks with the exact same voice and authority.',
+          'Ensure every AI agent — from copywriting to sales sequences — communicates with the exact same voice, authority, and values.',
       },
     ]}
     image={{
@@ -126,7 +146,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Strategy first, Copy later</h3>
-      Intelligence without identity is just noise. Gain a competitive advantage by defining your DNA first.
+      Intelligence without identity is just noise. Gain a structural competitive advantage by defining your DNA first.
     </Fragment>
 
     <Fragment slot="bg">
@@ -141,22 +161,23 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
     items={[
       {
         title: '12-Block Strategic Map',
-        description: `Map your history, values, positioning, and value proposition through an oriented 12-question workflow.`,
+        description:
+          'Map your history, values, positioning, ICP pain points, and offer architecture through an oriented 12-block framework.',
       },
       {
-        title: 'Intelligence-Based SaaS',
+        title: 'Immutable Versioning',
         description:
-          'We don\'t sell an editor; we sell the intelligence engine that powers all your communication.',
+          'Track DNA evolution across v1, v2, and v3 releases. Never worry about accidental prompt drift or overwritten intelligence.',
       },
       {
         title: 'Open Core Transparency',
         description:
-          "The core is MIT-licensed. Study it, host it, and trust that your brand data is secure and transparent.",
+          'The core engine is MIT-licensed. Study it, self-host it, and maintain complete sovereignty over your strategic brand assets.',
       },
       {
         title: 'Enterprise-Grade Scaling',
         description:
-          'Advanced metrics, automatic DNA evolution, and multiple workspaces for large organizations and agencies.',
+          'Manage multiple brand workspaces, role-based controls, and direct MCP streaming for high-throughput marketing teams.',
       },
     ]}
     image={{
@@ -164,7 +185,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
       alt: 'Strategic Blueprint',
     }}
   >
-    <Fragment slot="content">Your brand identity is your greatest asset. Protect it.</Fragment>
+    <Fragment slot="content">Your brand identity is your greatest asset. Protect it with versioned memory.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -179,19 +200,19 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
       {
         title: 'Step 1: <span class="font-medium">Define your DNA</span>',
         description:
-          "Answer 12 strategic questions to build your Brand DNA map. This becomes the permanent memory for your AI.",
+          'Answer 12 strategic blocks to build your Brand DNA map. This establishes the permanent memory layer for all models.',
         icon: 'tabler:dna',
       },
       {
-        title: 'Step 2: <span class="font-medium">Deploy Agents</span>',
+        title: 'Step 2: <span class="font-medium">Deploy Agents & MCPs</span>',
         description:
-          "Connect specialized AI agents to your DNA. They will instantly understand your voice, promises, and value.",
+          'Connect specialized AI agents and MCP servers to your DNA. They instantly inherit your voice, positioning, and offer details.',
         icon: 'tabler:users-group',
       },
       {
         title: 'Step 3: <span class="font-medium">Scale & Evolve</span>',
         description:
-          'Launch campaigns and let the results feed back into your DNA, making your brand smarter every day.',
+          'Run campaigns across ads, email, and organic channels. Feed real-world conversion metrics back into your versioned DNA.',
         icon: 'tabler:trending-up',
       },
       {
@@ -222,20 +243,23 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
     actions={[
       {
         variant: 'primary',
-        text: 'Launch your DNA',
-        href: 'https://app.copymonster.me',
+        text: 'Start 7-Day Free Trial',
+        href: 'https://app.copymonster.co/',
         target: '_blank',
         icon: 'tabler:rocket',
+      },
+      {
+        text: 'See How It Works',
+        href: getPermalink('/dna'),
       },
     ]}
   >
     <Fragment slot="title">
-      Strategy&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Identity</span>
+      Scale with Persistent Brand Memory
     </Fragment>
 
     <Fragment slot="subtitle">
-      Stop producing generic content. Join the era of Brand Intelligence.<br class="hidden md:inline" />No DNA. No Copy.
+      Deploy specialized agents trained on your 12-block Brand DNA. Stop prompt rewriting.<br class="hidden md:inline" />No DNA. No Copy.
     </Fragment>
   </CallToAction>
-
 </Layout>

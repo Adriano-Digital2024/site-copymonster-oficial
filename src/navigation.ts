@@ -5,10 +5,12 @@ export const headerData = {
     {
       text: 'Product',
       links: [
-        { text: 'Features', href: getPermalink('/#features') },
-        { text: 'AI Agents', href: getPermalink('/services') },
+        { text: 'Brand DNA Engine', href: getPermalink('/dna') },
+        { text: 'AI Agents', href: getPermalink('/agents') },
+        { text: 'MCP Directory', href: getPermalink('/mcps') },
+        { text: 'Integrations', href: getPermalink('/integrations') },
+        { text: 'Platform Features', href: getPermalink('/#features') },
         { text: 'Pricing', href: getPermalink('/pricing') },
-        { text: 'Enterprise', href: getPermalink('/contact') },
       ],
     },
     {
@@ -35,10 +37,11 @@ export const footerData = {
     {
       title: 'Product',
       links: [
-        { text: 'DNA Engine', href: getPermalink('/#features') },
-        { text: 'Services & Agents', href: getPermalink('/services') },
+        { text: 'Brand DNA Engine', href: getPermalink('/dna') },
+        { text: 'AI Agents', href: getPermalink('/agents') },
+        { text: 'MCP Directory', href: getPermalink('/mcps') },
+        { text: 'Integrations', href: getPermalink('/integrations') },
         { text: 'Pricing Plans', href: getPermalink('/pricing') },
-        { text: 'Enterprise Solution', href: getPermalink('/pricing') },
       ],
     },
     {

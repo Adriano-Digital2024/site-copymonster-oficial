@@ -1,0 +1,198 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'Brand DNA Engine — 12-Block Strategic Architecture — CopyMonster',
+  description: 'Explore the 12-block Brand DNA architecture that transforms brand identity into immutable structured memory for AI agents.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget *************** -->
+
+  <HeroText
+    tagline="Brand DNA Engine"
+    title="The 12-Block Strategic Architecture"
+    subtitle="A deterministic foundation that turns brand positioning into immutable structured memory. Stop prompt degradation across your team and tools."
+    callToAction={{
+      variant: 'primary',
+      text: 'Start 7-Day Free Trial',
+      href: 'https://app.copymonster.co/',
+      target: '_blank',
+      icon: 'tabler:dna',
+    }}
+    callToAction2={{
+      text: 'See How It Works',
+      href: getPermalink('/agents'),
+    }}
+  />
+
+  <!-- Content Widget (Philosophy) *** -->
+
+  <Content
+    isReversed
+    tagline="Persistent Memory"
+    title="Why Prompts Fail and Brand DNA Succeeds"
+    items={[
+      {
+        title: 'Zero Prompt Drift',
+        description:
+          'Prompting an LLM on every session introduces variance and dilution. Brand DNA locks your positioning in structured JSON schemas.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Immutable Versioning (v1, v2, v3)',
+        description:
+          'Every evolution of your brand strategy is saved as an immutable release. Roll back or compare variations with complete traceability.',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'Cross-Agent Inheritance',
+        description:
+          'All specialized agents — copywriters, funnel architects, and analytics loopers — draw from the same single source of truth.',
+        icon: 'tabler:hierarchy-2',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Brand DNA Architecture Data Flow',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Determinism Over Randomness</h3>
+      Generative AI requires strategic constraints. Without persistent memory, your marketing communications lose nuance and authority.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget (The 12 Blocks) ** -->
+
+  <Steps
+    tagline="The Strategic Matrix"
+    title="The 12 Blocks of Brand DNA"
+    subtitle="Structured into three critical operational phases to capture the full spectrum of your business identity."
+    items={[
+      {
+        title: 'Block 1: <span class="font-medium">Origin & Core Mission</span>',
+        description: 'The foundational narrative, reason for existence, and long-term vision of the enterprise.',
+        icon: 'tabler:compass',
+      },
+      {
+        title: 'Block 2: <span class="font-medium">Non-Negotiable Values</span>',
+        description: 'Ethical boundaries, positioning stances, and principles that the brand will never violate.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Block 3: <span class="font-medium">Primary Value Proposition</span>',
+        description: 'The distinct statement of tangible transformation and category authority.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Block 4: <span class="font-medium">Ideal Customer Profile (ICP)</span>',
+        description: 'Demographics, psychographics, sophistication level, and operational realities of your best buyers.',
+        icon: 'tabler:user-search',
+      },
+      {
+        title: 'Block 5: <span class="font-medium">Core Pain Points & Friction</span>',
+        description: 'The acute financial, psychological, and operational struggles your ICP faces daily.',
+        icon: 'tabler:alert-triangle',
+      },
+      {
+        title: 'Block 6: <span class="font-medium">Transformation Promise</span>',
+        description: 'The precise before-and-after state achieved after adopting your solution.',
+        icon: 'tabler:sparkles',
+      },
+      {
+        title: 'Block 7: <span class="font-medium">Tone of Voice & Vocabulary Rules</span>',
+        description: 'Formal syntax guidelines, forbidden buzzwords, cadence constraints, and stylistic signatures.',
+        icon: 'tabler:speakerphone',
+      },
+      {
+        title: 'Block 8: <span class="font-medium">Contrarian & Counter-Intuitive Beliefs</span>',
+        description: 'Unique industry viewpoints that challenge consensus and generate distinctive category leadership.',
+        icon: 'tabler:flame',
+      },
+      {
+        title: 'Block 9: <span class="font-medium">Product & Offer Architecture</span>',
+        description: 'Deliverables, mechanism names, pricing tier hierarchy, and deliverable commitments.',
+        icon: 'tabler:box',
+      },
+      {
+        title: 'Block 10: <span class="font-medium">Proof Elements & Authority Assets</span>',
+        description: 'Hard data points, benchmark metrics, client case histories, and verifiable credentials.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Block 11: <span class="font-medium">Objections & Friction Killers</span>',
+        description: 'Preemptive responses to buyer hesitation, risk reversals, guarantees, and transition steps.',
+        icon: 'tabler:help-hexagon',
+      },
+      {
+        title: 'Block 12: <span class="font-medium">Strategic Call-to-Actions (CTAs)</span>',
+        description: 'Standardized primary, secondary, and tertiary conversion triggers mapped by funnel stage.',
+        icon: 'tabler:target-arrow',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget (Operational Uses) -->
+
+  <Features2
+    tagline="Operational Flow"
+    title="How Models Consume Your DNA"
+    subtitle="Connect your Brand DNA to every tool in your tech stack through open standards."
+    columns={3}
+    items={[
+      {
+        title: 'MCP Server Stream',
+        description: 'Stream structured DNA blocks directly into Claude Desktop, Cursor, or custom IDEs.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Specialized Multi-Agents',
+        description: 'Copywriting, launch, and email agents automatically load versioned DNA parameters.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Continuous Evaluation Loop',
+        description: 'Campaign results are analyzed to suggest targeted calibrations to specific blocks.',
+        icon: 'tabler:refresh-dot',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start 7-Day Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'See How It Works',
+        href: getPermalink('/agents'),
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Construct Your Brand DNA?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Answer the guided 12-block workflow and generate persistent AI memory for your brand in minutes.
+    </Fragment>
+  </CallToAction>
+</Layout>

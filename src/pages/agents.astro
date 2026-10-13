@@ -1,0 +1,142 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'AI Agents — Specialized Brand Operators — CopyMonster',
+  description: 'Deploy specialized AI agents for copywriting, launch funnels, paid ads, and email sequences that share a single Brand DNA brain.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget *************** -->
+
+  <HeroText
+    tagline="Multi-Agent Orchestration"
+    title="Specialized AI Agents Powered by Your Brand DNA"
+    subtitle="Eliminate disjointed marketing copy. Deploy specialized agents that share the exact same strategic memory, tone rules, and offer architecture."
+    callToAction={{
+      variant: 'primary',
+      text: 'Start 7-Day Free Trial',
+      href: 'https://app.copymonster.co/',
+      target: '_blank',
+      icon: 'tabler:robot',
+    }}
+    callToAction2={{
+      text: 'See How It Works',
+      href: getPermalink('/dna'),
+    }}
+  />
+
+  <!-- Features2 Widget (Agents Roster) -->
+
+  <Features2
+    tagline="Agent Roster"
+    title="Specialized Operational Agents"
+    subtitle="Each agent is fine-tuned for a specific discipline while inheriting your 12-block Brand DNA."
+    columns={3}
+    items={[
+      {
+        title: 'Direct-Response Copywriter',
+        description: 'Generates long-form sales letters, VSL scripts, and magnetic headlines rooted in your unique mechanism and ICP pains.',
+        icon: 'tabler:article',
+      },
+      {
+        title: 'Launch Funnel Strategist',
+        description: 'Orchestrates full 7-day launch campaigns, pre-launch CPL sequences, webinar scripts, and closing cart pushes.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'GEO & Search Architect',
+        description: 'Produces high-density technical articles and synthesis blocks optimized for generative AI answer engines like Perplexity and Claude.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Email Lifecycle Operator',
+        description: 'Crafts indoctrination welcome series, high-retention newsletters, and behavioral follow-up flows that build genuine authority.',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Paid Acquisition Specialist',
+        description: 'Formulates scroll-stopping hooks, creative angles, and compliant ad copy for Meta Ads, Google Ads, and TikTok Ads.',
+        icon: 'tabler:ad',
+      },
+      {
+        title: 'Voice & Tone Auditor',
+        description: 'Analyzes any draft against your Brand DNA rules, flagging forbidden vocabulary, tone drift, and missing proof elements.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <!-- Content Widget (Why Multi-Agent) -->
+
+  <Content
+    isReversed
+    tagline="Shared Brain Architecture"
+    title="Why Single-Prompt AI Fails at Marketing Scale"
+    items={[
+      {
+        title: 'Unified Positioning Across Channels',
+        description:
+          'When your email agent and your ad agent share the same Brand DNA memory, your prospects experience seamless narrative consistency.',
+        icon: 'tabler:arrows-join-2',
+      },
+      {
+        title: 'Deep Domain Specialization',
+        description:
+          'A copywriter agent requires different structural frameworks than an email deliverability agent. Specialization yields superior output quality.',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Continuous Strategic Feedback',
+        description:
+          'Winning hooks and high-converting angles detected by paid ad agents feed directly into your versioned DNA to strengthen future campaigns.',
+        icon: 'tabler:refresh',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Multi-Agent Collaboration',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Orchestration Beats Prompting</h3>
+      High-growth businesses do not ask one prompt to do everything. They deploy coordinated agents sharing persistent memory.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start 7-Day Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'See How It Works',
+        href: getPermalink('/dna'),
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Deploy Your Dedicated Agent Roster Today
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Lock your Brand DNA once and unleash specialized agents across every marketing channel.
+    </Fragment>
+  </CallToAction>
+</Layout>
