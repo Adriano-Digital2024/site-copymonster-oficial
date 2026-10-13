@@ -1,6 +1,6 @@
 site:
   name: CopyMonster
-  site: 'https://copymonster.me'
+  site: 'https://copymonster.co'
   base: '/'
   trailingSlash: false
 
@@ -11,7 +11,7 @@ metadata:
   title:
     default: CopyMonster
     template: '%s — CopyMonster'
-  description: "🚀 Brand DNA Operating System for AI. Transform your identity into strategic intelligence."
+  description: "Brand DNA Operating System for AI. Orchestrate specialized agents, MCPs, and workflows from a single versioned brand foundation."
   robots:
     index: true
     follow: true
@@ -26,7 +26,6 @@ metadata:
     handle: '@copymonster'
     site: '@copymonster'
     cardType: summary_large_image
-
 
 i18n:
   language: en
@@ -45,19 +44,19 @@ apps:
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog'
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'category'
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'tag'
       robots:
         index: false
 

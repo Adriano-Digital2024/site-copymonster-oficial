@@ -27,7 +27,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Free Trial', href: 'https://app.copymonster.me/', target: '_blank' }],
+  actions: [{ text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }],
 };
 
 export const footerData = {

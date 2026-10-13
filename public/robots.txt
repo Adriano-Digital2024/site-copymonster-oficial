@@ -1,2 +1,22 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# AI Search & Indexing Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap & LLMs Context
+Sitemap: https://copymonster.co/sitemap-index.xml
+# LLMs Full Context: https://copymonster.co/llms.txt

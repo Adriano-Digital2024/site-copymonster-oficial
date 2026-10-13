@@ -23,6 +23,46 @@ export interface Props {
 
 const { metadata = {} } = Astro.props;
 const { language, textDirection } = I18N;
+
+const globalJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://copymonster.co/#organization",
+      "name": "CopyMonster",
+      "url": "https://copymonster.co",
+      "logo": "https://copymonster.co/favicon.ico",
+      "founder": {
+        "@type": "Person",
+        "name": "Adriano Vieira"
+      },
+      "sameAs": [
+        "https://github.com/Adriano-Digital2024/site-copymonster-oficial",
+        "https://www.instagram.com/eusouadrianovieira"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://copymonster.co/#website",
+      "url": "https://copymonster.co",
+      "name": "CopyMonster",
+      "publisher": { "@id": "https://copymonster.co/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://copymonster.co/#software",
+      "name": "CopyMonster Brand DNA Operating System",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -40,6 +80,8 @@ const { language, textDirection } = I18N;
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
+
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(globalJsonLd)} />
 
     <style is:global>
       /* Premium Language Selector & Google Translate Total Ban */
