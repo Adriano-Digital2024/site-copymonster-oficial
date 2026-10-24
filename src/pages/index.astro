@@ -18,6 +18,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- 1. Hero Widget ******************* -->
   <Hero
+    id="hero"
     tagline="The Brand DNA Operating System"
     actions={[
       {
@@ -31,13 +32,13 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      <span class="text-white">
+      <span class="hero-animate-title inline-block text-white">
         Your Brand Has a DNA. <span class="text-blue-400">CopyMonster</span> Is the System That Keeps It Alive.
       </span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="text-slate-200 dark:text-slate-300">
+      <span class="hero-animate-subtitle inline-block text-slate-200 dark:text-slate-300">
         Define your brand once. Then launch funnels, pages, automations, ads, emails, and entire campaigns — all powered
         by the same versioned strategic memory. No prompt drift. No generic AI. No rebuilding your voice from scratch
         every time you open a chat.
@@ -45,19 +46,25 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="content">
-      <p class="mt-4 text-sm text-slate-300 dark:text-slate-400">
+      <p class="hero-animate-content mt-4 text-sm text-slate-300 dark:text-slate-400">
         No credit card required · 100 free credits · Open Core (MIT)
       </p>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/home/01-hero.jpg');"></div>
+      <div
+        class="hero-bg-parallax absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('/images/home/01-hero.jpg');"
+      >
+      </div>
       <div class="absolute inset-0 bg-slate-950/80 dark:bg-slate-950/85 backdrop-blur-[2px]"></div>
     </Fragment>
   </Hero>
 
   <!-- Hero Visual Caption / Note ******************* -->
-  <Note title="The Rule:" description="No DNA. No Copy." />
+  <div class="intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+    <Note title="The Rule:" description="No DNA. No Copy." />
+  </div>
 
   <!-- 2. The Problem Widget **************** -->
   <Content
@@ -154,11 +161,13 @@ const metadata = {
         you deploy — copy, funnel, email, ads, automation — reads from the same source. You never rewrite your brand
         context again.
       </span>
-      <div class="mt-8 mb-4">
+      <div
+        class="section-image-wrapper mt-8 mb-4 overflow-hidden rounded-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      >
         <img
           src="/images/home/03-dna-engine.jpg"
           alt="Brand DNA Engine"
-          class="w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
+          class="section-image w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
           loading="lazy"
         />
       </div>
@@ -209,11 +218,13 @@ const metadata = {
         agent that sequences your emails, the agent that analyzes your market — they all operate from one strategic
         memory. Consistency is structural, not manual.
       </span>
-      <div class="mt-8 mb-4">
+      <div
+        class="section-image-wrapper mt-8 mb-4 overflow-hidden rounded-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      >
         <img
           src="/images/home/04-agent-orchestration.jpg"
           alt="Agent Orchestration"
-          class="w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
+          class="section-image w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
           loading="lazy"
         />
       </div>
@@ -272,11 +283,13 @@ const metadata = {
         CopyMonster is not just where you write copy. It is where you launch. From the first ad to the final follow-up,
         every asset, page, and automation ships from one strategic memory. Launch once. Launch again. Evolve each time.
       </span>
-      <div class="mt-8 mb-4">
+      <div
+        class="section-image-wrapper mt-8 mb-4 overflow-hidden rounded-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      >
         <img
           src="/images/home/05-launch-app.jpg"
           alt="The Complete Launch App"
-          class="w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
+          class="section-image w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
           loading="lazy"
         />
       </div>
@@ -326,11 +339,13 @@ const metadata = {
         file system, your repositories. No vendor lock-in. No manual copy-paste between systems. Your strategic memory
         is portable, versioned, and sovereign.
       </span>
-      <div class="mt-8 mb-4">
+      <div
+        class="section-image-wrapper mt-8 mb-4 overflow-hidden rounded-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      >
         <img
           src="/images/home/06-connected-workflows.jpg"
           alt="Connected Workflows and MCP"
-          class="w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
+          class="section-image w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
           loading="lazy"
         />
       </div>
@@ -431,11 +446,13 @@ const metadata = {
         self-host it, and maintain complete sovereignty over your strategic brand assets. No black box. No vendor
         lock-in. No dependency on a single provider.
       </span>
-      <div class="mt-8 mb-4">
+      <div
+        class="section-image-wrapper mt-8 mb-4 overflow-hidden rounded-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      >
         <img
           src="/images/home/08-open-core.jpg"
           alt="Open Core Architecture"
-          class="w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
+          class="section-image w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
           loading="lazy"
         />
       </div>
@@ -483,11 +500,13 @@ const metadata = {
   >
     <Fragment slot="subtitle">
       <span> CopyMonster is built for the people who ship — not the ones who talk about shipping. </span>
-      <div class="mt-8 mb-4">
+      <div
+        class="section-image-wrapper mt-8 mb-4 overflow-hidden rounded-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      >
         <img
           src="/images/home/09-who-its-for.jpg"
           alt="Built for Operators"
-          class="w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
+          class="section-image w-full max-w-4xl mx-auto rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
           loading="lazy"
         />
       </div>
@@ -577,7 +596,9 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title"> Scale With Persistent Brand Memory. </Fragment>
+    <Fragment slot="title">
+      <span class="block">Scale With Persistent Brand Memory.</span>
+    </Fragment>
 
     <Fragment slot="subtitle">
       <span class="block">
@@ -597,3 +618,278 @@ const metadata = {
     </Fragment>
   </CallToAction>
 </Layout>
+
+<style is:global>
+  /* ==========================================================================
+     1. HERO PARALLAX & ENTRANCE ANIMATIONS
+     ========================================================================== */
+  .hero-bg-parallax {
+    background-attachment: fixed;
+    background-position: center 30%;
+    will-change: transform;
+  }
+
+  @media (max-width: 768px) {
+    .hero-bg-parallax {
+      background-attachment: scroll;
+    }
+  }
+
+  @keyframes heroFadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #hero p.tracking-wide {
+    animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both !important;
+  }
+
+  .hero-animate-title {
+    animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both !important;
+  }
+
+  .hero-animate-subtitle {
+    animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both !important;
+  }
+
+  #hero .flex-col.sm\:flex-row,
+  #hero .max-w-xs.sm\:max-w-md {
+    animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both !important;
+  }
+
+  .hero-animate-content {
+    animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both !important;
+  }
+
+  /* ==========================================================================
+     2. CARDS & FEATURES INTERACTIVE HOVER (SECTIONS 2 TO 9)
+     ========================================================================== */
+  #problem .grid > div > div,
+  #dna-engine .grid > div > div,
+  #agents .grid > div > div,
+  #launch-app .grid > div > div,
+  #integrations .grid > div > div,
+  #performance-loop .grid > div > div,
+  #open-core .grid > div > div,
+  #who-its-for .grid > div > div {
+    transition:
+      transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+      background-color 0.35s ease;
+    border-radius: 0.875rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid rgba(218, 217, 212, 0.6);
+    background-color: rgba(250, 249, 245, 0.65);
+    backdrop-filter: blur(4px);
+    height: 100%;
+    will-change: transform, box-shadow, border-color;
+  }
+
+  .dark #problem .grid > div > div,
+  .dark #dna-engine .grid > div > div,
+  .dark #agents .grid > div > div,
+  .dark #launch-app .grid > div > div,
+  .dark #integrations .grid > div > div,
+  .dark #performance-loop .grid > div > div,
+  .dark #open-core .grid > div > div,
+  .dark #who-its-for .grid > div > div {
+    border: 1px solid rgba(62, 62, 56, 0.65);
+    background-color: rgba(38, 38, 36, 0.5);
+  }
+
+  #problem .grid > div > div:hover,
+  #dna-engine .grid > div > div:hover,
+  #agents .grid > div > div:hover,
+  #launch-app .grid > div > div:hover,
+  #integrations .grid > div > div:hover,
+  #performance-loop .grid > div > div:hover,
+  #open-core .grid > div > div:hover,
+  #who-its-for .grid > div > div:hover {
+    transform: scale(1.02);
+    border-color: var(--cm-primary);
+    box-shadow:
+      0 14px 32px -8px rgba(150, 125, 69, 0.22),
+      0 4px 12px rgba(0, 0, 0, 0.04);
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .dark #problem .grid > div > div:hover,
+  .dark #dna-engine .grid > div > div:hover,
+  .dark #agents .grid > div > div:hover,
+  .dark #launch-app .grid > div > div:hover,
+  .dark #integrations .grid > div > div:hover,
+  .dark #performance-loop .grid > div > div:hover,
+  .dark #open-core .grid > div > div:hover,
+  .dark #who-its-for .grid > div > div:hover {
+    transform: scale(1.02);
+    border-color: var(--cm-primary);
+    box-shadow:
+      0 14px 32px -8px rgba(208, 173, 98, 0.25),
+      0 6px 16px rgba(0, 0, 0, 0.45);
+    background-color: rgba(48, 48, 46, 0.95);
+  }
+
+  /* ==========================================================================
+     3. SECTION IMAGES REVEAL & ZOOM
+     ========================================================================== */
+  .section-image-wrapper {
+    transition: box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .section-image-wrapper img,
+  #problem img,
+  #performance-loop img,
+  #blueprint img {
+    transition:
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+  }
+
+  .section-image-wrapper:hover img,
+  #problem:hover img,
+  #performance-loop:hover img,
+  #blueprint:hover img {
+    transform: scale(1.04);
+    box-shadow: 0 22px 40px -10px rgba(0, 0, 0, 0.28);
+  }
+
+  /* ==========================================================================
+     4. FINAL CTA BREATHING GLOW (SUBTLE PULSE)
+     ========================================================================== */
+  @keyframes ctaBreathingGlow {
+    0%,
+    100% {
+      box-shadow:
+        0 0 0 0 rgba(150, 125, 69, 0.42),
+        0 4px 14px rgba(0, 0, 0, 0.15);
+    }
+    50% {
+      box-shadow:
+        0 0 0 10px rgba(150, 125, 69, 0),
+        0 8px 24px rgba(150, 125, 69, 0.28);
+    }
+  }
+
+  @keyframes ctaBreathingGlowDark {
+    0%,
+    100% {
+      box-shadow:
+        0 0 0 0 rgba(208, 173, 98, 0.48),
+        0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+    50% {
+      box-shadow:
+        0 0 0 10px rgba(208, 173, 98, 0),
+        0 8px 26px rgba(208, 173, 98, 0.32);
+    }
+  }
+
+  #final-cta .btn-primary {
+    animation: ctaBreathingGlow 3s ease-in-out infinite;
+  }
+
+  .dark #final-cta .btn-primary {
+    animation: ctaBreathingGlowDark 3s ease-in-out infinite;
+  }
+
+  /* ==========================================================================
+     5. ACCESSIBILITY: PREFERS REDUCED MOTION
+     ========================================================================== */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+    .hero-bg-parallax {
+      background-attachment: scroll !important;
+      transform: none !important;
+    }
+    #final-cta .btn-primary {
+      animation: none !important;
+    }
+  }
+</style>
+
+<script is:inline>
+  /* ==========================================================================
+     STATS COUNT-UP OBSERVER (SECTION 11)
+     ========================================================================== */
+  (function () {
+    function initStatsCounter() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var statsSection = document.getElementById('stats');
+      if (!statsSection) return;
+
+      var numberElements = statsSection.querySelectorAll('.font-heading.text-primary');
+      if (!numberElements.length) return;
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              numberElements.forEach(function (el, index) {
+                var raw = el.textContent ? el.textContent.trim() : '';
+                var match = raw.match(/^(\d+)(.*)$/);
+                if (match) {
+                  var target = parseInt(match[1], 10);
+                  var suffix = match[2] || '';
+                  var duration = 1200;
+                  var startTime = null;
+                  el.textContent = '0' + suffix;
+
+                  function step(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    var elapsed = currentTime - startTime;
+                    var progress = Math.min(elapsed / duration, 1);
+                    var ease = 1 - Math.pow(1 - progress, 3);
+                    var val = Math.floor(ease * target);
+                    el.textContent = val + suffix;
+                    if (progress < 1) {
+                      requestAnimationFrame(step);
+                    } else {
+                      el.textContent = raw;
+                    }
+                  }
+
+                  setTimeout(function () {
+                    requestAnimationFrame(step);
+                  }, index * 90);
+                } else {
+                  el.style.opacity = '0';
+                  el.style.transform = 'scale(0.85)';
+                  el.style.transition = 'opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+                  setTimeout(function () {
+                    el.style.opacity = '1';
+                    el.style.transform = 'scale(1)';
+                  }, index * 100);
+                }
+              });
+              observer.unobserve(statsSection);
+            }
+          });
+        },
+        { threshold: 0.25 }
+      );
+
+      observer.observe(statsSection);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initStatsCounter);
+    } else {
+      initStatsCounter();
+    }
+    document.addEventListener('astro:page-load', initStatsCounter);
+  })();
+</script>
