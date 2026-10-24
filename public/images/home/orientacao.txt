@@ -1,0 +1,857 @@
+Orientação para a recriação da pagina inicial "/" do CopyMonmster
+
+Não criar componentes do zero, apenas utilizar os componentes do tema ASTRO reutilizaveis existentes no projeto. 
+
+reescrever a página inteira como copy sênior de resposta direta, em inglês, com seções para cada capacidade real, e um hero com CTA poderoso.
+
+Abaixo está o texto completo da nova home, seção por seção.
+
+CopyMonster — New Homepage Copy
+SECTION 1 — HERO
+Eyebrow: The Brand DNA Operating System
+
+Headline:
+
+Your Brand Has a DNA. CopyMonster Is the System That Keeps It Alive.
+Subheadline:
+Define your brand once. Then launch funnels, pages, automations, ads, emails, and entire campaigns — all powered by the same versioned strategic memory. No prompt drift. No generic AI. No rebuilding your voice from scratch every time you open a chat.
+
+Primary CTA:
+Deploy Brand OS — Start 7-Day Free Trial
+
+Secondary CTA:
+See How It Works
+
+Trust line:
+No credit card required · 100 free credits · Open Core (MIT)
+
+Hero visual caption:
+The Rule: No DNA. No Copy.
+
+SECTION 2 — THE PROBLEM
+Eyebrow: The Problem
+
+Headline:
+
+Generic AI Is Killing Your Brand Essence
+Body:
+AI democratized content creation. It also democratized generic output. Every expert, infoproductor, and mentor now has access to the same models, the same prompts, and the same vocabulary — which means every brand sounds identical to the next.
+
+The result is a paradox: the more you produce, the less you sound like yourself.
+
+CopyMonster was built to close that gap. Not with better prompts. With structural memory.
+
+Three-column proof:
+
+Strategy First, Copy Later
+Intelligence without identity is just noise. Gain a structural competitive advantage by defining your DNA before you write a single line.
+
+Prompt vs. Memory
+Stop relying on temporary prompts and fragile chat sessions. Build a permanent strategic memory that grows with your business.
+
+Unified Identity
+Ensure every agent — from copywriting to sales sequences — communicates with the exact same voice, authority, and values.
+
+SECTION 3 — BRAND DNA ENGINE
+Eyebrow: Core Infrastructure
+
+Headline:
+
+One DNA. Every Agent. Zero Drift.
+Body:
+The Brand DNA Engine is the foundation of everything CopyMonster does. Through a guided 12-block strategic interview, the system maps your promise, persona, pain points, unique mechanisms, tone of voice, objections, and offer architecture into a structured, versioned document.
+
+That document becomes permanent memory. Every agent you deploy — copy, funnel, email, ads, automation — reads from the same source. You never rewrite your brand context again.
+
+Feature cards:
+
+12-Block Strategic Map
+Map your history, values, positioning, ICP pain points, and offer architecture through an oriented 12-block framework.
+
+Immutable Versioning
+Track DNA evolution across v1, v2, and v3 releases. Never worry about accidental prompt drift or overwritten intelligence.
+
+Opt-In Injection
+Choose which DNA powers each session. The structured POSITIONING CONTEXT block is injected into the runtime automatically — or choose "No DNA" when you want a clean slate.
+
+Multi-DNA Management
+Manage multiple brand profiles in Settings → My DNA. Create, resume, duplicate, set as default, archive, and refine — ideal for agencies and multi-product creators.
+
+CTA:
+Explore the DNA Engine
+
+SECTION 4 — AGENT ORCHESTRATION
+Eyebrow: Multi-Agent Architecture
+
+Headline:
+
+Deploy Specialized Agents That Share the Same Brain.
+Body:
+CopyMonster is not a single chatbot. It is an orchestration layer where every capability is an agent — and every agent reads from the same Brand DNA.
+
+The agent that writes your VSL, the agent that builds your funnel, the agent that sequences your emails, the agent that analyzes your market — they all operate from one strategic memory. Consistency is structural, not manual.
+
+Feature cards:
+
+Copywriting Agents
+Presets for VSL scripts, paid ads, email sequences, landing pages, and sales copy — each calibrated to your DNA and to proven direct-response frameworks.
+
+Funnel & Launch Agents
+Build the entire funnel from a single brief: opt-in, sales page, order bump, upsell, thank-you. Every page ships with the same voice.
+
+Research & Market Agents
+Web search, page scraping, and competitive analysis — feeding insights back into your versioned DNA.
+
+Planning & Delegation
+Planning mode, goal management, task lists, subagent delegation, and background execution. The system structures complex work before it runs.
+
+CTA:
+View AI Agents
+
+SECTION 5 — THE COMPLETE LAUNCH APP
+Eyebrow: Complete Launch Infrastructure
+
+Headline:
+
+The Complete Launch App.
+Body:
+CopyMonster is not just where you write copy. It is where you launch.
+
+From the first ad to the final follow-up, every asset, page, and automation ships from one strategic memory. Launch once. Launch again. Evolve each time.
+
+Feature cards:
+
+Complete Funnels
+Build the entire funnel — opt-in, sales page, order bump, upsell, thank-you — from one DNA. Every page ships with the same voice, no prompt rewriting between steps.
+
+Any Integration
+Connect your funnel to the tools your business already uses — payment, email, CRM, WhatsApp, analytics. The launch runs end-to-end without manual stitching.
+
+Payment-Ready Pages
+Pages come ready to receive payments. Checkout, order bumps, and upsells configured without touching code. From ad click to confirmed sale, one flow.
+
+Automations in a Few Clicks
+Pre-built automations for the moments that matter — cart abandonment, post-purchase, re-engagement, launch sequences. Activate in a few clicks, not a few weeks.
+
+The Launch App
+CopyMonster is the complete launch app. From first ad to final follow-up, every asset, page, and automation ships from one strategic memory.
+
+CTA:
+Explore Launch Infrastructure
+
+SECTION 6 — CONNECTED WORKFLOWS & MCP
+Eyebrow: Connected Workflows
+
+Headline:
+
+Your Brand DNA, Inside the Tools You Already Use.
+Body:
+CopyMonster speaks MCP (Model Context Protocol) — the open standard for connecting AI agents to external tools. That means your DNA can travel with you: into your CRM, your payment stack, your messaging, your analytics, your file system, your repositories.
+
+No vendor lock-in. No manual copy-paste between systems. Your strategic memory is portable, versioned, and sovereign.
+
+Feature cards:
+
+MCP Connectors
+Connect Supabase, WhatsApp, Stripe, Notion, GitHub, Google Drive, and any service with an MCP server.
+
+Workspace Context
+The agent works inside a selected workspace — files, tasks, and context tied to that area.
+
+File & Shell Tools
+Read, create, edit, and search files. Execute shell commands in a sandbox. Combine file changes with operational tasks.
+
+Approval & Permissions
+Every sensitive operation follows the active permission policy. The interface requests approval when the policy requires it — never unrestricted by default.
+
+CTA:
+Explore Integrations
+
+SECTION 7 — STRATEGIC PERFORMANCE LOOP
+Eyebrow: The Feedback Loop
+
+Headline:
+
+Launch. Measure. Evolve.
+Body:
+Most AI tools stop at generation. CopyMonster closes the loop.
+
+Campaign metrics feed back into your DNA. The system identifies what worked, what didn't, and what the market is signaling — then proposes a new DNA version. Your v1 stays intact. Your v2 gets smarter. Your v3 compounds.
+
+Feature cards:
+
+Market Radar
+The system scans your market for new hooks, rising ideas, and opportunities — and notifies you when something is worth exploring.
+
+Versioned Evolution
+Each new DNA version is proposed, reviewed, and approved by you. Nothing is overwritten. Nothing is lost.
+
+Strategic Blueprint
+Three steps: Define your DNA. Apply it across assets. Scale and evolve with real conversion data.
+
+CTA:
+See the Performance Loop
+
+SECTION 8 — OPEN CORE (MIT)
+Eyebrow: Open Core
+
+Headline:
+
+A Foundation You Can Inspect, Host, and Own.
+Body:
+CopyMonster is built on an Open Core architecture, MIT-licensed. The engine is transparent. You can study it, self-host it, and maintain complete sovereignty over your strategic brand assets.
+
+No black box. No vendor lock-in. No dependency on a single provider.
+
+Feature cards:
+
+MIT Licensed Core
+The core engine is MIT-licensed. Study it, self-host it, and maintain complete sovereignty over your strategic brand assets.
+
+Provider Flexibility
+Configure your own models and credentials. Fallback between providers when the primary route fails.
+
+Enterprise-Grade Scaling
+Multiple brand workspaces, role-based controls, and direct MCP streaming for high-throughput marketing teams.
+
+Multi-Tenant Security
+Row-level security, tenant isolation, disposable email blocking, and admin controls — built into the database layer.
+
+CTA:
+View on GitHub
+
+SECTION 9 — WHO IT'S FOR
+Eyebrow: Built For
+
+Headline:
+
+For the Operators Who Refuse to Sound Generic.
+Body:
+CopyMonster is built for the people who ship — not the ones who talk about shipping.
+
+Persona cards:
+
+Info-Product Creators
+Launch courses, mentorships, and communities without rebuilding your brand context for every asset.
+
+Experts & Mentors
+Build high-ticket positioning, sales pages, and follow-up sequences that sound like you — at scale.
+
+Agencies
+Manage multiple brand DNAs, workspaces, and launches from one operating system.
+
+Content Operators
+Run newsletters, social content, ads, and email flows from a single strategic memory.
+
+CTA:
+See Use Cases
+
+SECTION 10 — STRATEGIC BLUEPRINT
+Eyebrow: Getting Started
+
+Headline:
+
+Transform Your Brand in Three Steps.
+Step 1 — Define Your DNA
+Answer 12 strategic blocks to build your Brand DNA map. This establishes the permanent memory layer for all agents.
+
+Step 2 — Apply Your Brand DNA
+Use your Brand DNA as a shared reference when creating and refining marketing assets.
+
+Step 3 — Scale & Evolve
+Run campaigns across ads, email, and organic channels. Feed real-world conversion metrics back into your versioned DNA.
+
+CTA:
+Start 7-Day Free Trial
+
+SECTION 11 — PROOF & STATS
+Eyebrow: By the Numbers
+
+Headline:
+
+Built for Scale. Designed for Identity.
+Stats:
+
+132
+Countries
+
+21K+
+Community Members
+
+MIT
+Open Source
+
+Multi
+AI Agents
+
+One
+Brand DNA
+
+SECTION 12 — FINAL CTA
+Headline:
+
+Scale With Persistent Brand Memory.
+Subheadline:
+Deploy specialized agents trained on your 12-block Brand DNA. Stop prompt rewriting. Stop sounding generic. Start launching from one strategic memory.
+
+CTA Primary:
+Start 7-Day Free Trial
+
+CTA Secondary:
+See How It Works
+
+Trust line:
+No credit card required · 100 free credits · Open Core (MIT)
+
+Tagline:
+No DNA. No Copy.
+
+Notas para implementação
+1. Ordem das seções: Hero → Problem → DNA Engine → Agent Orchestration → Launch App → Connected Workflows → Performance Loop → Open Core → Who It's For → Strategic Blueprint → Stats → Final CTA.
+
+2. Seções que já existem na home atual: Hero, Problem, What you get (DNA Engine + Orchestration + Workflows + Open Core + Performance Loop), Launch App, Strategic Blueprint, Stats, Final CTA.
+
+3. Seções novas a adicionar: Agent Orchestration (separada de "What you get"), Connected Workflows & MCP (detalhada), Who It's For (personas). As outras são versões expandidas das existentes.
+
+4. Componentes: todas as seções usam widgets existentes do AstroWind (HeroText, Features, Content, Steps, Stats, CallToAction). Nenhum componente novo.
+
+5. CTAs: todos os botões primários apontam para https://app.copymonster.co com o texto "Start 7-Day Free Trial" ou "Deploy Brand OS". Botões secundários apontam para âncoras internas ou /dna, /agents, /integrations.
+
+6. Tom: técnico-analítico, sem buzzwords, sem exclamações, sentence case nos títulos de seção (exceto hero, que pode ser title case).
+
+7. Idioma: inglês.
+
+
+
+═══════════════════════════════════════════════════════════
+REGRA ABSOLUTA — LEIA ANTES DE QUALQUER AÇÃO
+═══════════════════════════════════════════════════════════
+
+NÃO APAGUE NADA.
+
+- NÃO apague componentes
+- NÃO apague imagens
+- NÃO apague arquivos
+- NÃO apague CSS ou tokens de tema
+- NÃO apague widgets
+
+A tarefa é EXPANDIR a home. Isso significa:
+- MANTER as seções que já existem (atualizando o conteúdo delas)
+- ADICIONAR novas seções que hoje não existem
+- NÃO remover nenhuma seção existente
+
+A versão atual da home é curta. A nova versão é longa e 
+cobre todas as capacidades do produto.
+
+═══════════════════════════════════════════════════════════
+CONTEXTO
+═══════════════════════════════════════════════════════════
+
+As imagens já estão em public/images/home/:
+- 01-hero.jpg
+- 02-problem.jpg
+- 03-dna-engine.jpg
+- 04-agent-orchestration.jpg
+- 05-launch-app.jpg
+- 06-connected-workflows.jpg
+- 07-performance-loop.jpg
+- 08-open-core.jpg
+- 09-who-its-for.jpg
+- 10-strategic-blueprint.jpg
+- 11-proof-stats.jpg
+- 12-final-cta.jpg
+
+O site usa AstroWind. A home está em src/pages/index.astro.
+Os widgets reutilizáveis estão em src/components/widgets/.
+
+═══════════════════════════════════════════════════════════
+MAPA DE SEÇÕES: EXISTENTES vs NOVAS
+═══════════════════════════════════════════════════════════
+
+A home atual tem estas seções (verificar no arquivo antes de 
+qualquer alteração):
+
+1. Hero (existe)
+2. What you get with CopyMonster — Features (existe)
+3. The Problem — Content (existe)
+4. 12-Block Strategic Map — Content (existe)
+5. Strategic Blueprint — Steps (existe)
+6. Stats (existe)
+7. CallToAction (existe)
+8. The Complete Launch App — Features (existe, adicionada recentemente)
+
+A nova home terá estas seções:
+
+1. Hero — ATUALIZAR (background image + novo texto)
+2. The Problem — ATUALIZAR (novo texto + 3 cards)
+3. Brand DNA Engine — ATUALIZAR (transformar o "What you get" 
+   ou o "12-Block Strategic Map" em seção expandida com 4 cards)
+4. Agent Orchestration — NOVA SEÇÃO (adicionar)
+5. The Complete Launch App — ATUALIZAR (já existe, expandir 
+   para 5 cards)
+6. Connected Workflows & MCP — NOVA SEÇÃO (adicionar)
+7. Strategic Performance Loop — NOVA SEÇÃO (adicionar)
+8. Open Core (MIT) — NOVA SEÇÃO (adicionar)
+9. Who It's For — NOVA SEÇÃO (adicionar)
+10. Strategic Blueprint — ATUALIZAR (manter, ajustar texto)
+11. Proof & Stats — ATUALIZAR (manter Stats, ajustar)
+12. Final CTA — ATUALIZAR (manter CallToAction, ajustar)
+
+RESUMO:
+- Seções existentes que serão atualizadas: 1, 2, 3, 5, 10, 11, 12
+- Seções NOVAS que serão adicionadas: 4, 6, 7, 8, 9
+- Total de seções na home atual: ~8
+- Total de seções na nova home: 12
+
+═══════════════════════════════════════════════════════════
+INSTRUÇÕES POR SEÇÃO
+═══════════════════════════════════════════════════════════
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 1 — HERO (ATUALIZAR — BACKGROUND IMAGE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: Atualizar o Hero existente. A imagem 01-hero.jpg deve 
+ser PLANO DE FUNDO (background image), não imagem lateral.
+
+Se o Hero.astro atual não suportar background image, verifique 
+Hero2.astro ou similar. Se nenhum suportar, adapte o Hero.astro 
+existente adicionando uma div de background com CSS inline 
+ou classe Tailwind — SEM criar componente novo.
+
+A imagem de fundo deve ter overlay escuro (gradient ou cor 
+sólida com opacidade) para legibilidade do texto. Use tokens 
+de tema.
+
+Conteúdo:
+- Eyebrow: "The Brand DNA Operating System"
+- Título: "Your Brand Has a DNA. CopyMonster Is the System 
+  That Keeps It Alive."
+- Subtítulo: "Define your brand once. Then launch funnels, 
+  pages, automations, ads, emails, and entire campaigns — 
+  all powered by the same versioned strategic memory. No 
+  prompt drift. No generic AI. No rebuilding your voice 
+  from scratch every time you open a chat."
+- CTA Primário: "Deploy Brand OS — Start 7-Day Free Trial" 
+  → https://app.copymonster.co
+- CTA Secundário: "See How It Works" → #dna-engine
+- Trust line: "No credit card required · 100 free credits 
+  · Open Core (MIT)"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 2 — THE PROBLEM (ATUALIZAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: Atualizar a seção "The Problem" existente. Manter o 
+componente Content.astro. Adicionar 3 cards abaixo do texto 
+(usar Features.astro ou similar).
+
+Imagem: 02-problem.jpg
+
+Conteúdo:
+- Eyebrow: "The Problem"
+- Título: "Generic AI Is Killing Your Brand Essence"
+- Corpo: "AI democratized content creation. It also 
+  democratized generic output. Every expert, infoproductor, 
+  and mentor now has access to the same models, the same 
+  prompts, and the same vocabulary — which means every 
+  brand sounds identical to the next. The result is a 
+  paradox: the more you produce, the less you sound like 
+  yourself. CopyMonster was built to close that gap. Not 
+  with better prompts. With structural memory."
+- 3 cards:
+  - "Strategy First, Copy Later" — "Intelligence without 
+    identity is just noise. Gain a structural competitive 
+    advantage by defining your DNA before you write a 
+    single line."
+  - "Prompt vs. Memory" — "Stop relying on temporary 
+    prompts and fragile chat sessions. Build a permanent 
+    strategic memory that grows with your business."
+  - "Unified Identity" — "Ensure every agent — from 
+    copywriting to sales sequences — communicates with 
+    the exact same voice, authority, and values."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 3 — BRAND DNA ENGINE (ATUALIZAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: Esta seção já existe como "What you get with CopyMonster" 
+e "12-Block Strategic Map". Consolidar em uma seção expandida 
+com 4 cards. Usar Features.astro.
+
+Imagem: 03-dna-engine.jpg
+
+Conteúdo:
+- Eyebrow: "Core Infrastructure"
+- Título: "One DNA. Every Agent. Zero Drift."
+- Corpo: "The Brand DNA Engine is the foundation of 
+  everything CopyMonster does. Through a guided 12-block 
+  strategic interview, the system maps your promise, 
+  persona, pain points, unique mechanisms, tone of voice, 
+  objections, and offer architecture into a structured, 
+  versioned document. That document becomes permanent 
+  memory. Every agent you deploy — copy, funnel, email, 
+  ads, automation — reads from the same source. You never 
+  rewrite your brand context again."
+- 4 cards:
+  - "12-Block Strategic Map" — "Map your history, values, 
+    positioning, ICP pain points, and offer architecture 
+    through an oriented 12-block framework."
+  - "Immutable Versioning" — "Track DNA evolution across 
+    v1, v2, and v3 releases. Never worry about accidental 
+    prompt drift or overwritten intelligence."
+  - "Opt-In Injection" — "Choose which DNA powers each 
+    session. The structured POSITIONING CONTEXT block is 
+    injected into the runtime automatically — or choose 
+    'No DNA' when you want a clean slate."
+  - "Multi-DNA Management" — "Manage multiple brand 
+    profiles in Settings → My DNA. Create, resume, 
+    duplicate, set as default, archive, and refine — 
+    ideal for agencies and multi-product creators."
+- CTA: "Explore the DNA Engine" → /dna
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 4 — AGENT ORCHESTRATION (NOVA SEÇÃO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: ADICIONAR nova seção. Usar Features.astro (4 cards).
+
+Imagem: 04-agent-orchestration.jpg
+
+Conteúdo:
+- Eyebrow: "Multi-Agent Architecture"
+- Título: "Deploy Specialized Agents That Share the Same Brain."
+- Corpo: "CopyMonster is not a single chatbot. It is an 
+  orchestration layer where every capability is an agent — 
+  and every agent reads from the same Brand DNA. The agent 
+  that writes your VSL, the agent that builds your funnel, 
+  the agent that sequences your emails, the agent that 
+  analyzes your market — they all operate from one 
+  strategic memory. Consistency is structural, not manual."
+- 4 cards:
+  - "Copywriting Agents" — "Presets for VSL scripts, paid 
+    ads, email sequences, landing pages, and sales copy — 
+    each calibrated to your DNA and to proven 
+    direct-response frameworks."
+  - "Funnel & Launch Agents" — "Build the entire funnel 
+    from a single brief: opt-in, sales page, order bump, 
+    upsell, thank-you. Every page ships with the same 
+    voice."
+  - "Research & Market Agents" — "Web search, page 
+    scraping, and competitive analysis — feeding insights 
+    back into your versioned DNA."
+  - "Planning & Delegation" — "Planning mode, goal 
+    management, task lists, subagent delegation, and 
+    background execution. The system structures complex 
+    work before it runs."
+- CTA: "View AI Agents" → /agents
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 5 — THE COMPLETE LAUNCH APP (ATUALIZAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: Esta seção já existe (adicionada recentemente com 5 
+cards). Manter e ajustar o texto conforme abaixo.
+
+Imagem: 05-launch-app.jpg
+
+Conteúdo:
+- Eyebrow: "Complete Launch Infrastructure"
+- Título: "The Complete Launch App."
+- Corpo: "CopyMonster is not just where you write copy. 
+  It is where you launch. From the first ad to the final 
+  follow-up, every asset, page, and automation ships from 
+  one strategic memory. Launch once. Launch again. Evolve 
+  each time."
+- 5 cards:
+  - "Complete Funnels" — "Build the entire funnel — 
+    opt-in, sales page, order bump, upsell, thank-you — 
+    from one DNA. Every page ships with the same voice, 
+    no prompt rewriting between steps."
+  - "Any Integration" — "Connect your funnel to the tools 
+    your business already uses — payment, email, CRM, 
+    WhatsApp, analytics. The launch runs end-to-end 
+    without manual stitching."
+  - "Payment-Ready Pages" — "Pages come ready to receive 
+    payments. Checkout, order bumps, and upsells 
+    configured without touching code. From ad click to 
+    confirmed sale, one flow."
+  - "Automations in a Few Clicks" — "Pre-built automations 
+    for the moments that matter — cart abandonment, 
+    post-purchase, re-engagement, launch sequences. 
+    Activate in a few clicks, not a few weeks."
+  - "The Launch App" — "CopyMonster is the complete launch 
+    app. From first ad to final follow-up, every asset, 
+    page, and automation ships from one strategic memory."
+- CTA: "Explore Launch Infrastructure" → /launch
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 6 — CONNECTED WORKFLOWS & MCP (NOVA SEÇÃO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: ADICIONAR nova seção. Usar Features.astro (4 cards).
+
+Imagem: 06-connected-workflows.jpg
+
+Conteúdo:
+- Eyebrow: "Connected Workflows"
+- Título: "Your Brand DNA, Inside the Tools You Already Use."
+- Corpo: "CopyMonster speaks MCP (Model Context Protocol) — 
+  the open standard for connecting AI agents to external 
+  tools. That means your DNA can travel with you: into 
+  your CRM, your payment stack, your messaging, your 
+  analytics, your file system, your repositories. No vendor 
+  lock-in. No manual copy-paste between systems. Your 
+  strategic memory is portable, versioned, and sovereign."
+- 4 cards:
+  - "MCP Connectors" — "Connect Supabase, WhatsApp, 
+    Stripe, Notion, GitHub, Google Drive, and any service 
+    with an MCP server."
+  - "Workspace Context" — "The agent works inside a 
+    selected workspace — files, tasks, and context tied 
+    to that area."
+  - "File & Shell Tools" — "Read, create, edit, and search 
+    files. Execute shell commands in a sandbox. Combine 
+    file changes with operational tasks."
+  - "Approval & Permissions" — "Every sensitive operation 
+    follows the active permission policy. The interface 
+    requests approval when the policy requires it — never 
+    unrestricted by default."
+- CTA: "Explore Integrations" → /integrations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 7 — STRATEGIC PERFORMANCE LOOP (NOVA SEÇÃO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: ADICIONAR nova seção. Usar Features.astro (3 cards) 
+ou Content.astro.
+
+Imagem: 07-performance-loop.jpg
+
+Conteúdo:
+- Eyebrow: "The Feedback Loop"
+- Título: "Launch. Measure. Evolve."
+- Corpo: "Most AI tools stop at generation. CopyMonster 
+  closes the loop. Campaign metrics feed back into your 
+  DNA. The system identifies what worked, what didn't, and 
+  what the market is signaling — then proposes a new DNA 
+  version. Your v1 stays intact. Your v2 gets smarter. 
+  Your v3 compounds."
+- 3 cards:
+  - "Market Radar" — "The system scans your market for 
+    new hooks, rising ideas, and opportunities — and 
+    notifies you when something is worth exploring."
+  - "Versioned Evolution" — "Each new DNA version is 
+    proposed, reviewed, and approved by you. Nothing is 
+    overwritten. Nothing is lost."
+  - "Strategic Blueprint" — "Three steps: Define your 
+    DNA. Apply it across assets. Scale and evolve with 
+    real conversion data."
+- CTA: "See the Performance Loop" → /dna
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 8 — OPEN CORE (MIT) (NOVA SEÇÃO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: ADICIONAR nova seção. Usar Features.astro (4 cards).
+
+Imagem: 08-open-core.jpg
+
+Conteúdo:
+- Eyebrow: "Open Core"
+- Título: "A Foundation You Can Inspect, Host, and Own."
+- Corpo: "CopyMonster is built on an Open Core architecture, 
+  MIT-licensed. The engine is transparent. You can study 
+  it, self-host it, and maintain complete sovereignty over 
+  your strategic brand assets. No black box. No vendor 
+  lock-in. No dependency on a single provider."
+- 4 cards:
+  - "MIT Licensed Core" — "The core engine is MIT-licensed. 
+    Study it, self-host it, and maintain complete 
+    sovereignty over your strategic brand assets."
+  - "Provider Flexibility" — "Configure your own models 
+    and credentials. Fallback between providers when the 
+    primary route fails."
+  - "Enterprise-Grade Scaling" — "Multiple brand 
+    workspaces, role-based controls, and direct MCP 
+    streaming for high-throughput marketing teams."
+  - "Multi-Tenant Security" — "Row-level security, tenant 
+    isolation, disposable email blocking, and admin 
+    controls — built into the database layer."
+- CTA: "View on GitHub" → link do repositório
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 9 — WHO IT'S FOR (NOVA SEÇÃO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: ADICIONAR nova seção. Usar Features.astro (4 cards) 
+ou Steps.astro.
+
+Imagem: 09-who-its-for.jpg
+
+Conteúdo:
+- Eyebrow: "Built For"
+- Título: "For the Operators Who Refuse to Sound Generic."
+- Corpo: "CopyMonster is built for the people who ship — 
+  not the ones who talk about shipping."
+- 4 cards:
+  - "Info-Product Creators" — "Launch courses, mentorships, 
+    and communities without rebuilding your brand context 
+    for every asset."
+  - "Experts & Mentors" — "Build high-ticket positioning, 
+    sales pages, and follow-up sequences that sound like 
+    you — at scale."
+  - "Agencies" — "Manage multiple brand DNAs, workspaces, 
+    and launches from one operating system."
+  - "Content Operators" — "Run newsletters, social 
+    content, ads, and email flows from a single strategic 
+    memory."
+- CTA: "See Use Cases" → /use-cases
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 10 — STRATEGIC BLUEPRINT (ATUALIZAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: Esta seção já existe. Manter Steps.astro, ajustar o 
+texto se necessário.
+
+Imagem: 10-strategic-blueprint.jpg
+
+Conteúdo:
+- Eyebrow: "Getting Started"
+- Título: "Transform Your Brand in Three Steps."
+- 3 steps:
+  - Step 1: "Define Your DNA" — "Answer 12 strategic 
+    blocks to build your Brand DNA map. This establishes 
+    the permanent memory layer for all agents."
+  - Step 2: "Apply Your Brand DNA" — "Use your Brand DNA 
+    as a shared reference when creating and refining 
+    marketing assets."
+  - Step 3: "Scale & Evolve" — "Run campaigns across ads, 
+    email, and organic channels. Feed real-world 
+    conversion metrics back into your versioned DNA."
+- CTA: "Start 7-Day Free Trial" → https://app.copymonster.co
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 11 — PROOF & STATS (ATUALIZAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: Esta seção já existe (Stats.astro). Manter, ajustar 
+os números se necessário.
+
+Imagem: 11-proof-stats.jpg
+
+Conteúdo:
+- Eyebrow: "By the Numbers"
+- Título: "Built for Scale. Designed for Identity."
+- Stats:
+  - 132 — Countries
+  - 21K+ — Community Members
+  - MIT — Open Source
+  - Multi — AI Agents
+  - One — Brand DNA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEÇÃO 12 — FINAL CTA (ATUALIZAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AÇÃO: Esta seção já existe (CallToAction.astro). Manter, 
+ajustar o texto.
+
+Imagem: 12-final-cta.jpg
+
+Conteúdo:
+- Título: "Scale With Persistent Brand Memory."
+- Subtítulo: "Deploy specialized agents trained on your 
+  12-block Brand DNA. Stop prompt rewriting. Stop sounding 
+  generic. Start launching from one strategic memory."
+- CTA Primário: "Start 7-Day Free Trial" → 
+  https://app.copymonster.co
+- CTA Secundário: "See How It Works" → /dna
+- Trust line: "No credit card required · 100 free credits 
+  · Open Core (MIT)"
+- Tagline: "No DNA. No Copy."
+
+═══════════════════════════════════════════════════════════
+EFEITOS ESPECIAIS E ANIMAÇÕES (ASTROWIND)
+═══════════════════════════════════════════════════════════
+
+Use APENAS efeitos e animações que já existem no AstroWind:
+
+1. O AstroWind usa Intersection Observer API para animações 
+   de fade-in nos widgets. Mantenha isso.
+
+2. Para animações em background (se o Hero tiver), use as 
+   classes CSS já disponíveis no template.
+
+3. Se precisar adicionar transições sutis, use classes 
+   Tailwind já configuradas (transition-all, duration-300, 
+   ease-in-out).
+
+4. NÃO adicione bibliotecas de animação externas.
+   NÃO crie animações customizadas com JavaScript.
+   NÃO use GSAP, Framer Motion, Locomotive Scroll, etc.
+
+5. Para imagens de seção, use lazy loading nativo 
+   (loading="lazy") exceto a hero.
+
+═══════════════════════════════════════════════════════════
+IMAGENS — COMO REFERENCIAR
+═══════════════════════════════════════════════════════════
+
+As imagens estão em public/, então referencie com caminho 
+absoluto:
+
+<img src="/images/home/01-hero.jpg" alt="..." />
+
+Para o Hero com background image:
+
+style="background-image: url('/images/home/01-hero.jpg');"
+
+Se os widgets do AstroWind exigirem imagens de src/assets/, 
+mova as imagens para src/assets/images/home/ e importe:
+
+import heroImg from '~/assets/images/home/01-hero.jpg';
+
+Verifique qual é o padrão do projeto e siga.
+
+═══════════════════════════════════════════════════════════
+VALIDAÇÃO
+═══════════════════════════════════════════════════════════
+
+Antes de commitar:
+
+- [ ] A home tem 12 seções (antes tinha ~8)
+- [ ] 5 seções novas foram adicionadas (4, 6, 7, 8, 9)
+- [ ] 7 seções existentes foram atualizadas (1, 2, 3, 5, 10, 11, 12)
+- [ ] A imagem 01-hero.jpg é background do Hero
+- [ ] As imagens 02-12 estão nas seções correspondentes
+- [ ] Nenhum componente foi apagado
+- [ ] Nenhuma seção existente foi removida
+- [ ] Idioma: inglês
+- [ ] Tom técnico-analítico, sem buzzwords, sem exclamações
+- [ ] CTAs apontam para app.copymonster.co e páginas internas
+- [ ] Apenas efeitos do AstroWind (Intersection Observer, 
+      transições Tailwind)
+- [ ] Nenhuma dependência nova adicionada
+- [ ] npm run build passa sem erros
+- [ ] Contraste WCAG AA preservado
+
+═══════════════════════════════════════════════════════════
+COMMIT E PUSH
+═══════════════════════════════════════════════════════════
+
+Após validação:
+- Commit com mensagem descritiva em inglês
+- Push para main
+- Reportar:
+  - Hash do commit
+  - Quantas seções existiam antes
+  - Quantas seções existem depois
+  - Quais seções foram ADICIONADAS
+  - Quais seções foram ATUALIZADAS
+  - Confirmação de que nenhuma seção foi removida
+  - Status do build
+  - Confirmação de que as imagens estão sendo carregadas
+
+Se algo não estiver claro, PARE e pergunte antes de agir.
