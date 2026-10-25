@@ -84,11 +84,10 @@ export const footerData = {
     { text: 'AI Policy', href: getPermalink('/ai-policy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/eusouadrianovieira' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Adriano-Digital2024/CopyMonster' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/copymonsters/' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/copymonster/posts/?viewAsMember=true' },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@CopyMonsters' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61583156018783' },
   ],
   footNote: `
     Made by <a class="text-[var(--cm-primary)] underline dark:text-muted" href="https://integridadedigital.com.br/"> Integridade Digital</a> · All rights reserved.
