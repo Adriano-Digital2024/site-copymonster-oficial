@@ -1,0 +1,271 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import { getPermalink } from '~/utils/permalinks';
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'CopyMonster for Startups — Strategic DNA',
+  description: 'Scale startup messaging, positioning, and high-velocity launches with persistent Brand DNA architecture.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero
+    tagline="Startup DNA"
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        icon: 'tabler:rocket',
+      },
+      { text: 'View Pricing', href: getPermalink('/pricing') },
+    ]}
+  >
+    <Fragment slot="title">
+      Protect Your <span class="text-[var(--cm-primary)]">Startup DNA</span> From the Generic AI Wave
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Stop wasting cycles on prompt engineering. <span class="font-semibold text-default dark:text-white">CopyMonster</span> provides the infrastructure to build, version, and scale your brand identity as a unified AI memory.
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="gxBkghlglTg" title="The Future of Brand Intelligence" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+          border-radius: 1rem;
+          overflow: hidden;
+          border: 1px solid var(--cm-border);
+          box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+      </style>
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget 1: Strategy Over Automation (Balanced 2-Column) -->
+  <Content
+    isReversed
+    tagline="Competitive Moat"
+    title="Strategy Over Automation: The Founder's Dilemma"
+    items={[
+      {
+        title: '12-Block Strategic Foundation',
+        description:
+          'Map your origin, mechanisms, voice boundaries, and ICP before generating a single line of copy.',
+        icon: 'tabler:dna',
+      },
+      {
+        title: 'Multi-Agent Orchestration',
+        description:
+          'Specialist agents for hooks, sales letters, ads, and technical launches draw from one unified memory.',
+        icon: 'tabler:users-group',
+      },
+    ]}
+    image={{
+      src: '/images/site/open-source-ai-copywriter.jpg',
+      alt: 'Open Source AI Copywriter Architecture',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">
+        In a World of Disposable Prompts, Identity is Your Moat
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-4">
+        Commoditized AI models produce identical, bland copy. CopyMonster forces strategy first so your startup sounds distinct, authoritative, and impossible to replicate.
+      </p>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed">
+        Save hundreds of hours of manual copy editing while increasing conversion rates across your entire funnel.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Stats Widget ****************** -->
+  <Stats
+    title="The Monster Impact"
+    subtitle="Trusted by visionaries who value brand integrity over generic AI noise."
+    stats={[
+      { title: 'Global Presence', amount: '30+ Countries' },
+      { title: 'Brand DNAs Built', amount: 'Multi-Tenant' },
+      { title: 'Campaigns Launched', amount: '21K+' },
+      { title: 'DNA Blocks', amount: '12' },
+    ]}
+  />
+
+  <!-- Content Widget 2: Escape Generic Fluff -->
+  <Content
+    tagline="Market Differentiation"
+    title="The High-Performance Alternative to Generic AI Tools"
+    items={[
+      {
+        title: 'Zero Prompt Drift',
+        description:
+          'Stop re-educating chat interfaces. Your startup positioning stays permanently locked in versioned memory.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Full Data Sovereignty',
+        description:
+          'Strict tenant isolation ensures your strategic arguments and product roadmap remain strictly private.',
+        icon: 'tabler:lock',
+      },
+    ]}
+    image={{
+      src: '/images/site/jasper-alternative-with-brand-dna.jpg',
+      alt: 'Jasper Alternative with Brand DNA',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">
+        Elevate Your Pitch & Messaging
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-4">
+        Early-stage startups need every impression to count. Generic copy turns prospective users away before they can experience your product.
+      </p>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed">
+        With CopyMonster, your value proposition and mechanism shine through on every page, deck, and email.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Features Widget *************** -->
+  <Features
+    id="features"
+    title="Core Infrastructure for Fast-Moving Startups"
+    subtitle="Engineered for high-growth teams that need to maintain a world-class voice while scaling with AI."
+    columns={3}
+    items={[
+      {
+        title: '12-Block Brand DNA',
+        description:
+          'Mandatory strategic map: 6 structural blocks and 6 adaptive blocks to define your unique brand identity.',
+        icon: 'tabler:check',
+      },
+      {
+        title: 'Performance Feedback',
+        description: 'Automatic DNA evolution based on real-world conversion metrics and user feedback.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'DNA Versioning',
+        description:
+          'Version your brand strategy like code. Compare and revert to past high-performing identities.',
+        icon: 'tabler:history',
+      },
+      {
+        title: 'Multilingual Native',
+        description: 'PT, EN, and ES out of the box, with strategic nuance preserved across cultures.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'Open Architecture',
+        description:
+          'Connect with OpenAI, Anthropic, or custom endpoints. You control your intelligence pipeline.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'MIT Open Core',
+        description: 'Self-host, fork, and audit every prompt. Full transparency in the age of black-box AI.',
+        icon: 'tabler:brand-github',
+      },
+    ]}
+  />
+
+  <!-- Content Widget 3: Prevent Prompt Drift -->
+  <Content
+    isReversed
+    tagline="Long-Term Consistency"
+    title="Eliminate Prompt Drift Across Expanding Teams"
+    items={[
+      {
+        title: 'Mathematical Voice Consistency',
+        description:
+          'Every marketer and copywriter on your team generates copy that aligns 100% with founder intent.',
+        icon: 'tabler:check',
+      },
+      {
+        title: 'Instant Onboarding',
+        description:
+          'New contractors and team members inherit the entire company positioning on their first day.',
+        icon: 'tabler:user-plus',
+      },
+    ]}
+    image={{
+      src: '/images/site/prompt-drift-in-marketing.jpg',
+      alt: 'Prompt Drift in Marketing and Brand DNA Solution',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">
+        Scale Your Team Without Diluting Your Voice
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed">
+        Eliminate the chaotic back-and-forth review cycles. When your AI models are governed by deterministic Brand DNA, every draft meets your exact standards.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- FAQs Widget ******************* -->
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'Why "No DNA → No Copy"?',
+        description:
+          'Generic prompts create generic copy. We force strategy first so that every line of generated text sounds unmistakably like your brand.',
+      },
+      {
+        title: 'Can I self-host CopyMonster?',
+        description:
+          'Yes. The Core engine is MIT licensed. You can deploy it on your own servers for total data sovereignty.',
+      },
+      {
+        title: 'How does multi-tenant isolation protect our startup?',
+        description:
+          'All tenant data is partitioned with strict Row-Level Security (RLS). Your proprietary positioning is never used for external model training.',
+      },
+      {
+        title: 'How fast can our team get started?',
+        description:
+          'You can complete our guided 12-block DNA onboarding in under 30 minutes, or import existing pitch decks and sales pages to generate it automatically.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Plans & Pricing',
+        href: getPermalink('/pricing'),
+      },
+    ]}
+    title="Ready to Scale Your Startup Voice?"
+    subtitle="Launch your 7-day Pro free trial now and experience deterministic Brand DNA copywriting."
+  />
+</Layout>

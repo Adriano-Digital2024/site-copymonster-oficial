@@ -39,30 +39,16 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
             <img src={logoImg.src} alt={SITE?.name} class="h-11 dark:invert" />
           </a>
         </div>
-        <div class="text-xs tracking-wide text-default/70 dark:text-gray-400 mb-2 flex items-center gap-1.5">
-          <a href="/terms" class="hover:text-primary transition-colors">Terms</a>
+        <div class="text-xs tracking-wide text-default/70 dark:text-gray-400 mb-2.5 flex items-center gap-1.5">
+          <a href="/terms" class="hover:text-[var(--cm-primary)] transition-colors">Terms</a>
           <span>·</span>
-          <a href="/privacy" class="hover:text-primary transition-colors">Privacy</a>
+          <a href="/privacy" class="hover:text-[var(--cm-primary)] transition-colors">Privacy</a>
           <span>·</span>
-          <a href="/ai-policy" class="hover:text-primary transition-colors">AI Policy</a>
+          <a href="/ai-policy" class="hover:text-[var(--cm-primary)] transition-colors">AI Policy</a>
         </div>
         <p class="text-xs sm:text-sm font-medium text-default/90 dark:text-gray-300 mb-4 max-w-sm leading-relaxed">
           Your Brand Has a DNA. CopyMonster Is the System That Keeps It Alive.
         </p>
-        <div class="text-sm text-default/80 dark:text-gray-400 flex gap-1">
-          {
-            secondaryLinks.map(({ text, href }, index) => (
-              <>
-                {index !== 0 ? ' · ' : ''}
-                <a
-                  class="text-default/80 hover:text-primary dark:text-gray-400 dark:hover:text-primary hover:underline transition duration-150 ease-in-out"
-                  href={href}
-                  set:html={text}
-                />
-              </>
-            ))
-          }
-        </div>
       </div>
       {
         links.map(({ title, links }) => (

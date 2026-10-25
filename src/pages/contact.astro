@@ -1,9 +1,9 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Icon } from 'astro-icon/components';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
@@ -20,44 +20,98 @@ const metadata = {
     subtitle="Have questions about enterprise deployment, agency multi-tenancy, or custom LLM fine-tuning? Our team of senior copy strategists is ready to assist."
   />
 
-  <!-- Visual Hero Showcase Image -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
-    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
-      <img
-        src="/images/site/Generative%20Engine%20Optimization%20(GEO)%20for%20SaaS%20%E2%80%94%20Otimiza%C3%A7%C3%A3o%20para%20motores%20generativos%20(GEO)%20para%20SaaS.jpg"
-        alt="Enterprise Generative Engine Optimization"
-        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-        loading="lazy"
-      />
-    </div>
-  </div>
+  <!-- 2-Column Contact & Enterprise Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <!-- Left Column: Visual Card with GEO Image -->
+      <div class="flex flex-col gap-6">
+        <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+          <img
+            src="/images/site/generative-engine-optimization-geo-for-saas.jpg"
+            alt="Generative Engine Optimization (GEO) for SaaS"
+            class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+            loading="lazy"
+          />
+        </div>
 
-  <ContactUs
-    id="form"
-    title="Drop Us a Message"
-    subtitle="For urgent enterprise trials, custom token SLAs, or technical integrations."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Full Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Work Email',
-      },
-    ]}
-    textarea={{
-      label: 'How can we help your team?',
-      name: 'message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you agree to our Terms of Service and Privacy Policy.',
-    }}
-    description="Our technical team typically responds within 2 to 4 business hours."
-  />
+        <div class="p-6 rounded-2xl bg-[var(--cm-card)] border border-[var(--cm-border)] shadow-md">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="p-2 rounded-lg bg-[var(--cm-primary)]/15 text-[var(--cm-primary)]">
+              <Icon name="tabler:shield-check" class="w-6 h-6" />
+            </span>
+            <h4 class="text-base font-bold text-default dark:text-white">Enterprise SLA & Priority Routing</h4>
+          </div>
+          <p class="text-sm text-default/80 dark:text-gray-300 leading-relaxed">
+            Need custom tenant isolation, SOC2 compliance documents, or dedicated model lanes? Contact our technical advisory directly or test immediately via our 7-day Pro free trial.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column: Contact Form Card -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-[var(--cm-card)] border border-[var(--cm-border)] shadow-xl">
+        <h3 class="text-2xl font-bold text-default dark:text-white mb-2">Drop Us a Message</h3>
+        <p class="text-sm text-default/70 dark:text-gray-400 mb-6">
+          Our technical team typically responds within 2 to 4 business hours.
+        </p>
+
+        <form action="https://app.copymonster.co/" method="GET" class="space-y-4">
+          <div>
+            <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-default/80 dark:text-gray-300 mb-1.5">
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-[var(--cm-border)] bg-slate-50 dark:bg-slate-800 text-default dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--cm-primary)] text-sm"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-default/80 dark:text-gray-300 mb-1.5">
+              Work Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@company.com"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-[var(--cm-border)] bg-slate-50 dark:bg-slate-800 text-default dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--cm-primary)] text-sm"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-default/80 dark:text-gray-300 mb-1.5">
+              How can we help your team?
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us about your team size, Brand DNA needs, or volume requirements..."
+              required
+              class="w-full px-4 py-3 rounded-xl border border-[var(--cm-border)] bg-slate-50 dark:bg-slate-800 text-default dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--cm-primary)] text-sm resize-none"
+            ></textarea>
+          </div>
+
+          <p class="text-xs text-default/60 dark:text-gray-400">
+            By submitting this form, you agree to our Terms of Service and Privacy Policy.
+          </p>
+
+          <button
+            type="submit"
+            class="w-full py-3.5 px-6 rounded-xl font-bold text-sm bg-[var(--cm-primary)] text-white hover:opacity-90 transition-all shadow-md cursor-pointer flex items-center justify-center gap-2"
+          >
+            <span>Send Message & Launch App</span>
+            <Icon name="tabler:arrow-right" class="w-4 h-4" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- Features2 Widget: Direct Channels -->
   <Features2
@@ -67,12 +121,12 @@ const metadata = {
     items={[
       {
         title: 'Enterprise & Agency Sales',
-        description: 'Discuss custom SLAs, dedicated infrastructure, and multi-tenant setups.<br /><span class="font-medium text-default">sales@copymonster.co</span>',
+        description: 'Discuss custom SLAs, dedicated infrastructure, and multi-tenant setups.<br /><span class="font-medium text-default dark:text-white">sales@copymonster.co</span>',
         icon: 'tabler:building-skyscraper',
       },
       {
         title: 'Technical Support & MCP',
-        description: 'Assistance with API keys, MCP server connections, and tenant settings.<br /><span class="font-medium text-default">support@copymonster.co</span>',
+        description: 'Assistance with API keys, MCP server connections, and tenant settings.<br /><span class="font-medium text-default dark:text-white">support@copymonster.co</span>',
         icon: 'tabler:headset',
       },
       {

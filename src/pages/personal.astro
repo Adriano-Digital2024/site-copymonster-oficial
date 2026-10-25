@@ -1,0 +1,227 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { headerData } from '~/navigation';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'Adriano Vieira — Founder of CopyMonster',
+  description: 'Meet Adriano Vieira, Sales Funnel Reverse Engineer and creator of the CopyMonster Brand DNA architecture.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Free Trial',
+          href: 'https://app.copymonster.co/',
+          target: '_blank',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero Widget ******************* -->
+  <Hero
+    id="hero"
+    title="Adriano Vieira"
+    tagline="Founder & Strategist"
+    actions={[
+      { variant: 'primary', text: 'Free Trial', href: 'https://app.copymonster.co/', target: '_blank', icon: 'tabler:rocket' },
+      { text: 'Connect on Instagram', href: 'https://www.instagram.com/eusouadrianovieira', target: '_blank', icon: 'tabler:brand-instagram' },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      Adriano is a father of 7, a proud grandfather of 3, and a bulletproof coffee enthusiast — the daily fuel for his strategic vision and relentless execution. <br /> 
+      A Sales Funnel Reverse Engineer, Digital Strategist, and AI Solutions Architect, he serves as the CEO of Integridade Digital Marketing, with 11+ years leading the digital marketing landscape.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget 1: Bio & Authority **************** -->
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:brand-instagram',
+        callToAction: {
+          target: '_blank',
+          text: 'Instagram',
+          href: 'https://www.instagram.com/eusouadrianovieira',
+        },
+      },
+      {
+        icon: 'tabler:brand-linkedin',
+        callToAction: {
+          target: '_blank',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/adriano-integridade-digital/',
+        },
+      },
+      {
+        icon: 'tabler:brand-github',
+        callToAction: {
+          target: '_blank',
+          text: 'GitHub',
+          href: 'https://github.com/Adriano-Digital2024/CopyMonster',
+        },
+      },
+    ]}
+    image={{
+      src: 'https://integridadedigital.com.br/lovable-uploads/2ee743a1-ef79-4d7c-8a58-a2437fe1e1af.png',
+      alt: 'Adriano Vieira — Strategic Authority',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">A Battlefield-Tested Authority</h2>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-4">
+        Adriano Vieira didn't start as an "expert." His authority was forged in the trenches of digital marketing, where he mastered the reverse engineering of high-performance sales funnels and the validation of complex digital assets.
+      </p>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-4">
+        As the founder of CopyMonster.co, Adriano created the 12-block Brand DNA framework to solve the AI identity crisis: giving businesses an immutable strategic memory so models never produce bland, generic copy.
+      </p>
+      <p class="text-sm font-semibold text-default dark:text-white">Follow his strategic journey:</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget 2: Philosophy on AI **************** -->
+  <Content
+    isReversed
+    tagline="The Monster Philosophy"
+    title="Why Generic AI Destroys Value"
+    items={[
+      {
+        title: 'Identity as the Sole Moat',
+        description: 'When anyone can write an email in 5 seconds with AI, speed is no longer an advantage. Distinctive voice is.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Reverse Engineered Conversion',
+        description: 'Every prompt and template is derived from 8-figure direct response frameworks tested in the wild.',
+        icon: 'tabler:chart-arrows-vertical',
+      },
+    ]}
+    image={{
+      src: '/images/site/how-to-stop-ai-from-sounding-like-a-robot.jpg',
+      alt: 'How to Stop AI From Sounding Like a Robot',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">
+        No DNA. No Copy.
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-4">
+        Adriano's central thesis is simple: never let an AI generate a single line of customer-facing copy before it has absorbed your core mechanisms, objections, and tone constraints.
+      </p>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed">
+        CopyMonster is the physical embodiment of this rule, engineered to restore your brand's unique soul.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="resume"
+    title="Core Milestones"
+    items={[
+      {
+        title:
+          'CEO & Founder <br /> <span class="font-normal text-default/80 dark:text-gray-400">Integridade Digital Marketing</span> <br /> <span class="text-sm font-normal text-default/60">2013 - Present</span>',
+        description: 'Helping thousands of entrepreneurs transform knowledge and talents into scalable businesses. Creator of the "Plano & Ação" consultancy.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Community Leader <br /> <span class="font-normal text-default/80 dark:text-gray-400">"How to Create an Extraordinary Digital Product"</span> <br /> <span class="text-sm font-normal text-default/60">21,600+ Members</span>',
+        description: 'Founding member of "Multiplicadores de Talentos," where strategy, positioning, and funnels are applied in practice.',
+        icon: 'tabler:users',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Features3 Widget ************** -->
+  <Features3
+    title="Strategic Expertise"
+    subtitle="Built on the intersection of LLM engineering, copy strategy, and real-world conversion."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Funnel Reverse Engineering',
+        description: 'Breaking down high-performance campaigns to their strategic DNA.',
+      },
+      {
+        title: 'LLM AI Solutions',
+        description: 'Architecting strategic memory layers for the agentic era.',
+      },
+      {
+        title: 'Strategic Copywriting',
+        description: 'Writing that converts because it is built on identity, not prompts.',
+      },
+      {
+        title: 'Community Scaling',
+        description: 'Building and managing active communities with 20K+ members.',
+      },
+      {
+        title: 'Product Validation',
+        description: 'Rapidly moving from raw ideas to market-ready digital assets.',
+      },
+      {
+        title: 'Digital Authority',
+        description: 'Transforming audience into predictable and sustainable revenue.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+  <CallToAction
+    title="Ready to Build With CopyMonster?"
+    subtitle="Experience the direct response AI platform built from real battlefield experience."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Plans & Pricing',
+        href: getPermalink('/pricing'),
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts
+    id="blog"
+    title="Strategic Insights"
+    information="Read articles on sales funnels, AI integration, and the future of strategic marketing."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

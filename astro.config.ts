@@ -24,6 +24,13 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
+  redirects: {
+    '/homes/saas': '/saas',
+    '/homes/startup': '/startup',
+    '/homes/personal': '/personal',
+    '/homes/mobile-app': '/mobile-app',
+  },
+
   output: 'static',
 
   integrations: [

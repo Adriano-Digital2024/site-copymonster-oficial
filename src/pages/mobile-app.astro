@@ -1,0 +1,206 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import { headerData } from '~/navigation';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'CopyMonster Mobile — Brand DNA on the Go',
+  description: 'Manage your Brand DNA, review AI agent drafts, and deploy high-converting copy from any device.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Free Trial',
+          href: 'https://app.copymonster.co/',
+          target: '_blank',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+  <Hero2
+    tagline="Mobile & Social Workflow"
+    image={{
+      src: '/images/site/claude-ai-instagram-carousel-workflow.jpg',
+      alt: 'CopyMonster Mobile and Instagram Carousel Workflow',
+    }}
+  >
+    <Fragment slot="title">
+      <span class="text-[var(--cm-primary)]">CopyMonster Mobile</span>: <br /> Your Brand DNA <span class="hidden xl:inline">in your pocket</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Access your strategic brand identity and deploy specialized AI agents from anywhere.
+      </span>
+      The world's first strategy-first Brand DNA operating system is optimized for responsive mobile browsers and progressive app workflows.
+    </Fragment>
+
+    <Fragment slot="actions">
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="https://app.copymonster.co/"
+          target="_blank"
+          class="inline-flex items-center justify-center px-6 py-3 rounded-xl font-bold text-sm bg-[var(--cm-primary)] text-white hover:opacity-90 transition-all shadow-md"
+        >
+          Free Trial & Web App
+        </a>
+        <a
+          href={getPermalink('/pricing')}
+          class="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm border border-[var(--cm-border)] bg-[var(--cm-card)] text-default hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+        >
+          View Plans & Pricing
+        </a>
+      </div>
+    </Fragment>
+  </Hero2>
+
+  <!-- Features3 Widget ************** -->
+  <Features3
+    id="features"
+    title="Why Use the Mobile Monster?"
+    subtitle="Built for the modern operator who needs to manage brand identity without being chained to a desk. Your DNA never sleeps, and now your specialized agents are just a tap away."
+    tagline="Monster Workflow"
+    columns={2}
+    items={[
+      {
+        title: 'DNA Strategy Sync',
+        description:
+          'Your 12 strategic blocks are fully synced. Update your positioning, voice, or audience on the fly from your phone.',
+        icon: 'tabler:dna',
+      },
+      {
+        title: 'Mobile Agent Hub',
+        description:
+          'Deploy Hook, Headline, or Ads agents directly from your mobile dashboard using your unified strategic memory.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Performance Monitoring',
+        description:
+          'Track Meta Ads and social conversions on the go. Refine your Brand DNA based on real-time campaign return.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Strategic Push Alerts',
+        description:
+          'Get notified when your DNA evolves or when key campaign metrics require human-in-the-loop attention.',
+        icon: 'tabler:bell',
+      },
+    ]}
+    image={{
+      src: '/images/site/instagram-claude-ai-caption-generator.jpg',
+      alt: 'Instagram Caption and Mobile Strategy',
+    }}
+  />
+
+  <!-- Content Widget: Social & DM Automation (2-Column) **************** -->
+  <Content
+    isReversed
+    tagline="Social Execution"
+    title="Turn Social Traffic into Direct Response Conversions"
+    items={[
+      {
+        title: 'Instant Hook Generation',
+        description:
+          'Generate high-engagement reels scripts, carousels, and stories that lead directly into your offer funnel.',
+        icon: 'tabler:flame',
+      },
+      {
+        title: 'Autonomous DM Qualification',
+        description:
+          'Equip conversational agents with your exact Brand DNA to answer objections and qualify prospects.',
+        icon: 'tabler:messages',
+      },
+    ]}
+    image={{
+      src: '/images/site/claude-ai-instagram-dm-automation.jpg',
+      alt: 'Claude AI Instagram DM Automation',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">
+        Social Selling Without Identity Loss
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-4">
+        Social algorithms demand daily volume, but hasty posts often damage brand positioning. CopyMonster ensures your social presence maintains unwavering authority.
+      </p>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed">
+        Scale your organic and paid social channels with complete peace of mind.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Stats Widget ****************** -->
+  <Stats
+    title="Mobile Reach & Global Impact"
+    stats={[
+      { amount: '30+', title: 'Countries' },
+      { amount: '21K+', title: 'Community Members' },
+      { amount: '12', title: 'DNA Blocks' },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+  <FAQs
+    title="Mobile FAQs"
+    items={[
+      {
+        title: 'Is CopyMonster mobile-responsive right now?',
+        description:
+          'Yes! The CopyMonster web app at app.copymonster.co is fully responsive and installable as a Progressive Web App (PWA) on iOS and Android.',
+      },
+      {
+        title: 'Can I map my Brand DNA on a mobile device?',
+        description:
+          'Yes. The mobile interface provides full access to view, edit, and version your 12-block Brand DNA schema.',
+      },
+      {
+        title: 'Does it support self-hosted instances?',
+        description:
+          'Yes. MIT Open Core users can connect their own self-hosted instances directly via our open API.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+  <CallToAction
+    id="download"
+    title="Experience CopyMonster on Any Device"
+    subtitle="Launch your 7-day Pro free trial now and take your Brand DNA wherever you go."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Plans & Pricing',
+        href: getPermalink('/pricing'),
+      },
+    ]}
+  />
+</Layout>

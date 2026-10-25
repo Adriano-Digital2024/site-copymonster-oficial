@@ -1,0 +1,261 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { headerData } from '~/navigation';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'CopyMonster for SaaS — Brand Intelligence',
+  description: 'Scale your SaaS copywriting, onboarding sequences, and product messaging with persistent Brand DNA.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Free Trial',
+          href: 'https://app.copymonster.co/',
+          target: '_blank',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+  <Hero2
+    tagline="SaaS Intelligence"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Free Trial', href: 'https://app.copymonster.co/', icon: 'tabler:rocket' },
+      { text: 'View Pricing', href: getPermalink('/pricing') },
+    ]}
+    image={{
+      src: '/images/site/chatgpt-alternative-for-copywriting.jpg',
+      alt: 'CopyMonster SaaS Interface and Brand Intelligence',
+    }}
+  >
+    <Fragment slot="title">
+      The First <span class="text-[var(--cm-primary)]">Brand DNA</span> SaaS: <br /> Identity That Scales With AI
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Transform your business vision into a permanent AI memory with <span class="font-semibold text-default dark:text-white">CopyMonster</span>.</span
+      >
+      Stop training prompts. Start polishing your Brand DNA to power specialized agents that work 24/7 with zero voice drift.
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+  <Features
+    id="features"
+    title="Why Choose CopyMonster for SaaS?"
+    subtitle="Our infrastructure is built for founders and product marketers who value identity over generic automation."
+    columns={2}
+    items={[
+      {
+        title: 'Unified Brand Brain',
+        description:
+          'Your DNA feeds every agent. No more disconnected responses or off-brand content across your multi-agent team.',
+        icon: 'tabler:dna',
+      },
+      {
+        title: 'Scalable for Teams & Agencies',
+        description:
+          'Manage multiple Brand DNAs and hundreds of agents from a single workspace with enterprise-grade security.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Performance-Driven Evolution',
+        description:
+          'Integrate conversion signals to let real-world performance data refine your Brand DNA automatically.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Agentic Infrastructure',
+        description:
+          'Not just a writer, but the system where your brand\'s communication is born, optimized, and deployed.',
+        icon: 'tabler:network',
+      },
+      {
+        title: 'MIT Open Core Foundation',
+        description:
+          'Built on transparency. Trust our open-source core while scaling with our high-performance cloud managed layers.',
+        icon: 'tabler:brand-github',
+      },
+      {
+        title: 'Strategic Market Radar',
+        description:
+          'AI-driven scanning for opportunities that reinforce your brand\'s unique positioning against competitors.',
+        icon: 'tabler:radar',
+      },
+    ]}
+  />
+
+  <!-- Content Widget 1 **************** -->
+  <Content
+    title="SaaS Intelligence Use Cases"
+    subtitle="See how CopyMonster transforms generic automation into strategic intelligence for modern software teams."
+    isReversed
+    items={[
+      {
+        title: 'Identity-First Scaling:',
+        description:
+          'Are you a startup with a unique voice? Protect it. CopyMonster ensures your personality is preserved as you scale from one to one hundred agents. Our 12-block strategic map is your brand\'s insurance in the AI era.',
+      },
+      {
+        title: 'Strategic Benefits:',
+        description:
+          'Ensure cohesive messaging across multi-agent deployments, communicate complex technical features simply, and prioritize user pain points through structured strategic memory.',
+      },
+    ]}
+    image={{
+      src: '/images/site/claude-ai-for-sales-copy.jpg',
+      alt: 'Claude AI for Sales Copy and SaaS Precision',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">
+        Scaling Brand Intelligence: <br /><span class="text-xl text-[var(--cm-primary)]">Precision at Scale</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget 2 **************** -->
+  <Content
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Unified Customer Experience:',
+        description:
+          'For SaaS businesses, user experience is everything. CopyMonster enhances every touchpoint by ensuring your agents speak with your specific authority. Our 12-block DNA integration guarantees a strategic consistency that generic AI tools simply cannot match.',
+      },
+      {
+        title: 'Performance Benefits:',
+        description:
+          'Cohesive and user-centric strategic narratives, clear value propositions for feature launches, and higher conversion across trial-to-paid lifecycle flows.',
+      },
+    ]}
+    image={{
+      src: '/images/site/how-to-scale-content-without-losing-brand-identity.jpg',
+      alt: 'How to Scale Content Without Losing Brand Identity',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-3">
+        SaaS Excellence: <br /><span class="text-xl text-[var(--cm-primary)]">Strategy Before Generation</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget ******************* -->
+  <CallToAction
+    title="Ready to Deploy SaaS Brand Intelligence?"
+    subtitle="Launch your 7-day Pro free trial with 1,000,000 trial tokens and lock your Brand DNA today."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Plans & Pricing',
+        href: getPermalink('/pricing'),
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+  <FAQs
+    title="SaaS FAQs"
+    items={[
+      {
+        title: 'Why mandatory DNA mapping?',
+        description:
+          'Because generic prompts lead to generic copy. By forcing a 12-block strategy map first, we ensure your AI agents have the permanent memory needed to sound like your brand.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'What LLMs do you support?',
+        description:
+          'CopyMonster supports state-of-the-art models including Claude 3.5 Sonnet, GPT-4o, and DeepSeek, configured with deterministic Brand DNA temperature controls.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'How does multi-tenant isolation work?',
+        description:
+          'Every workspace runs with strict database Row-Level Security (RLS) and isolated sandbox environments, guaranteeing no data leaks between teams or clients.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Is the core engine open source?',
+        description:
+          'Yes, our core foundation is MIT licensed. You can inspect, audit, and contribute to our open-source architecture.',
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Steps2 Widget ****************** -->
+  <Steps2
+    title="Contact Strategic Support"
+    subtitle="Have questions about DNA mapping or Multi-agent scaling?"
+    callToAction={{
+      text: 'Connect Now',
+      href: '/contact',
+    }}
+    items={[
+      {
+        title: 'Email us',
+        description: 'support@copymonster.co',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Open Source',
+        description: 'Join the development on GitHub',
+        icon: 'tabler:brand-github',
+      },
+      {
+        title: 'Cloud App',
+        description: 'app.copymonster.co',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts
+    id="blog"
+    title="Monster Blog"
+    information="Explore strategic insights on Brand DNA, Multi-agent AI, and the future of digital marketing."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
