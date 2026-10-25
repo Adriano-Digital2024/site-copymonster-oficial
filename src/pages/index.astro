@@ -22,17 +22,20 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Deploy Brand OS — Start 7-Day Free Trial',
+        text: 'Free Trial',
         href: 'https://app.copymonster.co/',
         target: '_blank',
-        icon: 'tabler:cpu',
+        icon: 'tabler:rocket',
       },
-      { text: 'See How It Works', href: '#dna-engine' },
+      {
+        text: 'Read More',
+        href: '#problem',
+      },
     ]}
   >
     <Fragment slot="title">
-      <span class="hero-animate-title inline-block text-white">
-        Your Brand Has a DNA. <span class="text-blue-400">CopyMonster</span> Is the System That Keeps It Alive.
+      <span class="hero-animate-title inline-block text-white font-bold">
+        Your Brand Has a DNA. <span class="text-[var(--cm-primary)]">CopyMonster</span> Is the System That Keeps It Alive.
       </span>
     </Fragment>
 
@@ -56,7 +59,11 @@ const metadata = {
         style="background-image: url('/images/home/01-hero.jpg');"
       >
       </div>
-      <div class="absolute inset-0 bg-slate-950/80 dark:bg-slate-950/85 backdrop-blur-[2px]"></div>
+      <!-- Lateral gradient: high contrast on the left for text readability, clear transparency on the right to showcase the image -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/70 to-transparent sm:via-slate-950/50 sm:to-transparent"
+      >
+      </div>
     </Fragment>
   </Hero>
 
@@ -680,6 +687,27 @@ const metadata = {
   /* ==========================================================================
      1. HERO PARALLAX & ENTRANCE ANIMATIONS
      ========================================================================== */
+  /* Hero Left Alignment */
+  #hero .text-center {
+    text-align: left !important;
+    margin-left: 0 !important;
+    max-width: 44rem !important;
+  }
+  #hero .max-w-5xl {
+    margin-left: 0 !important;
+  }
+  #hero .max-w-3xl {
+    margin-left: 0 !important;
+  }
+  #hero .max-w-xs.sm\:max-w-md.m-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    justify-content: flex-start !important;
+  }
+  #hero .flex-col.sm\:flex-row {
+    justify-content: flex-start !important;
+  }
+
   .hero-bg-parallax {
     background-attachment: fixed;
     background-position: center 30%;
