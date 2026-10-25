@@ -97,6 +97,8 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
                   class="text-default/80 dark:text-gray-400 hover:bg-gray-200/50 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label={ariaLabel}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {icon && <Icon name={icon} class="w-5 h-5" />}
                   <Fragment set:html={text} />
