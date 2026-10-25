@@ -9,7 +9,7 @@ tags:
   - tutorial
   - positioning
 metadata:
-  canonical: https://copymonster.co/how-to-build-your-brand-dna
+  canonical: https://copymonster.co/blog/how-to-build-your-brand-dna
   description: "A step-by-step technical guide to mapping your brand essence into a permanent strategic memory for AI models with CopyMonster."
 ---
 
@@ -61,7 +61,7 @@ The Core Identity layer defines the strategic foundation and historical authorit
 
 The Value Engine articulates how your solution solves technical bottlenecks for your target audience:
 
-* **Target Persona:** Precise behavioral profiling based on unedited community logs and exact infrastructure realities rather than speculative demographics. See [how to create realistic AI marketing avatars](/how-to-create-realistic-ai-marketing-avatar/).
+* **Target Persona:** Precise behavioral profiling based on unedited community logs and exact infrastructure realities rather than speculative demographics. See [how to create realistic AI marketing avatars](/blog/how-to-create-realistic-ai-marketing-avatar).
 * **Value Proposition:** The quantified operational delta your product delivers to the customer.
 * **Unique Mechanism:** The proprietary technical framework that explains why your solution works where conventional methods fail.
 
@@ -87,7 +87,7 @@ Once codified, Brand DNA is not a static document. It acts as the shared context
 
 When an agent drafts a sales page, an email sequence, or an advertisement, it queries the Brand DNA repository to pull authentic voice parameters, verified data points, and stylistic constraints.
 
-This decoupling of business context from prompt execution is detailed in our guide on [AI agents in copywriting automation](/ai-agents-copywriting-automation/).
+This decoupling of business context from prompt execution is detailed in our guide on [AI agents in copywriting automation](/blog/ai-agents-copywriting-automation).
 
 ## Frequently Asked Questions
 

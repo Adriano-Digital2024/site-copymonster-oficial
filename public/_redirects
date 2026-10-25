@@ -1,4 +1,43 @@
+# Legacy home routes
 /homes/saas /saas 301
 /homes/startup /startup 301
 /homes/personal /personal 301
 /homes/mobile-app /mobile-app 301
+
+# Blog post permalink migration (root to /blog/)
+/ai-agents-copywriting-automation/  /blog/ai-agents-copywriting-automation/  301
+/ai-agents-copywriting-automation   /blog/ai-agents-copywriting-automation/  301
+/ai-pre-launch-cpl-script/  /blog/ai-pre-launch-cpl-script/  301
+/ai-pre-launch-cpl-script   /blog/ai-pre-launch-cpl-script/  301
+/ai-to-create-sell-micro-infoproducts/  /blog/ai-to-create-sell-micro-infoproducts/  301
+/ai-to-create-sell-micro-infoproducts   /blog/ai-to-create-sell-micro-infoproducts/  301
+/ai-welcome-email-sequence/  /blog/ai-welcome-email-sequence/  301
+/ai-welcome-email-sequence   /blog/ai-welcome-email-sequence/  301
+/boring-copy-ai-sales-pages-guide/  /blog/boring-copy-ai-sales-pages-guide/  301
+/boring-copy-ai-sales-pages-guide   /blog/boring-copy-ai-sales-pages-guide/  301
+/claude-vs-chatgpt-copywriting-infoproducts/  /blog/claude-vs-chatgpt-copywriting-infoproducts/  301
+/claude-vs-chatgpt-copywriting-infoproducts   /blog/claude-vs-chatgpt-copywriting-infoproducts/  301
+/copymonster-brand-dna-in-depth/  /blog/copymonster-brand-dna-in-depth/  301
+/copymonster-brand-dna-in-depth   /blog/copymonster-brand-dna-in-depth/  301
+/copywriting-high-ticket-artificial-intelligence/  /blog/copywriting-high-ticket-artificial-intelligence/  301
+/copywriting-high-ticket-artificial-intelligence   /blog/copywriting-high-ticket-artificial-intelligence/  301
+/create-weekly-newsletter-with-ai/  /blog/create-weekly-newsletter-with-ai/  301
+/create-weekly-newsletter-with-ai   /blog/create-weekly-newsletter-with-ai/  301
+/geo-how-to-optimize-site-for-ai-chatbots/  /blog/geo-how-to-optimize-site-for-ai-chatbots/  301
+/geo-how-to-optimize-site-for-ai-chatbots   /blog/geo-how-to-optimize-site-for-ai-chatbots/  301
+/get-started-with-brand-intelligence/  /blog/get-started-with-brand-intelligence/  301
+/get-started-with-brand-intelligence   /blog/get-started-with-brand-intelligence/  301
+/how-to-build-your-brand-dna/  /blog/how-to-build-your-brand-dna/  301
+/how-to-build-your-brand-dna   /blog/how-to-build-your-brand-dna/  301
+/how-to-create-realistic-ai-marketing-avatar/  /blog/how-to-create-realistic-ai-marketing-avatar/  301
+/how-to-create-realistic-ai-marketing-avatar   /blog/how-to-create-realistic-ai-marketing-avatar/  301
+/markdown-elements-demo-post/  /blog/markdown-elements-demo-post/  301
+/markdown-elements-demo-post   /blog/markdown-elements-demo-post/  301
+/reverse-copy-optimization-with-ai/  /blog/reverse-copy-optimization-with-ai/  301
+/reverse-copy-optimization-with-ai   /blog/reverse-copy-optimization-with-ai/  301
+/strategic-landing-pages/  /blog/strategic-landing-pages/  301
+/strategic-landing-pages   /blog/strategic-landing-pages/  301
+/useful-resources-for-strategic-ai/  /blog/useful-resources-for-strategic-ai/  301
+/useful-resources-for-strategic-ai   /blog/useful-resources-for-strategic-ai/  301
+/voice-to-copy-method-ai-transcription/  /blog/voice-to-copy-method-ai-transcription/  301
+/voice-to-copy-method-ai-transcription   /blog/voice-to-copy-method-ai-transcription/  301

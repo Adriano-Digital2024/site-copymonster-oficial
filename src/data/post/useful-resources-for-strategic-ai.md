@@ -9,7 +9,7 @@ tags:
   - agentic business
   - automation
 metadata:
-  canonical: https://copymonster.co/useful-resources-for-strategic-ai
+  canonical: https://copymonster.co/blog/useful-resources-for-strategic-ai
 ---
 
 ## Key Strategic Takeaways

@@ -9,7 +9,7 @@ tags:
   - workflow
   - onboarding
 metadata:
-  canonical: https://copymonster.co/get-started-with-brand-intelligence
+  canonical: https://copymonster.co/blog/get-started-with-brand-intelligence
 ---
 
 ## Key Strategic Takeaways

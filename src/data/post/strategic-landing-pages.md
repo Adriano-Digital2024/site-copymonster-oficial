@@ -9,7 +9,7 @@ tags:
   - conversion
   - brand identity
 metadata:
-  canonical: https://copymonster.co/strategic-landing-pages
+  canonical: https://copymonster.co/blog/strategic-landing-pages
 ---
 
 ## Key Strategic Takeaways
