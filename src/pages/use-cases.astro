@@ -3,22 +3,187 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink } from '~/utils/permalinks';
-const metadata = { title: 'Brand DNA Use Cases and Personas | CopyMonster', description: 'See how solo creators, experts, agencies, and publishers can use structured Brand DNA to keep marketing copy aligned with their brand.' };
----
-<Layout metadata={metadata}>
-  <HeroText tagline="Use Cases" title="Brand DNA for Different Marketing Teams" subtitle="Different operators face different copy production constraints. A shared, structured brand foundation helps keep their work consistent." callToAction={{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }} callToAction2={{ text: 'See How It Works', href: getPermalink('/dna') }} />
-  <Features tagline="Solo creators" title="Solo Infopreneurs" subtitle="Build campaign assets without re-entering the same strategic context for every task." items={[{ title: 'Challenge', description: 'Working alone means repeatedly explaining the offer, audience, and voice to general-purpose AI tools.', icon: 'tabler:alert-triangle' }, { title: 'Brand DNA role', description: 'Keep audience, positioning, offer, and voice information in a structured foundation for repeatable copy work.', icon: 'tabler:dna' }]} />
-  <Features tagline="Experts" title="High-Ticket Mentors and Experts" subtitle="Keep positioning and expertise recognizable across customer-facing materials." items={[{ title: 'Challenge', description: 'Generic drafts can flatten specialist language and make a premium offer sound interchangeable.', icon: 'tabler:alert-triangle' }, { title: 'Brand DNA role', description: 'Record the offer, audience, proof points, and voice boundaries that should inform future drafts.', icon: 'tabler:shield-check' }]} />
-  <Features tagline="Agencies" title="Marketing Agencies" subtitle="Give teams a consistent reference when producing work for distinct clients." items={[{ title: 'Challenge', description: 'Writers and strategists need to keep each client’s positioning and voice separate.', icon: 'tabler:folders' }, { title: 'Brand DNA role', description: 'Use structured brand information as a reference during client content production and review.', icon: 'tabler:users' }]} />
-  <Features tagline="Publishers" title="Content Creators and Publishers" subtitle="Maintain a recognizable editorial point of view across recurring content." items={[{ title: 'Challenge', description: 'Higher publishing cadence can make it harder to preserve a distinct voice and editorial stance.', icon: 'tabler:alert-triangle' }, { title: 'Brand DNA role', description: 'Keep editorial principles, audience context, and terminology available as a reusable reference.', icon: 'tabler:feather' }]} />
-  <FAQs title="Frequently Asked Questions" items={[{ title: 'Can Brand DNA support different types of marketing work?', description: 'Brand DNA provides structured brand context that can inform copy and content across different marketing tasks.' }, { title: 'Does Brand DNA replace editorial review?', description: 'No. It provides a consistent reference for generating drafts; people should review and approve customer-facing content.' }]} />
 
-  <CallToAction actions={[{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }, { text: 'See How It Works', href: getPermalink('/dna') }]}>
-    <Fragment slot="title">Build from a consistent brand foundation</Fragment>
-    <Fragment slot="subtitle">Explore how structured Brand DNA supports your marketing work.</Fragment>
-  </CallToAction>
+const metadata = {
+  title: 'Brand DNA Use Cases — Solopreneurs, Mentors, Agencies | CopyMonster',
+  description: 'See how solo infopreneurs, high-ticket mentors, and marketing agencies scale content and funnels without losing brand identity.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget -->
+  <HeroText
+    tagline="Proven Use Cases"
+    title="Built for High-Performing Operators and Growing Agencies"
+    subtitle="Different business models face unique copy production bottlenecks. Here is how structured Brand DNA scales results across teams."
+    callToAction={{
+      variant: 'primary',
+      text: 'Free Trial',
+      href: 'https://app.copymonster.co/',
+      target: '_blank',
+      icon: 'tabler:rocket',
+    }}
+    callToAction2={{
+      text: 'See Launch Workflows',
+      href: getPermalink('/launch'),
+    }}
+  />
+
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/AI%20for%20solo%20infoproduct%20creators%20%E2%80%94%20IA%20para%20criadores%20de%20infoprodutos%20solo.jpg"
+        alt="AI for Solo Infoproduct Creators"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <!-- Content Widget: Coaching & Mentorship -->
+  <Content
+    isReversed
+    tagline="High-Ticket Mentorship"
+    title="Scale Coaching and Mentorship Without Hiring Bloat"
+    items={[
+      {
+        title: 'Preserve Deep Authority',
+        description: 'Generic AI flattens specialized knowledge. Brand DNA codifies your proprietary frameworks, mechanisms, and case evidence.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'High-Ticket Funnel Velocity',
+        description: 'Draft application pages, video scripts, and consultation sequences that pre-sell prospects before you speak to them.',
+        icon: 'tabler:user-check',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Your Voice, Multiplied
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Stop trading hours of coaching time to write marketing emails. Retain full control over positioning while autonomous agents handle execution.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Scale%20coaching%20business%20without%20hiring%20%E2%80%94%20Escalar%20neg%C3%B3cio%20de%20coaching%20sem%20contratar.jpg"
+          alt="Scale Coaching Business Without Hiring"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget: High-Ticket Mentorship Launch -->
+  <Content
+    tagline="Launch Architecture"
+    title="Execute Complex Launches Without Strategic Chaos"
+    items={[
+      {
+        title: 'Coordinated Launch Timeline',
+        description: 'Synchronize pre-launch buzz, webinar invitations, live event scripts, and cart-closing emails with complete consistency.',
+        icon: 'tabler:calendar-event',
+      },
+      {
+        title: 'Zero Brand Identity Loss',
+        description: 'As output volume grows from dozens to hundreds of assets, your core tone and vocabulary remain strictly intact.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Stress-Free Campaign Deployment
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Whether launching a cohort or evergreen high-ticket program, Brand DNA ensures every asset supports the central conversion argument.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/AI%20for%20high-ticket%20mentorship%20launch%20%E2%80%94%20IA%20para%20lan%C3%A7amento%20de%20mentoria%20high-ticket.jpg"
+          alt="AI for High-Ticket Mentorship Launch"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- Features Widget: Target Personas -->
+  <Features
+    tagline="Audience Breakdown"
+    title="Who Generates Massive ROI With CopyMonster"
+    subtitle="Engineered specifically for creators and teams where copy quality directly dictates monthly revenue."
+    items={[
+      {
+        title: 'Solo Infopreneurs & Course Creators',
+        description: 'Produce high-converting sales letters, launch emails, and ads without burning hours re-explaining the offer to ChatGPT.',
+        icon: 'tabler:user',
+      },
+      {
+        title: 'High-Ticket Mentors & Consultants',
+        description: 'Command premium pricing with copy that reflects sophisticated authority, client proof, and contrarian frameworks.',
+        icon: 'tabler:trophy',
+      },
+      {
+        title: 'Digital Marketing Agencies',
+        description: 'Switch between isolated client workspaces with strict tenant security and separate Brand DNAs in a single click.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Media Companies & Publishers',
+        description: 'Scale daily content cadence across newsletters, social threads, and carousels without prompt drift.',
+        icon: 'tabler:news',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget -->
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="How Brand DNA adapts across different business models."
+    items={[
+      {
+        title: 'Can one account manage multiple brands or clients?',
+        description: 'Yes. Depending on your plan, you can manage 3, 10, or up to 50 distinct Brand DNAs in isolated workspaces with dedicated settings.',
+      },
+      {
+        title: 'Does Brand DNA require technical setup?',
+        description: 'Not at all. You complete an intuitive 12-block guided questionnaire or import existing copy samples, and the system synthesizes your DNA automatically.',
+      },
+      {
+        title: 'How does CopyMonster prevent hallucination and generic advice?',
+        description: 'Every generation is constrained by your non-negotiable values, forbidden phrases, target mechanisms, and proven conversion triggers.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Pricing Plans',
+        href: getPermalink('/pricing'),
+      },
+    ]}
+    title="Scale Your Production Without Losing Your Identity"
+    subtitle="Join thousands of operators using structured Brand DNA to automate their direct response marketing."
+  />
 </Layout>

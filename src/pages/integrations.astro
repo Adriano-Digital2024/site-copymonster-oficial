@@ -7,121 +7,178 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'Integrations & Connectors — CopyMonster',
-  description: 'A conceptual overview of how consistent brand context can support connected marketing workflows.',
+  title: 'Integrations & MCP Ecosystem — CopyMonster',
+  description: 'Connect your Brand DNA to modern AI tools, Claude Code, Model Context Protocol (MCP), and external marketing automation stacks.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget *************** -->
-
+  <!-- HeroText Widget -->
   <HeroText
-    tagline="Ecosystem Connectivity"
-    title="Connect Brand Context to Your Workflows"
-    subtitle="Explore how a shared Brand DNA can inform work across the tools and processes your team chooses to use."
+    tagline="Ecosystem & Connectivity"
+    title="Connect Brand Intelligence to Your Entire Marketing Stack"
+    subtitle="Bridge persistent Brand DNA with Model Context Protocol (MCP), Claude Skills, custom webhooks, and modern marketing platforms."
     callToAction={{
       variant: 'primary',
-      text: 'Start 7-Day Free Trial',
+      text: 'Free Trial',
       href: 'https://app.copymonster.co/',
       target: '_blank',
       icon: 'tabler:puzzle',
     }}
     callToAction2={{
-      text: 'See How It Works',
-      href: getPermalink('/dna'),
+      text: 'View AI Agents',
+      href: getPermalink('/agents'),
     }}
   />
 
-  <!-- Features2 Widget (Connectors) ** -->
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/AI%20marketing%20platform%20with%20MCP%20%E2%80%94%20Plataforma%20de%20marketing%20com%20IA%20com%20MCP.jpg"
+        alt="AI Marketing Platform with MCP Ecosystem"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
 
-  <Features2
-    tagline="Connected Workflows"
-    title="A Consistent Brand Context Across Your Work"
-    subtitle="Conceptually, connected workflows can help teams apply the same brand foundation across different kinds of work."
-    columns={3}
-    items={[
-      {
-        title: 'Content Creation',
-        description: 'Use a shared brand foundation as a reference when planning and creating marketing content.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Campaign Planning',
-        description: 'Keep positioning, audience context, and offer details in view as campaigns are planned.',
-        icon: 'tabler:route',
-      },
-      {
-        title: 'Team Collaboration',
-        description: 'Give collaborators a common reference for discussing and reviewing brand-related work.',
-        icon: 'tabler:users-group',
-      },
-    ]}
-  />
-
-  <!-- Content Widget (Security & Governance) -->
-
+  <!-- Content Widget: Claude Skills vs MCP -->
   <Content
     isReversed
-    tagline="Shared Context"
-    title="A Common Reference for Brand Decisions"
+    tagline="Modern Architecture"
+    title="Model Context Protocol (MCP) & Claude Skills Integration"
     items={[
       {
-        title: 'Consistent Brand Context',
-        description:
-          'A clearly documented Brand DNA can help teams refer to the same positioning, audience, and offer information.',
-        icon: 'tabler:lock',
+        title: 'Native MCP Server Connectivity',
+        description: 'Expose your 12-block Brand DNA directly to MCP-compatible AI clients and external toolchains.',
+        icon: 'tabler:plug-connected',
       },
       {
-        title: 'Purposeful Collaboration',
-        description:
-          'Teams can use their shared brand foundation to align discussions and creative reviews.',
-        icon: 'tabler:file-text',
+        title: 'Bespoke Claude Skills & Prompts',
+        description: 'Equip your team with specialized skill packs for direct response copy, humanized tone, and launch assets.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Flexible Workflows',
-        description:
-          'Choose the tools and processes that fit your team; this page does not describe specific technical connectors.',
-        icon: 'tabler:server',
+        title: 'Data Sovereignty & Encryption',
+        description: 'All integration payloads run over secure TLS with end-to-end token validation and strict tenant isolation.',
+        icon: 'tabler:shield-lock',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Enterprise Cloud Infrastructure',
-    }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Start With a Shared Brand Foundation</h3>
-      Brand DNA can serve as a consistent reference point when teams coordinate marketing work across their chosen tools.
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        The Standard for AI Context
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Don't isolate your brand intelligence in a closed silo. Connect your Brand DNA directly into terminal agents, IDEs, and workflow builders.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/claude%20skills%20vs%20mcp%20%E2%80%94%20habilidades%20do%20claude%20vs%20mcp.jpg"
+          alt="Claude Skills vs MCP Architecture"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- CallToAction Widget *********** -->
+  <!-- Content Widget: Claude Code Skills -->
+  <Content
+    tagline="Developer & Automator Friendly"
+    title="Automate Campaign Workflows with Claude Code & Custom Skills"
+    items={[
+      {
+        title: 'Scriptable Campaign Pipelines',
+        description: 'Trigger full-funnel copy builds from CLI commands, GitHub Actions, or scheduled cron automations.',
+        icon: 'tabler:terminal-2',
+      },
+      {
+        title: 'Custom Brand Skill Packages',
+        description: 'Package your Brand DNA into reusable skills that instruct agents on forbidden vocabulary and proven mechanisms.',
+        icon: 'tabler:package',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Built for the Next Generation of Builders
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Whether you prefer a no-code visual app or scriptable automation pipes, CopyMonster gives you complete programmatic control.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/claude%20code%20skills%20%E2%80%94%20habilidades%20do%20claude%20code.jpg"
+          alt="Claude Code Skills for Automation"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+  </Content>
 
+  <!-- Features2 Widget: Connected Workflows -->
+  <Features2
+    tagline="Ecosystem Reach"
+    title="Supported Marketing Platforms & Endpoints"
+    subtitle="Seamlessly pass generated copy to the tools your team already uses daily."
+    columns={3}
+    items={[
+      {
+        title: 'Email Service Providers',
+        description: 'ActiveCampaign, Klaviyo, Mautic, Mailchimp, ConvertKit, and custom SMTP endpoints.',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Funnels & Landing Pages',
+        description: 'WordPress, Webflow, ClickFunnels, GoHighLevel, Kajabi, and custom Astro/Next.js repositories.',
+        icon: 'tabler:layout',
+      },
+      {
+        title: 'Social & Ads Channels',
+        description: 'Meta Ads Manager, Google Ads, LinkedIn, YouTube video description pipelines, and Twitter/X.',
+        icon: 'tabler:brand-meta',
+      },
+      {
+        title: 'Workflow Automation',
+        description: 'n8n, Zapier, Make.com, and custom webhook callbacks with JWT authentication.',
+        icon: 'tabler:arrow-loop-right',
+      },
+      {
+        title: 'CRM & Customer Ops',
+        description: 'HubSpot, Salesforce, Pipedrive, and WhatsApp Business API sequences.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Developer APIs & MCP',
+        description: 'Direct REST API access, Webhook events, and local MCP server discovery.',
+        icon: 'tabler:api',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget -->
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Start 7-Day Free Trial',
+        text: 'Free Trial',
         href: 'https://app.copymonster.co/',
         target: '_blank',
         icon: 'tabler:rocket',
       },
       {
-        text: 'See How It Works',
-        href: getPermalink('/dna'),
+        text: 'View Pricing',
+        href: getPermalink('/pricing'),
       },
     ]}
-  >
-    <Fragment slot="title">
-      Bring Your Brand Context Into the Work
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Use your Brand DNA as a common reference across the workflows your team chooses to build.
-    </Fragment>
-  </CallToAction>
+    title="Connect Your Entire Marketing Ecosystem Today"
+    subtitle="Experience the speed and precision of AI agents governed by your immutable Brand DNA."
+  />
 </Layout>

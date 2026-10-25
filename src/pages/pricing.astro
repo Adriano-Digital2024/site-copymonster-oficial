@@ -1,246 +1,585 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Prices from '~/components/widgets/Pricing.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Pricing — CopyMonster',
+  title: 'Plans & Pricing — CopyMonster',
+  description: 'Scale your launch copywriting and autonomous AI funnels with dedicated multi-agent throughput.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
-
+  <!-- HeroText Widget -->
   <HeroText
-    tagline="Pricing"
-    title="Choose the IQ of your Brand Identity"
-    subtitle="Strategic plans designed to scale your brand intelligence from solopreneur to global enterprise."
+    tagline="Plans & Pricing"
+    title="Scale Your Brand Intelligence With Dedicated Throughput"
+    subtitle="Scale your launch copywriting and autonomous AI funnels with dedicated multi-agent throughput."
   />
 
-  <!-- Pricing Widget ******************* -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 -mt-8 mb-16 not-prose">
+    <!-- 1. Trial Banner -->
+    <div
+      class="mb-10 p-6 sm:p-8 rounded-2xl border border-[var(--cm-border)] bg-[var(--cm-card)] shadow-lg intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+    >
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">🚀</span>
+          <div>
+            <h2 class="text-lg sm:text-xl font-bold text-default dark:text-white flex flex-wrap items-center gap-2">
+              7-Day Free Trial Active
+              <span class="inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full bg-[var(--cm-primary)]/15 text-[var(--cm-primary)] border border-[var(--cm-primary)]/30">
+                Pro Access · 4 days remaining
+              </span>
+            </h2>
+            <p class="text-sm text-default/80 dark:text-gray-300 mt-1 max-w-3xl">
+              You have full access to our Pro plan features, including advanced multi-agent orchestration and up to 3 workspaces during your trial. Upon trial completion, your account transitions to the Starter tier.
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://app.copymonster.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold bg-[var(--cm-primary)] text-white hover:opacity-90 transition-all shadow-md whitespace-nowrap"
+        >
+          Open App Workspace
+          <Icon name="tabler:arrow-up-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
 
-  <Prices
-    title="Cloud Plans"
-    subtitle="Optimized for speed and strategic growth"
-    prices={[
-      {
-        title: 'Core (MIT)',
-        subtitle: 'Devs, indies, self-hosted teams',
-        price: 0,
-        period: 'Forever',
-        items: [
-          { description: 'Access to core DNA engine' },
-          { description: 'Community-driven updates' },
-          { description: 'Self-hosting support' },
-          { description: 'MIT License transparency' },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get on GitHub',
-          href: 'https://github.com/Adriano-Digital2024/CopyMonster',
-        },
-      },
-      {
-        title: 'Starter Cloud',
-        subtitle: 'Freelance copywriters',
-        price: 47,
-        period: 'Per Month',
-        items: [
-          { description: '1,000 credits per month' },
-          { description: '1 Brand DNA (Active)' },
-          { description: 'Access to all 8 AI agents' },
-          { description: 'Positioning Diagnosis' },
-          { description: 'AI Support Chat' },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Start Free Trial',
-          href: 'https://app.copymonster.co',
-        },
-      },
-      {
-        title: 'Pro Cloud',
-        subtitle: 'Small agencies',
-        price: 97,
-        period: 'Per Month',
-        items: [
-          { description: '5,000 credits per month' },
-          { description: 'Up to 10 Brand DNAs' },
-          { description: 'Ads Intelligence Dashboard' },
-          { description: 'Market Radar access' },
-          { description: 'Priority AI Support' },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Upgrade Now',
-          href: 'https://app.copymonster.co',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-    ]}
-  />
+      <!-- Token Consumption Bar -->
+      <div class="pt-4 border-t border-[var(--cm-border)]/60">
+        <div class="flex justify-between text-xs sm:text-sm font-medium mb-1.5 text-default/90 dark:text-gray-200">
+          <span>Trial Token Consumption</span>
+          <span class="font-bold text-[var(--cm-primary)]">819,716 / 1,000,000 tokens (82%)</span>
+        </div>
+        <div class="w-full h-2.5 bg-slate-200 dark:bg-slate-700/60 rounded-full overflow-hidden">
+          <div
+            class="h-full bg-[var(--cm-primary)] rounded-full transition-all duration-1000"
+            style="width: 82%;"
+          ></div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Enterprise & Scaling ******************* -->
+    <!-- 2. Billing Toggle -->
+    <div class="flex flex-col items-center justify-center mb-12">
+      <div class="inline-flex p-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-[var(--cm-border)] shadow-inner">
+        <button
+          type="button"
+          id="btn-monthly"
+          class="px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 bg-[var(--cm-primary)] text-white shadow"
+        >
+          Monthly Billing
+        </button>
+        <button
+          type="button"
+          id="btn-annual"
+          class="px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 text-default/80 dark:text-gray-300 hover:text-default"
+        >
+          Annual Billing <span class="text-xs text-[var(--cm-primary)] font-extrabold ml-1">(Save up to 25%)</span>
+        </button>
+      </div>
+      <p id="billing-note" class="text-xs text-default/70 dark:text-gray-400 mt-2.5 hidden">
+        Annual billing grants upfront credits for continuous campaign automation.
+      </p>
+    </div>
 
-  <Prices
-    title="Enterprise & Scale"
-    subtitle="High-performance solutions for large organizations"
-    prices={[
-      {
-        title: 'Legend Cloud',
-        subtitle: 'Mid-size agencies',
-        price: 197,
-        period: 'Per Month',
-        items: [
-          { description: '15,000 credits per month' },
-          { description: 'Up to 50 Brand DNAs' },
-          { description: 'Agent Training (Custom)' },
-          { description: 'VIP WhatsApp Support' },
-          { description: 'Early access to features' },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Become a Legend',
-          href: 'https://app.copymonster.co',
-        },
-      },
-      {
-        title: 'Enterprise Cloud',
-        subtitle: 'Holdings, in-house teams',
-        price: '1,500+',
-        period: 'Per Month',
-        items: [
-          { description: 'Unlimited credits' },
-          { description: 'Unlimited Brand DNAs' },
-          { description: 'SSO & Advanced Security' },
-          { description: 'Multi-tenant Workspaces' },
-          { description: 'Dedicated account manager' },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Contact Sales',
-          href: 'https://app.copymonster.co',
-        },
-      },
-      {
-        title: 'Enterprise Self-Hosted',
-        subtitle: 'Compliance / data-sensitive orgs',
-        price: '8k–20k',
-        period: 'Per Year',
-        items: [
-          { description: 'On-premise deployment' },
-          { description: 'Full data sovereignty' },
-          { description: 'Custom integration support' },
-          { description: 'Annual maintenance included' },
-          { description: 'SLA Guarantee' },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Request Quote',
-          href: 'https://app.copymonster.co',
-        },
-      },
-    ]}
-  />
+    <!-- 3. Pricing Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+      <!-- Card 1: Starter -->
+      <div
+        class="pricing-card flex flex-col justify-between p-7 sm:p-8 rounded-2xl bg-[var(--cm-card)] border border-[var(--cm-border)] shadow-md hover:border-[var(--cm-primary)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+      >
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-bold text-default dark:text-white">Starter</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-default/80">Solopreneur</span>
+          </div>
+          <p class="text-xs text-default/70 dark:text-gray-400 mb-6 min-h-[32px]">
+            Essential direct response engine and brand DNA lock for solo operators.
+          </p>
 
-  <!-- Features3 Widget ************** -->
+          <div class="mb-6 pb-6 border-b border-[var(--cm-border)]">
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl sm:text-5xl font-black text-default dark:text-white plan-price" data-monthly="9" data-annual="9">9</span>
+              <span class="text-sm text-default/70 dark:text-gray-400">/ month</span>
+            </div>
+            <p class="annual-subtext text-xs text-[var(--cm-primary)] font-medium mt-1.5 hidden" data-annual-note="Billed annually at 48/year (save 20/yr)">
+              Billed annually at 48/year (save 20/yr)
+            </p>
+            <p class="text-sm font-semibold text-default/90 dark:text-gray-200 mt-4 flex items-center gap-2">
+              <Icon name="tabler:dna" class="w-4 h-4 text-[var(--cm-primary)]" />
+              Up to 3 Brand DNAs
+            </p>
+          </div>
 
-  <Features3
-    title="The Monster Advantage"
-    subtitle="Why strategic intelligence beats generic prompting every time"
-    columns={2}
-    items={[
-      {
-        title: 'Permanent Strategic Memory',
-        description: 'Your Brand DNA is versioned and saved, ensuring every agent knows your history and values.',
-        icon: 'tabler:dna',
-      },
-      {
-        title: 'Multi-Agent Orchestration',
-        description: 'Deploy specialized agents for Ads, VSL, Email, and Social that all pull from the same brain.',
-        icon: 'tabler:users-group',
-      },
-      {
-        title: 'Performance-Driven Evolution',
-        description: 'Feed real performance data back into your DNA to evolve your brand identity automatically.',
-        icon: 'tabler:refresh',
-      },
-      {
-        title: 'Enterprise-Grade Security',
-        description: `Advanced SSO, multi-tenancy, and compliance-ready self-hosting options for sensitive data.`,
-        icon: 'tabler:shield-lock',
-      },
-    ]}
-    classes={{ container: 'max-w-5xl' }}
-  />
+          <ul class="space-y-3 text-sm text-default/85 dark:text-gray-300 mb-8">
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>2,000,000 monthly tokens</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>1 Isolated Workspace</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>5 Concurrent Sessions</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>Automated email & social copy</span>
+            </li>
+          </ul>
+        </div>
 
-  <!-- Steps Widget ****************** -->
+        <div class="space-y-3 pt-4 border-t border-[var(--cm-border)]/60">
+          <a
+            href="https://app.copymonster.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 hover:opacity-90 transition-all shadow"
+          >
+            Subscribe to Starter
+          </a>
+          <button
+            type="button"
+            data-modal-target="modal-starter"
+            class="open-spec-modal w-full text-center text-xs font-semibold text-[var(--cm-primary)] hover:underline py-1 flex items-center justify-center gap-1"
+          >
+            See full specifications
+            <Icon name="tabler:chevron-right" class="w-3.5 h-3.5" />
+          </button>
+        </div>
+      </div>
 
-  <Steps
-    title="Your 3-Step Journey to Brand Intelligence"
-    tagline="simplified process"
-    isReversed={true}
-    items={[
-      {
-        title: 'Map your 12-block DNA',
-        icon: 'tabler:number-1',
-      },
-      {
-        title: 'Select your specialized agents',
-        icon: 'tabler:number-2',
-      },
-      {
-        title: 'Scale and evolve with real data',
-        icon: 'tabler:number-3',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Strategy Workflow',
-    }}
-  />
+      <!-- Card 2: Pro (Most Popular) -->
+      <div
+        class="pricing-card relative flex flex-col justify-between p-7 sm:p-8 rounded-2xl bg-[var(--cm-card)] border-2 border-[var(--cm-primary)] shadow-xl transition-all duration-300 hover:-translate-y-1"
+      >
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[var(--cm-primary)] text-white text-[11px] font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md">
+          Most Popular
+        </div>
 
-  <!-- FAQs Widget ******************* -->
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-bold text-default dark:text-white">Pro</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[var(--cm-primary)]/15 text-[var(--cm-primary)]">Agencies & Teams</span>
+          </div>
+          <p class="text-xs text-default/70 dark:text-gray-400 mb-6 min-h-[32px]">
+            High-throughput autonomous funnel generation and multi-agent reasoning.
+          </p>
 
+          <div class="mb-6 pb-6 border-b border-[var(--cm-border)]">
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl sm:text-5xl font-black text-default dark:text-white plan-price" data-monthly="9" data-annual="9">9</span>
+              <span class="text-sm text-default/70 dark:text-gray-400">/ month</span>
+            </div>
+            <p class="annual-subtext text-xs text-[var(--cm-primary)] font-medium mt-1.5 hidden" data-annual-note="Billed annually at 48/year (save 40/yr)">
+              Billed annually at 48/year (save 40/yr)
+            </p>
+            <p class="text-sm font-semibold text-default/90 dark:text-gray-200 mt-4 flex items-center gap-2">
+              <Icon name="tabler:dna" class="w-4 h-4 text-[var(--cm-primary)]" />
+              Up to 10 Brand DNAs
+            </p>
+          </div>
+
+          <ul class="space-y-3 text-sm text-default/85 dark:text-gray-300 mb-8">
+            <li class="flex items-center gap-2.5 font-medium">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>10,000,000 monthly tokens</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>5 Isolated Workspaces (RBAC)</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>20 Concurrent Sessions</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>High-converting VSL & Sales Pages</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-3 pt-4 border-t border-[var(--cm-border)]/60">
+          <a
+            href="https://app.copymonster.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl font-bold text-sm bg-[var(--cm-primary)] text-white hover:opacity-90 transition-all shadow-md"
+          >
+            Subscribe to Pro
+          </a>
+          <button
+            type="button"
+            data-modal-target="modal-pro"
+            class="open-spec-modal w-full text-center text-xs font-semibold text-[var(--cm-primary)] hover:underline py-1 flex items-center justify-center gap-1"
+          >
+            See full specifications
+            <Icon name="tabler:chevron-right" class="w-3.5 h-3.5" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3: Legend -->
+      <div
+        class="pricing-card flex flex-col justify-between p-7 sm:p-8 rounded-2xl bg-[var(--cm-card)] border border-[var(--cm-border)] shadow-md hover:border-[var(--cm-primary)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+      >
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-bold text-default dark:text-white">Legend</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-amber-500/15 text-amber-600 dark:text-amber-400">Scale & Enterprise</span>
+          </div>
+          <p class="text-xs text-default/70 dark:text-gray-400 mb-6 min-h-[32px]">
+            Maximum dedicated multi-agent compute and unlimited brand portfolio scale.
+          </p>
+
+          <div class="mb-6 pb-6 border-b border-[var(--cm-border)]">
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl sm:text-5xl font-black text-default dark:text-white plan-price" data-monthly="49" data-annual="99">49</span>
+              <span class="text-sm text-default/70 dark:text-gray-400">/ month</span>
+            </div>
+            <p class="annual-subtext text-xs text-[var(--cm-primary)] font-medium mt-1.5 hidden" data-annual-note="Billed annually at 388/year (save 00/yr)">
+              Billed annually at 388/year (save 00/yr)
+            </p>
+            <p class="text-sm font-semibold text-default/90 dark:text-gray-200 mt-4 flex items-center gap-2">
+              <Icon name="tabler:dna" class="w-4 h-4 text-[var(--cm-primary)]" />
+              Up to 50 Brand DNAs
+            </p>
+          </div>
+
+          <ul class="space-y-3 text-sm text-default/85 dark:text-gray-300 mb-8">
+            <li class="flex items-center gap-2.5 font-medium">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>35,000,000 monthly tokens</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>Unlimited Workspaces</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>Unlimited Concurrent Sessions</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] flex-shrink-0" />
+              <span>100 GB Dedicated Storage</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-3 pt-4 border-t border-[var(--cm-border)]/60">
+          <a
+            href="https://app.copymonster.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 hover:opacity-90 transition-all shadow"
+          >
+            Subscribe to Legend
+          </a>
+          <button
+            type="button"
+            data-modal-target="modal-legend"
+            class="open-spec-modal w-full text-center text-xs font-semibold text-[var(--cm-primary)] hover:underline py-1 flex items-center justify-center gap-1"
+          >
+            See full specifications
+            <Icon name="tabler:chevron-right" class="w-3.5 h-3.5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs Modals -->
+  <!-- 1. Starter Modal -->
+  <dialog id="modal-starter" class="spec-dialog backdrop:bg-black/60 rounded-2xl p-0 border border-[var(--cm-border)] bg-[var(--cm-card)] max-w-2xl w-[92vw] shadow-2xl text-default dark:text-white">
+    <div class="p-6 sm:p-8">
+      <div class="flex justify-between items-center pb-4 mb-4 border-b border-[var(--cm-border)]">
+        <div>
+          <h3 class="text-2xl font-bold">Starter Specifications</h3>
+          <p class="text-xs text-default/70 dark:text-gray-400">Technical profile for solopreneurs and independent copywriters.</p>
+        </div>
+        <button type="button" class="close-modal p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-default/70 hover:text-default">
+          <Icon name="tabler:x" class="w-6 h-6" />
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-[var(--cm-border)] text-xs">
+        <div><strong class="block text-default/60 dark:text-gray-400">Token Quota</strong> 2,000,000 / mo</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Brand DNAs</strong> Up to 3</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Workspaces</strong> 1 Isolated</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Concurrency</strong> 5 Sessions</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Storage</strong> 1 GB Secure</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Architecture</strong> Standard Engine</div>
+      </div>
+
+      <h4 class="text-sm font-bold uppercase tracking-wider text-[var(--cm-primary)] mb-3">What is Included:</h4>
+      <ul class="space-y-2 text-sm text-default/85 dark:text-gray-300">
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> 2,000,000 monthly tokens (1.4M input / 600K output)</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Up to 3 Brand DNAs</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> 1 isolated workspace with secure data isolation</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Up to 5 concurrent agent execution sessions</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Full campaign copy templates & funnel structures</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Automated email & social copy pipelines</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Community & email support</li>
+      </ul>
+
+      <div class="mt-8 pt-4 border-t border-[var(--cm-border)] flex justify-end gap-3">
+        <button type="button" class="close-modal px-4 py-2 rounded-lg text-sm font-semibold border border-[var(--cm-border)] hover:bg-slate-100 dark:hover:bg-slate-800">Close</button>
+        <a href="https://app.copymonster.co/" target="_blank" class="px-5 py-2 rounded-lg text-sm font-bold bg-[var(--cm-primary)] text-white hover:opacity-90">Subscribe to Starter</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 2. Pro Modal -->
+  <dialog id="modal-pro" class="spec-dialog backdrop:bg-black/60 rounded-2xl p-0 border border-[var(--cm-border)] bg-[var(--cm-card)] max-w-2xl w-[92vw] shadow-2xl text-default dark:text-white">
+    <div class="p-6 sm:p-8">
+      <div class="flex justify-between items-center pb-4 mb-4 border-b border-[var(--cm-border)]">
+        <div>
+          <h3 class="text-2xl font-bold">Pro Specifications</h3>
+          <p class="text-xs text-default/70 dark:text-gray-400">Advanced throughput for scaling teams and marketing agencies.</p>
+        </div>
+        <button type="button" class="close-modal p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-default/70 hover:text-default">
+          <Icon name="tabler:x" class="w-6 h-6" />
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-[var(--cm-border)] text-xs">
+        <div><strong class="block text-default/60 dark:text-gray-400">Token Quota</strong> 10,000,000 / mo</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Brand DNAs</strong> Up to 10</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Workspaces</strong> 5 Isolated</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Concurrency</strong> 20 Sessions</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Storage</strong> 10 GB Secure</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Architecture</strong> Multi-Agent Engine</div>
+      </div>
+
+      <h4 class="text-sm font-bold uppercase tracking-wider text-[var(--cm-primary)] mb-3">What is Included:</h4>
+      <ul class="space-y-2 text-sm text-default/85 dark:text-gray-300">
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> 10,000,000 monthly tokens (7M input / 3M output)</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Up to 10 Brand DNAs</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> 5 isolated workspaces with granular RBAC permissions</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Up to 20 concurrent execution sessions</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Advanced multi-agent autonomous reasoning</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> High-converting VSL, sales page & webinar scripts</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> 10 GB high-performance storage</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Priority model execution queue & priority support</li>
+      </ul>
+
+      <div class="mt-8 pt-4 border-t border-[var(--cm-border)] flex justify-end gap-3">
+        <button type="button" class="close-modal px-4 py-2 rounded-lg text-sm font-semibold border border-[var(--cm-border)] hover:bg-slate-100 dark:hover:bg-slate-800">Close</button>
+        <a href="https://app.copymonster.co/" target="_blank" class="px-5 py-2 rounded-lg text-sm font-bold bg-[var(--cm-primary)] text-white hover:opacity-90">Subscribe to Pro</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 3. Legend Modal -->
+  <dialog id="modal-legend" class="spec-dialog backdrop:bg-black/60 rounded-2xl p-0 border border-[var(--cm-border)] bg-[var(--cm-card)] max-w-2xl w-[92vw] shadow-2xl text-default dark:text-white">
+    <div class="p-6 sm:p-8">
+      <div class="flex justify-between items-center pb-4 mb-4 border-b border-[var(--cm-border)]">
+        <div>
+          <h3 class="text-2xl font-bold">Legend Specifications</h3>
+          <p class="text-xs text-default/70 dark:text-gray-400">Dedicated infrastructure and unlimited capacity for holding portfolios.</p>
+        </div>
+        <button type="button" class="close-modal p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-default/70 hover:text-default">
+          <Icon name="tabler:x" class="w-6 h-6" />
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-[var(--cm-border)] text-xs">
+        <div><strong class="block text-default/60 dark:text-gray-400">Token Quota</strong> 35,000,000 / mo</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Brand DNAs</strong> Up to 50</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Workspaces</strong> Unlimited</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Concurrency</strong> Unlimited</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Storage</strong> 100 GB Dedicated</div>
+        <div><strong class="block text-default/60 dark:text-gray-400">Architecture</strong> Premium Dedicated</div>
+      </div>
+
+      <h4 class="text-sm font-bold uppercase tracking-wider text-[var(--cm-primary)] mb-3">What is Included:</h4>
+      <ul class="space-y-2 text-sm text-default/85 dark:text-gray-300">
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> 35,000,000 monthly tokens (25M input / 10M output)</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Up to 50 Brand DNAs</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Unlimited workspaces with bespoke access controls</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Unlimited concurrent agent sessions</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> 100 GB dedicated enterprise storage</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Custom tone-of-voice fine-tuning & prompt libraries</li>
+        <li class="flex items-start gap-2"><Icon name="tabler:check" class="w-4 h-4 text-[var(--cm-primary)] mt-0.5 flex-shrink-0" /> Dedicated SLA, priority compute lane & account manager</li>
+      </ul>
+
+      <div class="mt-8 pt-4 border-t border-[var(--cm-border)] flex justify-end gap-3">
+        <button type="button" class="close-modal px-4 py-2 rounded-lg text-sm font-semibold border border-[var(--cm-border)] hover:bg-slate-100 dark:hover:bg-slate-800">Close</button>
+        <a href="https://app.copymonster.co/" target="_blank" class="px-5 py-2 rounded-lg text-sm font-bold bg-[var(--cm-primary)] text-white hover:opacity-90">Subscribe to Legend</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Visual Workflow Section with public/images/site/ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 not-prose">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+        <img
+          src="/images/site/claude%20skills%20for%20marketing%20%E2%80%94%20habilidades%20do%20claude%20para%20marketing.jpg"
+          alt="Claude Skills for Marketing & Copywriting Automation"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+      <div class="space-y-4">
+        <span class="text-xs font-bold tracking-wider uppercase text-[var(--cm-primary)]">Engineered For Conversion</span>
+        <h3 class="text-2xl sm:text-3xl font-bold text-default dark:text-white">
+          The Only Marketing Engine Driven by Immutable Brand DNA
+        </h3>
+        <p class="text-default/80 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+          Unlike surface-level AI tools that reset context after every prompt, CopyMonster anchors all specialized agents in your persistent 12-block Brand DNA. Every token produced stays faithful to your tone, objections, mechanisms, and promises.
+        </p>
+        <ul class="space-y-2.5 pt-2 text-sm text-default/90 dark:text-gray-200">
+          <li class="flex items-center gap-2">
+            <Icon name="tabler:shield-check" class="w-5 h-5 text-[var(--cm-primary)]" />
+            Zero prompt drift across campaigns and funnels
+          </li>
+          <li class="flex items-center gap-2">
+            <Icon name="tabler:cpu" class="w-5 h-5 text-[var(--cm-primary)]" />
+            Dedicated multi-agent throughput per tenant
+          </li>
+          <li class="flex items-center gap-2">
+            <Icon name="tabler:database-leak" class="w-5 h-5 text-[var(--cm-primary)]" />
+            Strict multi-tenant Row-Level Security (RLS)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Widget with Exact Requirements -->
   <FAQs
-    title="Pricing FAQs"
-    subtitle="Everything you need to know about scaling your brand with CopyMonster."
+    title="Frequently Asked Questions"
+    subtitle="Everything you need to know about plans, trials, and multi-tenant security."
     columns={1}
     items={[
       {
-        title: 'What counts as a Brand DNA?',
+        title: 'How does the 7-day Free Trial work?',
         description:
-          'A Brand DNA is a complete strategic map (12 blocks) for one product or business entity. You can have multiple versions of the same DNA.',
+          'Every new organization automatically receives 7 days of full access to the Pro tier, backed by 1,000,000 trial tokens (500k input + 500k output) and up to 3 isolated workspaces. No credit card is required to begin. Once the trial ends, you can select any paid plan or transition to the Starter tier.',
       },
       {
-        title: 'How do credits work?',
+        title: 'Can I manage or cancel my subscription at any time?',
         description:
-          "Credits are consumed when you generate content or use the DNA Intelligence Engine. Higher plans offer significantly more volume.",
+          'Yes. You can manage payment methods, view invoices, or cancel your subscription at any time via the official Stripe Customer Billing Portal button above. If you cancel, your access remains active until the end of your prepaid period.',
       },
       {
-        title: 'Can I self-host CopyMonster?',
+        title: 'What happens when I reach my monthly token quota?',
         description:
-          'Yes! We are MIT licensed. The Core version is free to self-host. For enterprise-grade self-hosting with all features, contact our sales team.',
+          'Your monthly token allocation covers both prompt inputs and AI agent generation outputs. If your tenant reaches its monthly limit, workspaces and saved assets remain accessible, and you can instantly upgrade your tier to unlock additional volume.',
+      },
+      {
+        title: 'Are workspaces strictly isolated between tenants?',
+        description:
+          'Yes. CopyMonster enforces strict multi-tenant database Row-Level Security (RLS) and isolated sandbox environments. Workspaces, files, conversation sessions, and API credentials are completely partitioned and inaccessible to other organizations.',
       },
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
-
+  <!-- CallToAction Widget -->
   <CallToAction
-    title="Ready to scale your Brand DNA?"
-    subtitle="Join thousands of entrepreneurs turning generic AI text into strategic intelligence."
+    title="Ready to Lock Your Brand DNA?"
+    subtitle="Launch your 7-day trial now and experience autonomous multi-agent copywriting with zero prompt drift."
     actions={[
       {
         variant: 'primary',
-        text: 'Start Free Trial',
-        href: 'https://app.copymonster.co',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
       },
     ]}
   />
+
+  <!-- Interactive Client-Side Script for Toggle & Modals -->
+  <script is:inline>
+    (function () {
+      const btnMonthly = document.getElementById('btn-monthly');
+      const btnAnnual = document.getElementById('btn-annual');
+      const billingNote = document.getElementById('billing-note');
+      const priceEls = document.querySelectorAll('.plan-price');
+      const annualNotes = document.querySelectorAll('.annual-subtext');
+
+      function setBilling(isAnnual) {
+        if (isAnnual) {
+          btnAnnual.classList.add('bg-[var(--cm-primary)]', 'text-white', 'shadow');
+          btnAnnual.classList.remove('text-default/80', 'dark:text-gray-300');
+          btnMonthly.classList.remove('bg-[var(--cm-primary)]', 'text-white', 'shadow');
+          btnMonthly.classList.add('text-default/80', 'dark:text-gray-300');
+          if (billingNote) billingNote.classList.remove('hidden');
+
+          priceEls.forEach((el) => {
+            el.textContent = el.getAttribute('data-annual');
+          });
+          annualNotes.forEach((el) => {
+            el.classList.remove('hidden');
+          });
+        } else {
+          btnMonthly.classList.add('bg-[var(--cm-primary)]', 'text-white', 'shadow');
+          btnMonthly.classList.remove('text-default/80', 'dark:text-gray-300');
+          btnAnnual.classList.remove('bg-[var(--cm-primary)]', 'text-white', 'shadow');
+          btnAnnual.classList.add('text-default/80', 'dark:text-gray-300');
+          if (billingNote) billingNote.classList.add('hidden');
+
+          priceEls.forEach((el) => {
+            el.textContent = el.getAttribute('data-monthly');
+          });
+          annualNotes.forEach((el) => {
+            el.classList.add('hidden');
+          });
+        }
+      }
+
+      if (btnMonthly && btnAnnual) {
+        btnMonthly.addEventListener('click', () => setBilling(false));
+        btnAnnual.addEventListener('click', () => setBilling(true));
+      }
+
+      // Modals
+      const openModalBtns = document.querySelectorAll('.open-spec-modal');
+      const closeModalBtns = document.querySelectorAll('.close-modal');
+
+      openModalBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-modal-target');
+          const dialog = document.getElementById(targetId);
+          if (dialog && typeof dialog.showModal === 'function') {
+            dialog.showModal();
+          }
+        });
+      });
+
+      closeModalBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const dialog = btn.closest('dialog');
+          if (dialog) dialog.close();
+        });
+      });
+
+      // Close on backdrop click
+      const dialogs = document.querySelectorAll('dialog.spec-dialog');
+      dialogs.forEach((dialog) => {
+        dialog.addEventListener('click', (e) => {
+          const rect = dialog.getBoundingClientRect();
+          const inDialog =
+            rect.top <= e.clientY &&
+            e.clientY <= rect.top + rect.height &&
+            rect.left <= e.clientX &&
+            e.clientX <= rect.left + rect.width;
+          if (!inDialog) {
+            dialog.close();
+          }
+        });
+      });
+    })();
+  </script>
 </Layout>

@@ -1,22 +1,190 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink } from '~/utils/permalinks';
-const metadata = { title: 'Infoproduct Launch Planning with Brand DNA', description: 'Plan launch messaging with a consistent Brand DNA foundation across pre-launch content, event materials, and follow-up copy.' };
----
-<Layout metadata={metadata}>
-  <HeroText tagline="Launch planning" title="A Consistent Foundation for Infoproduct Launches" subtitle="Keep launch messaging connected to your audience, offer, and positioning from early content through follow-up." callToAction={{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }} callToAction2={{ text: 'See How It Works', href: getPermalink('/dna') }} />
-  <Content tagline="The challenge" title="Launch Assets Need a Shared Strategic Context" items={[{ title: 'Disconnected drafts', description: 'When each asset is developed from scratch, the central offer and positioning can drift between content, event materials, and follow-up.', icon: 'tabler:files' }, { title: 'Repeated context', description: 'Teams may spend time re-entering audience details, offer language, and brand voice in each new drafting session.', icon: 'tabler:repeat' }]}><Fragment slot="content"><h2 class="text-2xl font-bold">Keep the launch anchored to your brand</h2><p>Brand DNA provides a structured reference for the messages and offer details used in launch content.</p></Fragment></Content>
-  <Steps tagline="Workflow" title="A Brand DNA Launch Workflow" subtitle="A practical sequence for preparing launch materials around a consistent foundation." items={[{ title: '1. Define the foundation', description: 'Record your audience, positioning, offer, and brand voice in Brand DNA.', icon: 'tabler:dna' }, { title: '2. Prepare launch content', description: 'Use that reference while drafting pre-launch and event materials.', icon: 'tabler:file-text' }, { title: '3. Review message alignment', description: 'Check that key claims and offer details remain consistent across assets.', icon: 'tabler:check' }, { title: '4. Refine from feedback', description: 'Update the underlying brand context when your positioning or offer changes.', icon: 'tabler:refresh' }]} />
-  <FAQs title="Frequently Asked Questions" items={[{ title: 'Does this automatically run a launch campaign?', description: 'This page describes a content-planning workflow. It does not promise campaign scheduling or delivery automation.' }, { title: 'What launch materials can use Brand DNA?', description: 'The structured brand context can inform drafts for pre-launch content, event materials, and follow-up copy.' }]} />
 
-  <CallToAction actions={[{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }, { text: 'See How It Works', href: getPermalink('/dna') }]}>
-    <Fragment slot="title">Build from a consistent brand foundation</Fragment>
-    <Fragment slot="subtitle">Explore how structured Brand DNA supports your marketing work.</Fragment>
-  </CallToAction>
+const metadata = {
+  title: 'Infoproduct Launch Planning with Brand DNA — CopyMonster',
+  description: 'Plan and execute high-converting digital product launches with consistent Brand DNA across pre-launch, live events, and cart closing.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget -->
+  <HeroText
+    tagline="Launch Architecture"
+    title="Execute 6- and 7-Figure Launches With Flawless Message Consistency"
+    subtitle="Keep launch messaging connected to your audience, offer, and positioning from early teaser content to final cart-close deadlines."
+    callToAction={{
+      variant: 'primary',
+      text: 'Free Trial',
+      href: 'https://app.copymonster.co/',
+      target: '_blank',
+      icon: 'tabler:rocket',
+    }}
+    callToAction2={{
+      text: 'Explore Automation',
+      href: getPermalink('/automation'),
+    }}
+  />
+
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/Best%20AI%20for%20infoproduct%20launches%20%E2%80%94%20Melhor%20IA%20para%20lan%C3%A7amentos%20de%20infoprodutos.jpg"
+        alt="Best AI for Infoproduct Launches"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <!-- Content Widget: The Launch Challenge -->
+  <Content
+    isReversed
+    tagline="Pre-Launch Cohesion"
+    title="Pre-Launch Content Scripts Guided by Deep Strategy"
+    items={[
+      {
+        title: 'Zero Narrative Fracture',
+        description: 'Ensure stories told in your pre-launch videos match the exact mechanism revealed on your sales page.',
+        icon: 'tabler:link',
+      },
+      {
+        title: 'High-Converting Teasers & Hooks',
+        description: 'Generate curiosity hooks and problem-agitation sequences tailored to your ICP psychographics.',
+        icon: 'tabler:flame',
+      },
+      {
+        title: 'Omnichannel Readiness',
+        description: 'Spin out coordinated Instagram carousels, YouTube scripts, and email teasers simultaneously.',
+        icon: 'tabler:share',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Build Anticipation That Sells
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Launches succeed or fail during pre-launch. With CopyMonster, you prepare your market mentally and emotionally for your offer days before checkout opens.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Pre-launch%20content%20script%20with%20AI%20%E2%80%94%20Roteiro%20de%20conte%C3%BAdo%20de%20pr%C3%A9-lan%C3%A7amento%20com%20IA.jpg"
+          alt="Pre-Launch Content Script With AI"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget: Launch Workflow -->
+  <Steps
+    tagline="Operational Playbook"
+    title="The 4-Stage Monster Launch Sequence"
+    subtitle="A battle-tested workflow for deploying entire launch campaigns in days instead of weeks."
+    items={[
+      {
+        title: 'Stage 1: <span class="font-medium">Brand DNA & Offer Lock</span>',
+        description: 'Define your unique mechanism, tier pricing, bonus stack, and guarantee terms in structured memory.',
+        icon: 'tabler:dna',
+      },
+      {
+        title: 'Stage 2: <span class="font-medium">Pre-Launch Nurture & Agitation</span>',
+        description: 'Deploy 5 to 7 days of high-empathy narrative emails and authority-building video scripts.',
+        icon: 'tabler:speakerphone',
+      },
+      {
+        title: 'Stage 3: <span class="font-medium">Cart Open Frenzy & Webinar Copy</span>',
+        description: 'Deliver conversion-optimized sales letters, VSLs, checkout bump copy, and launch event slides.',
+        icon: 'tabler:shopping-cart',
+      },
+      {
+        title: 'Stage 4: <span class="font-medium">Countdown & Hard Close Blitz</span>',
+        description: 'Execute ethical urgency sequences, FAQ objection destroyers, and last-chance notifications.',
+        icon: 'tabler:hourglass',
+      },
+    ]}
+  />
+
+  <!-- Content Widget: How to Launch a Course with AI -->
+  <Content
+    tagline="Course Creators"
+    title="How to Launch an Online Course with Direct Response AI"
+    items={[
+      {
+        title: 'Compelling Curriculum Modules',
+        description: 'Translate dense educational material into exciting, benefit-driven syllabus sales copy.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Proof & Case History Integration',
+        description: 'Weave student transformations into every stage of the argument with surgical precision.',
+        icon: 'tabler:stars',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Turn Expertise Into High-Ticket Enrollments
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Course launches require heavy narrative continuity. CopyMonster guarantees your students feel the value from their first email through their final graduation.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/How%20to%20launch%20a%20course%20with%20AI%20%E2%80%94%20Como%20lan%C3%A7ar%20um%20curso%20com%20IA.jpg"
+          alt="How to Launch a Course with AI"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- FAQs Widget -->
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Key details about running launches with CopyMonster."
+    items={[
+      {
+        title: 'Does CopyMonster integrate with my email marketing tool?',
+        description: 'Yes. You can export generated launch sequences formatted for ActiveCampaign, Klaviyo, Mautic, or your preferred ESP.',
+      },
+      {
+        title: 'Can I reuse my launch DNA for future evergreen funnels?',
+        description: 'Absolutely. A single click transitions your live launch Brand DNA into an automated evergreen sequence.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Integrations',
+        href: getPermalink('/integrations'),
+      },
+    ]}
+    title="Ready to Launch Your Next Big Campaign?"
+    subtitle="Deploy high-converting launch copy powered by immutable Brand DNA today."
+  />
 </Layout>

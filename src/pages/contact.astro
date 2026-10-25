@@ -1,68 +1,104 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact & Enterprise Inquiries — CopyMonster',
+  description: 'Reach our enterprise architecture team for bespoke Brand DNA deployment, dedicated multi-agent throughput, or high-volume agency tiers.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <!-- HeroText Widget -->
+  <HeroText
+    tagline="Get in Touch"
+    title="Let's Scale Your Brand Intelligence"
+    subtitle="Have questions about enterprise deployment, agency multi-tenancy, or custom LLM fine-tuning? Our team of senior copy strategists is ready to assist."
+  />
 
-  <HeroText tagline="Contact" title="Connect with the Monster!" />
-
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-    <div class="max-w-3xl mx-auto text-center mb-12">
-      <h2 class="text-3xl font-bold mb-4">Scale your Brand Intelligence</h2>
-      <p class="text-muted">Have questions about Brand DNA, Multi-agent AI, or Enterprise solutions? Our strategic team is ready to help you unlock the next level of your business identity.</p>
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/Generative%20Engine%20Optimization%20(GEO)%20for%20SaaS%20%E2%80%94%20Otimiza%C3%A7%C3%A3o%20para%20motores%20generativos%20(GEO)%20para%20SaaS.jpg"
+        alt="Enterprise Generative Engine Optimization"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
     </div>
-    
-    <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl p-6 sm:p-8 lg:p-10 w-full">
-      <div class="mautic-form-container text-left">
-        <script is:inline type="text/javascript" src="https://mautic.integridadedigital.com.br/form/generate.js?id=1"></script>
-      </div>
-      <p class="mt-6 text-sm text-muted text-center border-t border-gray-100 dark:border-slate-800 pt-4 italic">
-        Our strategic agents typically respond within 24 business hours.
-      </p>
-    </div>
-  </section>
+  </div>
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="We are here to help!"
-    items={[
+  <ContactUs
+    id="form"
+    title="Drop Us a Message"
+    subtitle="For urgent enterprise trials, custom token SLAs, or technical integrations."
+    inputs={[
       {
-        title: 'Strategic Support',
-        description: `Inquiries related to DNA Map building, agent orchestration, and strategic alignment for your brand.`,
+        type: 'text',
+        name: 'name',
+        label: 'Full Name',
       },
       {
-        title: 'Enterprise Sales',
-        description:
-          'Inquiries about white-label solutions, SSO, custom agent training, and agency-level scaling.',
-      },
-      {
-        title: 'Technical Support',
-        description:
-          'Issues regarding App deployment, API integrations (Meta/Instagram), or Open Core self-hosting.',
-      },
-      {
-        title: 'WhatsApp VIP',
-        description: 'Exclusive for Legend Monster members.',
-        icon: 'tabler:brand-whatsapp',
-      },
-      {
-        title: 'Email',
-        description: 'contact@copymonster.co',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Global Vision',
-        description: 'Active in 132 countries. Digital-first and decentralized.',
-        icon: 'tabler:world',
+        type: 'email',
+        name: 'email',
+        label: 'Work Email',
       },
     ]}
+    textarea={{
+      label: 'How can we help your team?',
+      name: 'message',
+    }}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you agree to our Terms of Service and Privacy Policy.',
+    }}
+    description="Our technical team typically responds within 2 to 4 business hours."
+  />
+
+  <!-- Features2 Widget: Direct Channels -->
+  <Features2
+    title="Direct Communication Channels"
+    subtitle="Connect with us through your preferred operational route."
+    columns={3}
+    items={[
+      {
+        title: 'Enterprise & Agency Sales',
+        description: 'Discuss custom SLAs, dedicated infrastructure, and multi-tenant setups.<br /><span class="font-medium text-default">sales@copymonster.co</span>',
+        icon: 'tabler:building-skyscraper',
+      },
+      {
+        title: 'Technical Support & MCP',
+        description: 'Assistance with API keys, MCP server connections, and tenant settings.<br /><span class="font-medium text-default">support@copymonster.co</span>',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Instant Cloud App',
+        description: 'Launch your 7-day Pro free trial immediately with zero wait time.<br /><a href="https://app.copymonster.co/" target="_blank" class="font-medium text-[var(--cm-primary)] hover:underline">app.copymonster.co &rarr;</a>',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Pricing',
+        href: getPermalink('/pricing'),
+      },
+    ]}
+    title="Start Creating High-Converting Copy in 5 Minutes"
+    subtitle="Experience autonomous multi-agent copywriting powered by your immutable Brand DNA."
   />
 </Layout>

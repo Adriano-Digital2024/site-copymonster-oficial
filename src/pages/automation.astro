@@ -3,20 +3,188 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink } from '~/utils/permalinks';
-const metadata = { title: 'Marketing Operations and Brand DNA | CopyMonster', description: 'Use structured Brand DNA as a consistent reference for recurring marketing content and coordinated copy production.' };
----
-<Layout metadata={metadata}>
-  <HeroText tagline="Marketing operations" title="A Consistent Brand Foundation for Marketing Operations" subtitle="Bring structured brand context into recurring content and copy workflows without losing sight of your positioning." callToAction={{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }} callToAction2={{ text: 'See How It Works', href: getPermalink('/dna') }} />
-  <Content tagline="The challenge" title="Unstructured Context Makes Repeatable Work Harder" items={[{ title: 'Context is scattered', description: 'Offer details, audience information, and voice guidance may live across documents and individual drafting sessions.', icon: 'tabler:database' }, { title: 'Outputs can drift', description: 'Without a shared reference, recurring content may describe the same brand and offer in inconsistent ways.', icon: 'tabler:arrows-shuffle' }]}><Fragment slot="content"><h2 class="text-2xl font-bold">Use Brand DNA as a shared reference</h2><p>Organize strategic brand information so it can inform repeated marketing tasks and content reviews.</p></Fragment></Content>
-  <Features tagline="Capabilities" title="Marketing Workflows Brand DNA Can Inform" subtitle="These are conceptual use cases, not claims of automatic delivery or integration." items={[{ title: 'Recurring content drafts', description: 'Keep audience and voice context available when preparing newsletters, articles, and other recurring content.', icon: 'tabler:news' }, { title: 'Campaign copy variations', description: 'Use consistent positioning as a reference when exploring different copy angles.', icon: 'tabler:copy' }, { title: 'Voice review', description: 'Compare draft language with recorded voice guidelines and terminology.', icon: 'tabler:check' }, { title: 'Cross-asset consistency', description: 'Review whether related assets describe the offer and its audience consistently.', icon: 'tabler:link' }]} />
-  <FAQs title="Frequently Asked Questions" items={[{ title: 'Does this connect to external marketing tools?', description: 'This page does not describe a specific external tool integration. Check the product’s integrations information for supported connections.' }, { title: 'Does Brand DNA automatically publish content?', description: 'No automatic publishing capability is promised here. Brand DNA provides structured context for marketing work.' }]} />
 
-  <CallToAction actions={[{ variant: 'primary', text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }, { text: 'See How It Works', href: getPermalink('/dna') }]}>
-    <Fragment slot="title">Build from a consistent brand foundation</Fragment>
-    <Fragment slot="subtitle">Explore how structured Brand DNA supports your marketing work.</Fragment>
-  </CallToAction>
+const metadata = {
+  title: 'Marketing Operations & AI Funnel Automation — CopyMonster',
+  description: 'Use structured Brand DNA as a deterministic reference for recurring marketing content, email workflows, and automated funnels.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget -->
+  <HeroText
+    tagline="Marketing Automation"
+    title="Autonomous AI Funnels Anchored to Your Brand DNA"
+    subtitle="Bring deterministic brand context into recurring content, automated email sequences, and 24/7 revenue funnels without losing positioning integrity."
+    callToAction={{
+      variant: 'primary',
+      text: 'Free Trial',
+      href: 'https://app.copymonster.co/',
+      target: '_blank',
+      icon: 'tabler:settings-automation',
+    }}
+    callToAction2={{
+      text: 'See Connectors',
+      href: getPermalink('/integrations'),
+    }}
+  />
+
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/AI%20funnel%20automation%20%E2%80%94%20Automa%C3%A7%C3%A3o%20de%20funil%20com%20IA.jpg"
+        alt="AI Funnel Automation System"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <!-- Content Widget: Email Sequences with Brand Voice -->
+  <Content
+    isReversed
+    tagline="Lifecycle Marketing"
+    title="Automate Email Sequences With Uncompromising Brand Voice"
+    items={[
+      {
+        title: 'Behavioral Triggers',
+        description: 'Trigger dynamic copy calibrated to user actions, cart abandonment, and lead qualification stages.',
+        icon: 'tabler:bolt',
+      },
+      {
+        title: 'Zero Robotic Phrasing',
+        description: 'Brand DNA filters out overused AI clichés and injects your authentic syntax and conversational markers.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'High Deliverability Syntax',
+        description: 'Formatted and structured to maintain pristine sender reputation and inbox engagement rates.',
+        icon: 'tabler:inbox',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Nurture Leads on Autopilot
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Build evergreen relationship-building machines that sound exactly like your best salesperson, running every hour of every day.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Automate%20email%20sequences%20with%20brand%20voice%20%E2%80%94%20Automatizar%20sequ%C3%AAncias%20de%20e-mail%20com%20a%20voz%20da%20marca.jpg"
+          alt="Automate Email Sequences With Brand Voice"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget: Best AI Funnel Builder -->
+  <Content
+    tagline="Funnel Architecture"
+    title="The Best AI Funnel Builder for Digital Products"
+    items={[
+      {
+        title: 'Complete Direct Response Frameworks',
+        description: 'Generate VSLs, lead magnets, qualification quizzes, order bumps, and 1-click upsells in minutes.',
+        icon: 'tabler:stack-2',
+      },
+      {
+        title: 'Continuous Optimization Loops',
+        description: 'Integrate real conversion benchmarks back into your Brand DNA to constantly refine copy angles.',
+        icon: 'tabler:refresh',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Architectures That Convert
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Stop assembling funnels from fragmented pieces. CopyMonster gives you end-to-end alignment across every step of your buyer journey.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Best%20AI%20funnel%20builder%20for%20info%20products%20%E2%80%94%20Melhor%20construtor%20de%20funil%20com%20IA%20para%20infoprodutos.jpg"
+          alt="Best AI Funnel Builder for Info Products"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- Features Widget: Automated Workflows -->
+  <Features
+    tagline="Capabilities"
+    title="Automated Workflows Powered by Brand DNA"
+    subtitle="Scale repeatable marketing outputs without increasing operational overhead."
+    items={[
+      {
+        title: 'Evergreen Email Welcome Series',
+        description: '7 to 14-day onboarding sequences that introduce your origin story and core transformation.',
+        icon: 'tabler:mail-fast',
+      },
+      {
+        title: 'Webinar & Event Registration Funnels',
+        description: 'High-attendance invitation pages, SMS reminders, and replay recap emails.',
+        icon: 'tabler:device-laptop',
+      },
+      {
+        title: 'Customer Retention & Upsell Flows',
+        description: 'Nurture existing buyers and introduce complementary high-ticket backend offers.',
+        icon: 'tabler:currency-dollar',
+      },
+      {
+        title: 'Weekly Content Pipeline Generation',
+        description: 'Transform key strategic insights into newsletters, social threads, and community posts.',
+        icon: 'tabler:news',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget -->
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Everything you need to know about autonomous marketing with CopyMonster."
+    items={[
+      {
+        title: 'Can I connect CopyMonster to webhook automations?',
+        description: 'Yes. CopyMonster can dispatch generated campaign copy to automated webhooks, Zapier, n8n, or directly into your marketing stack.',
+      },
+      {
+        title: 'Does automation dilute brand voice?',
+        description: 'No. Because all generation is constrained by your persistent Brand DNA rules, tone and vocabulary remain strictly uniform across every automated step.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Integrations',
+        href: getPermalink('/integrations'),
+      },
+    ]}
+    title="Put Your High-Converting Funnel on Autopilot"
+    subtitle="Experience autonomous marketing with the intelligence and voice of a master copywriter."
+  />
 </Layout>

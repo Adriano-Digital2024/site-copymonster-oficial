@@ -1,149 +1,199 @@
 ---
-import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'About us — CopyMonster',
+  title: 'About CopyMonster — Identity-First AI Architecture',
+  description: 'Learn why CopyMonster was built to solve the identity crisis in generative AI and empower creators with deterministic Brand DNA.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-  <Hero
-    tagline="About us"
-    image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Strategy Team',
+  <!-- HeroText Widget -->
+  <HeroText
+    tagline="Our Mission"
+    title="The Future of AI Copywriting is Identity"
+    subtitle="We believe AI shouldn't replace human creativity — it should preserve, amplify, and execute your brand's distinct intellectual property with uncompromising fidelity."
+    callToAction={{
+      variant: 'primary',
+      text: 'Free Trial',
+      href: 'https://app.copymonster.co/',
+      target: '_blank',
+      icon: 'tabler:rocket',
     }}
-  >
-    <Fragment slot="title">
-      Empowering Brands in the <br />
-      <span class="text-accent dark:text-white"> AI & Agentic Era</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      CopyMonster is the culmination of 15+ years of strategic digital marketing. We believe that in a world where execution is automated, your unique Brand DNA is your most valuable asset.
-    </Fragment>
-  </Hero>
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    title="Global Reach & Community"
-    stats={[
-      { title: 'Countries', amount: '132' },
-      { title: 'Community Members', amount: '21K+' },
-      { title: 'Brand DNA Blocks', amount: '12' },
-      { title: 'Open Source', amount: 'MIT' },
-    ]}
+    callToAction2={{
+      text: 'Explore Brand DNA',
+      href: getPermalink('/dna'),
+    }}
   />
 
-  <!-- Features3 Widget ************** -->
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/AI%20system%20to%20buy%20back%20time%20%E2%80%94%20Sistema%20de%20IA%20para%20recuperar%20tempo.jpg"
+        alt="AI System to Buy Back Time"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
 
-  <Features3
-    title="Our Strategic Pillars"
-    subtitle="CopyMonster is the architectural layer where your brand voice is defined before a single line of copy is born."
-    columns={3}
-    isBeforeContent={true}
+  <!-- Content Widget: The Identity Crisis -->
+  <Content
+    isReversed
+    tagline="The Problem"
+    title="Why Generic AI is Poisoning Brand Authority"
     items={[
       {
-        title: 'DNA-First Framework',
-        description:
-          'The fundamental rule: No DNA → No Copy. We force the mapping of 12 strategic blocks to ensure authenticity.',
+        title: 'The Sameness Epidemic',
+        description: 'Millions of companies are using the same foundational models with generic prompts, flooding markets with indistinguishable copy.',
+        icon: 'tabler:alert-triangle',
+      },
+      {
+        title: 'The Context Erosion Loop',
+        description: 'Every time you open a new chat window, your brand history is wiped clean, forcing you to start from scratch.',
+        icon: 'tabler:refresh-off',
+      },
+      {
+        title: 'Direct Response Dilution',
+        description: 'Generic AI models are trained on academic prose and generic corporate blogs, not conversion mechanisms.',
+        icon: 'tabler:trending-down',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        The AI Identity Crisis
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Without structured memory and voice constraints, AI produces vanilla, sycophantic content that kills buyer trust. CopyMonster was founded to restore your brand moat.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Why%20Brand%20DNA%20matters%20for%20AI%20writing%20%E2%80%94%20Por%20que%20o%20DNA%20de%20marca%20importa%20para%20a%20escrita%20com%20IA.jpg"
+          alt="Why Brand DNA Matters for AI Writing"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget: What is Brand DNA -->
+  <Content
+    tagline="The Solution"
+    title="What is Brand DNA in AI?"
+    items={[
+      {
+        title: 'Structured Strategy Blocks',
+        description: 'Origin, pain points, core mechanisms, tone boundaries, proof stacks, and objection triggers codified into persistent schema.',
         icon: 'tabler:dna',
       },
       {
-        title: 'Multi-Agent Authority',
-        description:
-          'Specialized AI agents trained on your unique identity, ensuring every touchpoint sounds exactly like your brand.',
-        icon: 'tabler:users-group',
-      },
-      {
-        title: 'Real-World Evolution',
-        description:
-          'Performance metrics from Meta Ads feed back into your adaptive DNA layer, making your identity smarter over time.',
-        icon: 'tabler:refresh',
+        title: 'Deterministic Orchestration',
+        description: 'Autonomous agents read from this schema before generating a single syllable, ensuring mathematical consistency.',
+        icon: 'tabler:cpu',
       },
     ]}
-  />
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Preserving Your Strategic Soul
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Brand DNA is not just a system prompt. It is a living, versioned operating system that gives AI agents permanent, immutable context about who you are and how you sell.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/What%20is%20Brand%20DNA%20in%20AI%20%E2%80%94%20O%20que%20%C3%A9%20o%20DNA%20de%20marca%20na%20IA.jpg"
+          alt="What is Brand DNA in AI"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+  </Content>
 
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="The Monster Values"
-    subtitle="Built in the digital trenches, we value strategic depth over surface-level automation."
+  <!-- Steps Widget: Our Core Values -->
+  <Steps
+    tagline="Core Principles"
+    title="Our Engineering & Ethical Commitments"
+    subtitle="What guides every line of code we write at CopyMonster."
     items={[
       {
-        title: 'Strategy over generic prompts',
-        description:
-          'Prompts are commodities. Strategy is your moat. We prioritize mapping the Brand DNA to save months of wasted execution.',
+        title: '1. <span class="font-medium">Complete Tenant Data Isolation</span>',
+        description: 'We believe your strategic positioning is proprietary IP. Your Brand DNA is strictly isolated via Row-Level Security and never used to train public models.',
+        icon: 'tabler:shield-lock',
       },
       {
-        title: 'Identity over volume',
-        description:
-          'Generating 1,000 posts is useless if they don\'t sound like you. We never sacrifice voice integrity for scale.',
-      },
-      {
-        title: 'Transparency over black boxes',
-        description:
-          'Our Open Core (MIT) model allows you to audit every strategic prompt and self-host your brand intelligence infrastructure.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="The Journey"
-    subtitle="From reverse-engineering high-performance funnels to building global AI infrastructure."
-    isReversed={true}
-    callToAction={{
-      text: 'Launch DNA Engine',
-      href: 'https://app.copymonster.co',
-    }}
-    items={[
-      {
-        title: '11+ Years of Digital Mastery',
-        description: 'Founder Adriano Vieira builds a legacy of conversion, communities (21K+ members), and strategic funnels.',
-        icon: 'tabler:briefcase',
-      },
-      {
-        title: 'Visionary Reach (132 Countries)',
-        description: 'What started as a digital strategy practice evolved into a global brand intelligence platform.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Open Core Revolution',
-        description: 'Releasing the DNA Engine as MIT licensed code to decentralize the power of strategic marketing.',
+        title: '2. <span class="font-medium">Open Source Core (MIT)</span>',
+        description: 'Transparency over black boxes. We maintain an open core architecture so the community can inspect, extend, and audit our tooling.',
         icon: 'tabler:brand-github',
       },
+      {
+        title: '3. <span class="font-medium">Performance Over Fluff</span>',
+        description: 'We measure success in opt-in rates, click-throughs, and revenue generated, not vanity word counts or arbitrary token consumption.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: '4. <span class="font-medium">Buy Back Founder Time</span>',
+        description: 'Our ultimate metric is giving founders, solopreneurs, and copy chiefs their freedom back through deterministic multi-agent automation.',
+        icon: 'tabler:clock',
+      },
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
-
+  <!-- Features2 Widget: Global Impact -->
   <Features2
-    title="Strategic Support"
-    tagline="Get in Touch"
-    columns={2}
+    tagline="Worldwide Presence"
+    title="Built for Modern Operators Globally"
+    subtitle="From boutique agencies in São Paulo to high-ticket consulting firms in Silicon Valley."
+    columns={3}
     items={[
       {
-        title: 'DNA Strategy',
-        description:
-          'Need help mapping your 12 strategic blocks? Our Legend tier offers direct access.',
-        icon: 'tabler:messages',
+        title: 'Operators in 30+ Countries',
+        description: 'Used daily by infopreneurs, media buyers, and marketing teams worldwide.',
+        icon: 'tabler:world',
       },
       {
-        title: 'Technical Support',
-        description:
-          'Issues with deployment or self-hosting? Reach out to our core team.',
-        icon: 'tabler:headset',
+        title: 'Over 21,000 Campaigns Launched',
+        description: 'Billions of direct response impressions tested across paid traffic and email.',
+        icon: 'tabler:target-arrow',
+      },
+      {
+        title: 'Enterprise Multi-Tenant Security',
+        description: 'SOC2-ready cloud architecture with granular workspace controls and audit logs.',
+        icon: 'tabler:shield-check',
       },
     ]}
+  />
+
+  <!-- CallToAction Widget -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Pricing',
+        href: getPermalink('/pricing'),
+      },
+    ]}
+    title="Join the Identity-First AI Revolution"
+    subtitle="Lock your Brand DNA into the world's most powerful direct response copywriting engine."
   />
 </Layout>

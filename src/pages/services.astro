@@ -2,211 +2,221 @@
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Hero from '~/components/widgets/Hero.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'AI Agents & Services — CopyMonster',
+  title: 'AI Copywriting Software & Specialized Services — CopyMonster',
+  description: 'Enterprise AI copywriting software powered by Brand DNA. Discover why CopyMonster outperforms generic tools like Jasper and Copy.ai.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-  <Hero
-    tagline="AI Agents"
-    title="Select a Monster to start creating"
-    subtitle="Our specialized AI agents are trained on your Brand DNA to ensure every word aligns with your unique identity and strategic goals."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Launch App', href: 'https://app.copymonster.co' }]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AI Agent Orchestra',
+  <!-- HeroText Widget -->
+  <HeroText
+    tagline="AI Copywriting Software"
+    title="Direct Response AI Software Anchored in Brand Identity"
+    subtitle="Why settle for generic, robotic outputs? CopyMonster is the purpose-built copywriting engine that locks your Brand DNA into every word."
+    callToAction={{
+      variant: 'primary',
+      text: 'Free Trial',
+      href: 'https://app.copymonster.co/',
+      target: '_blank',
+      icon: 'tabler:robot',
+    }}
+    callToAction2={{
+      text: 'View Pricing',
+      href: getPermalink('/pricing'),
     }}
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/AI%20copywriting%20software%20%E2%80%94%20Software%20de%20copywriting%20com%20IA.jpg"
+        alt="AI Copywriting Software Overview"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
 
+  <!-- Features2 Widget: Specialized Copywriting Monsters -->
   <Features2
-    title="Copywriting Monsters"
-    subtitle="20+ Specialized agents for every digital touchpoint"
+    title="20+ Specialized Copywriting Monsters"
+    subtitle="Calibrated for every direct response touchpoint in your marketing ecosystem."
     columns={3}
     items={[
       {
-        title: 'Blog Posts Monster',
-        description: 'SEO-friendly articles that rank and engage readers.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Email Marketing Monster',
-        description: 'High-converting emails that build trust and drive clicks.',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Social Media Monster',
-        description: 'Strategic posts for Instagram, LinkedIn, and TikTok from your DNA.',
-        icon: 'tabler:brand-instagram',
-      },
-      {
-        title: 'Video Scripts Monster',
-        description: 'Engaging scripts for VSLs and short-form videos.',
+        title: 'Video Sales Letters (VSLs)',
+        description: 'Compelling psychological scripts built around problem agitation, core mechanism, and hard offers.',
         icon: 'tabler:video',
       },
       {
-        title: 'Google & Facebook Ads',
-        description: 'Expertly optimized copy for SEM and social advertising.',
-        icon: 'tabler:brand-google-filled',
-      },
-      {
-        title: 'Landing Pages Monster',
-        description: 'High-conversion page copy structured for results.',
+        title: 'High-Converting Sales Pages',
+        description: 'Complete long-form sales pages with magnetic hooks, proof stacking, and bullet-proof guarantees.',
         icon: 'tabler:layout-dashboard',
       },
       {
-        title: 'Headline Monster',
-        description: 'Magnetic headlines that capture attention instantly.',
-        icon: 'tabler:typography',
+        title: 'Direct Response Email Sequences',
+        description: 'Soap opera stories, launch blitzes, flash sale urgency, and cart-recovery emails that print cash.',
+        icon: 'tabler:mail',
       },
       {
-        title: 'WhatsApp Sales Monster',
-        description: 'Persuasive sales sequences for direct messaging.',
-        icon: 'tabler:brand-whatsapp',
+        title: 'Meta & Google Ads Engine',
+        description: 'Scroll-stopping creative angles, compliant copy variations, and magnetic headlines for paid traffic.',
+        icon: 'tabler:ad',
       },
       {
-        title: 'Strategic Stories Monster',
-        description: 'Authority-building narratives for social stories.',
-        icon: 'tabler:camera-rotate',
+        title: 'Lead Magnet & Opt-In Pages',
+        description: 'Irresistible curiosity bullets that drive astronomical conversion rates on cold traffic opt-ins.',
+        icon: 'tabler:magnet',
+      },
+      {
+        title: 'High-Ticket Application Copy',
+        description: 'Qualification surveys, pre-call booking pages, and vetting copy that filters for ideal clients.',
+        icon: 'tabler:filter',
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
-
+  <!-- Content Widget: CopyMonster vs Jasper -->
   <Content
     isReversed
-    tagline="Campaigns"
-    title="Complete Campaign Monsters"
-    subtitle="Ready-to-use campaigns with all assets included. Strategy, Content, and Performance in one click."
+    tagline="Market Comparison"
+    title="CopyMonster vs. Generic AI: The Brand DNA Difference"
     items={[
       {
-        title: 'Internal Launch Monster',
-        description: '7-day sequence with all emails and scripts.',
+        title: 'Beyond Disposable Prompts',
+        description: 'Generic AI treats every conversation as day zero. CopyMonster stores an immutable 12-block Brand DNA that never fades.',
+        icon: 'tabler:lock',
       },
       {
-        title: 'Evergreen Funnel Monster',
-        description: 'Automated funnel that sells 24/7.',
+        title: 'Direct Response Precision',
+        description: 'Trained on 15+ years of real conversion funnels, not bland corporate blog filler.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Flash Launch Monster',
-        description: '3-day maximum urgency sequence.',
-      },
-      {
-        title: 'Webinar Campaign Monster',
-        description: 'Complete invite and sales pitch sequence.',
+        title: 'Multi-Tenant Isolation',
+        description: 'Strict database Row-Level Security (RLS) ensures agency clients and distinct brands never bleed into each other.',
+        icon: 'tabler:shield-check',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Strategic Campaigns',
-    }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Orchestrated Results</h3>
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        The Jasper & Copy.ai Alternative
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Tired of rewriting generic AI fluff? Switch to a deterministic engine designed to preserve your tone of voice, contrarian beliefs, and unique mechanisms.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/CopyMonster%20vs%20Jasper%20%E2%80%94%20CopyMonster%20vs%20Jasper.jpg"
+          alt="CopyMonster vs Jasper Comparison"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
+  <!-- Content Widget: Copy.ai Comparison -->
   <Content
-    isAfterContent
+    tagline="True Identity Scale"
+    title="Stop Sounding Like Every Other Brand Using ChatGPT"
     items={[
       {
-        title: 'Strategic Efficiency',
-        description:
-          'Our agents don\'t just write; they think using your Brand DNA. This reduces editing time by 90% and ensures consistency.',
-        icon: 'tabler:rocket',
+        title: 'Zero Sycophantic AI Tone',
+        description: 'Eliminates words like delve, tapestry, revolutionize, and game-changer with automated vocabulary firewalls.',
+        icon: 'tabler:ban',
       },
       {
-        title: 'Agency-Ready Scaling',
-        description:
-          'Switch between multiple Brand DNAs effortlessly. Scale your agency production without losing brand integrity.',
-        icon: 'tabler:users-group',
-      },
-      {
-        title: 'Open Source Trust',
-        description:
-          'The core engine is MIT licensed. Self-host for maximum privacy and customize the specialized agents to your needs.',
-        icon: 'tabler:brand-github',
-      },
-      {
-        title: 'Real-World Performance',
-        description:
-          'Integrated with Meta Ads performance loops. Your brand identity becomes smarter with every dollar spent.',
-        icon: 'tabler:chart-bar',
+        title: 'Real Mechanism Naming',
+        description: 'Forces every offer to feature clear intellectual property mechanisms rather than vague promises.',
+        icon: 'tabler:bulb',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Monster Efficiency',
-    }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why it works</h3>
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Distinctive Positioning at Scale
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        In the age of infinite AI content, generic copy repels sophisticated buyers. Distinctive positioning and authentic voice are your only moats.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/CopyMonster%20vs%20Copy.ai%20%E2%80%94%20CopyMonster%20vs%20Copy.ai.jpg"
+          alt="CopyMonster vs Copy.ai Architecture"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
     </Fragment>
   </Content>
 
-  <!-- Testimonials Widget *********** -->
-
+  <!-- Testimonials Widget -->
   <Testimonials
-    title="Monster Success Stories"
+    title="Trusted by Elite Copywriters and Media Buyers"
+    subtitle="See what operators say about switching from generic AI tools to CopyMonster."
     testimonials={[
       {
-        testimonial: `CopyMonster finally solved my generic copy problem. By mapping my Brand DNA first, the AI agents now speak exactly like I do. It's like having a strategic clone that works 24/7.`,
+        testimonial:
+          'CopyMonster finally solved our brand voice drift. Our team of 6 copywriters produces 3x more output and every draft sounds unmistakably like our founder.',
         name: 'Carlos Mendes',
-        job: 'Direct Response Copywriter',
+        job: 'Direct Response Copy Chief',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
           alt: 'Carlos Mendes',
         },
       },
       {
-        testimonial: `The 12-block strategic map is a game changer for my SaaS. I used to spend hours tweaking prompts; now I just lock the DNA and deploy agents for my entire funnel in minutes.`,
+        testimonial:
+          'The 12-block Brand DNA framework cut our launch prep time from two weeks down to 48 hours. Our webinar conversion rate jumped 27% on the first run.',
         name: 'Amanda Rocha',
-        job: 'Founder, Tech Startup',
+        job: 'Infoproduct Launch Strategist',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
           alt: 'Amanda Rocha',
         },
       },
       {
-        testimonial: `As a marketing agency, consistency was our biggest nightmare. CopyMonster unified our brand intelligence across all clients. The Enterprise DNA Engine is absolute magic.`,
+        testimonial:
+          'We manage 18 clients. Switching between isolated Brand DNAs without re-prompting from scratch has saved us tens of thousands in wasted agency hours.',
         name: 'Roberto Silva',
-        job: 'Agency Director',
+        job: 'Growth Agency Founder',
         image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
           alt: 'Roberto Silva',
         },
       },
     ]}
-    callToAction={{
-      target: '_blank',
-      text: 'Free Trial',
-      href: 'https://app.copymonster.co/',
-      icon: 'tabler:chevron-right',
-    }}
   />
 
-  <!-- CallToAction Widget *********** -->
-
+  <!-- CallToAction Widget -->
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Start Branding',
-        href: 'https://app.copymonster.co',
+        text: 'Free Trial',
+        href: 'https://app.copymonster.co/',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'View Plans & Pricing',
+        href: getPermalink('/pricing'),
       },
     ]}
-    title="Ready to unleash the Monsters?"
-    subtitle="Join the 21K+ community building high-performance digital assets on top of strategic DNA."
+    title="Ready to Upgrade to Real Brand Intelligence?"
+    subtitle="Start your 7-day trial now and experience autonomous multi-agent copywriting with zero prompt drift."
   />
 </Layout>

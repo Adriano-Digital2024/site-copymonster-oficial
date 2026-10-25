@@ -31,7 +31,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Start 7-Day Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }],
+  actions: [{ text: 'Free Trial', href: 'https://app.copymonster.co/', target: '_blank' }],
 };
 
 export const footerData = {
@@ -91,6 +91,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Adriano-Digital2024/CopyMonster' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://integridadedigital.com.br/"> Integridade Digital</a> · All rights reserved.
+    Made by <a class="text-[var(--cm-primary)] underline dark:text-muted" href="https://integridadedigital.com.br/"> Integridade Digital</a> · All rights reserved.
   `,
 };

@@ -14,42 +14,52 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget *************** -->
-
+  <!-- HeroText Widget -->
   <HeroText
     tagline="Brand DNA Engine"
-    title="The 12-Block Strategic Architecture"
-    subtitle="A deterministic foundation that turns brand positioning into immutable structured memory. Stop prompt degradation across your team and tools."
+    title="The 12-Block Strategic Architecture That Makes AI Sound Like You"
+    subtitle="A deterministic framework that turns brand positioning into immutable structured memory. Stop prompt degradation, context loss, and generic robotic copy."
     callToAction={{
       variant: 'primary',
-      text: 'Start 7-Day Free Trial',
+      text: 'Free Trial',
       href: 'https://app.copymonster.co/',
       target: '_blank',
       icon: 'tabler:dna',
     }}
     callToAction2={{
-      text: 'See How It Works',
+      text: 'View AI Agents',
       href: getPermalink('/agents'),
     }}
   />
 
-  <!-- Content Widget (Philosophy) *** -->
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/12%20block%20brand%20positioning%20framework%20%E2%80%94%20Framework%20de%20posicionamento%20de%20marca%20em%2012%20blocos.jpg"
+        alt="12 Block Brand Positioning Framework"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
 
+  <!-- Content Widget: Why Prompts Fail -->
   <Content
     isReversed
-    tagline="Persistent Memory"
+    tagline="Persistent Memory Layer"
     title="Why Prompts Fail and Brand DNA Succeeds"
     items={[
       {
         title: 'Zero Prompt Drift',
         description:
-          'Prompting an LLM on every session introduces variance and dilution. Brand DNA locks your positioning in structured JSON schemas.',
+          'Prompting an LLM on every session introduces variance and dilution. Brand DNA locks your positioning in structured schemas that never fade.',
         icon: 'tabler:shield-lock',
       },
       {
         title: 'Immutable Versioning (v1, v2, v3)',
         description:
-          'Every evolution of your brand strategy is saved as an immutable release. Roll back or compare variations with complete traceability.',
+          'Every evolution of your brand strategy is saved as an immutable release. Roll back or compare variations with complete auditability.',
         icon: 'tabler:git-branch',
       },
       {
@@ -59,23 +69,30 @@ const metadata = {
         icon: 'tabler:hierarchy-2',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Brand DNA Architecture Data Flow',
-    }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Determinism Over Randomness</h3>
-      Generative AI requires strategic constraints. Without persistent memory, your marketing communications lose nuance and authority.
+    <Fragment slot=content>
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Determinism Over Randomness
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Generative AI requires strategic constraints. Without persistent memory, your marketing communications lose nuance, authority, and emotional resonance.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/How%20to%20build%20a%20Brand%20DNA%20%E2%80%94%20Como%20construir%20um%20DNA%20de%20marca.jpg"
+          alt="How to Build a Brand DNA System"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
     </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    <Fragment slot=bg>
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- Steps Widget (The 12 Blocks) ** -->
-
+  <!-- Steps Widget: The 12 Blocks -->
   <Steps
     tagline="The Strategic Matrix"
     title="The 12 Blocks of Brand DNA"
@@ -144,8 +161,42 @@ const metadata = {
     ]}
   />
 
-  <!-- Features2 Widget (Operational Uses) -->
+  <!-- Content Widget: Voice Consistency -->
+  <Content
+    tagline="Execution Engine"
+    title="Brand Voice Consistency Across Every AI Execution"
+    items={[
+      {
+        title: 'Automated Style Enforcement',
+        description: 'Every prompt injects vocabulary boundaries, cadence rules, and forbidden phrases automatically.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Multi-Agent Cohesion',
+        description: 'Whether writing VSLs, ads, or email follow-ups, your brand identity remains recognizably identical.',
+        icon: 'tabler:affiliate',
+      },
+    ]}
+  >
+    <Fragment slot=content>
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        One Brain. Unlimited Channels.
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Stop re-explaining who you are to separate AI chatbots. Build your DNA once and orchestrate an entire marketing department.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Brand%20voice%20consistency%20in%20AI%20writing%20%E2%80%94%20Consist%C3%AAncia%20da%20voz%20da%20marca%20na%20escrita%20com%20IA.jpg"
+          alt="Brand Voice Consistency in AI Writing"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+  </Content>
 
+  <!-- Features2 Widget: Operational Flow -->
   <Features2
     tagline="Operational Flow"
     title="How Models Consume Your DNA"
@@ -154,12 +205,12 @@ const metadata = {
     items={[
       {
         title: 'Workflow Reference',
-        description: 'Reference your structured Brand DNA blocks as guidance across marketing workflows.',
+        description: 'Reference your structured Brand DNA blocks as deterministic guidance across marketing workflows.',
         icon: 'tabler:plug-connected',
       },
       {
         title: 'Specialized Multi-Agents',
-        description: 'Copywriting, launch, and email agents automatically load versioned DNA parameters.',
+        description: 'Copywriting, launch, and email agents automatically inherit versioned DNA parameters.',
         icon: 'tabler:robot',
       },
       {
@@ -170,29 +221,22 @@ const metadata = {
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
-
+  <!-- CallToAction Widget -->
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Start 7-Day Free Trial',
+        text: 'Free Trial',
         href: 'https://app.copymonster.co/',
         target: '_blank',
         icon: 'tabler:rocket',
       },
       {
-        text: 'See How It Works',
+        text: 'Explore AI Agents',
         href: getPermalink('/agents'),
       },
     ]}
-  >
-    <Fragment slot="title">
-      Ready to Construct Your Brand DNA?
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Answer the guided 12-block workflow and generate persistent AI memory for your brand in minutes.
-    </Fragment>
-  </CallToAction>
+    title="Ready to Construct Your Brand DNA?"
+    subtitle="Answer the guided 12-block workflow and generate persistent AI memory for your brand in minutes."
+  />
 </Layout>

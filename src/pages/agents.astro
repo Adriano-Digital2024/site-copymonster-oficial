@@ -7,136 +7,178 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'AI Agents — Specialized Brand Operators — CopyMonster',
-  description: 'A conceptual overview of specialized AI agent roles and how a shared Brand DNA can guide their work.',
+  title: 'AI Agents — Specialized Direct Response Operators — CopyMonster',
+  description: 'Deploy specialized AI agents orchestrated by a shared Brand DNA to execute high-converting marketing campaigns.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget *************** -->
-
+  <!-- HeroText Widget -->
   <HeroText
-    tagline="Conceptual Roles"
-    title="Different AI Roles, Guided by the Same Brand DNA"
-    subtitle="Specialized agent roles can focus on different marketing tasks while referring to one shared brand foundation."
+    tagline="Specialized AI Operators"
+    title="Direct Response AI Agents Guided by Your Brand DNA"
+    subtitle="Autonomous agent roles engineered for VSLs, ads, email sequences, and high-converting launch funnels — all drawing from one immutable brand core."
     callToAction={{
       variant: 'primary',
-      text: 'Start 7-Day Free Trial',
+      text: 'Free Trial',
       href: 'https://app.copymonster.co/',
       target: '_blank',
       icon: 'tabler:robot',
     }}
     callToAction2={{
-      text: 'See How It Works',
+      text: 'Explore Brand DNA',
       href: getPermalink('/dna'),
     }}
   />
 
-  <!-- Features2 Widget (Agents Roster) -->
+  <!-- Visual Hero Showcase Image -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-6 mb-16 not-prose">
+    <div class="section-image-wrapper overflow-hidden rounded-2xl border border-[var(--cm-border)] shadow-xl intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      <img
+        src="/images/site/AI%20agents%20for%20direct%20response%20copywriting%20%E2%80%94%20Agentes%20de%20IA%20para%20copy%20de%20resposta%20direta.jpg"
+        alt="AI Agents for Direct Response Copywriting"
+        class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </div>
+  </div>
 
+  <!-- Features2 Widget: Agent Roster -->
   <Features2
-    tagline="Types of Work"
-    title="Common Marketing Agent Roles"
-    subtitle="These are conceptual examples of roles, not a technical catalog of available products or integrations."
+    tagline="Specialized Roster"
+    title="The Autonomous Marketing Workforce"
+    subtitle="Each agent is deeply calibrated for a specific direct response discipline, eliminating generic prompt tinkering."
     columns={3}
     items={[
       {
-        title: 'Copywriting Assistant',
-        description: 'Helps shape drafts and ideas around a brand’s positioning, audience, and offer context.',
-        icon: 'tabler:article',
+        title: 'VSL & Script Monster',
+        description: 'Constructs psychological video sales letters, webinars, and micro-hooks calibrated to your transformation promise.',
+        icon: 'tabler:video',
       },
       {
-        title: 'Campaign Planning Assistant',
-        description: 'Helps organize campaign messages and milestones around a consistent brand narrative.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Content Research Assistant',
-        description: 'Helps structure research and explanations so content is clear, specific, and grounded in supplied information.',
-        icon: 'tabler:search',
-      },
-      {
-        title: 'Email Writing Assistant',
-        description: 'Helps draft email communications that reflect the brand’s voice and customer context.',
+        title: 'Email Sequence Monster',
+        description: 'Drafts high-engagement soap opera sequences, cart abandonment triggers, and flash sale blitzes in your brand voice.',
         icon: 'tabler:mail',
       },
       {
-        title: 'Advertising Copy Assistant',
-        description: 'Helps explore ad messages and creative angles consistent with the brand’s positioning.',
+        title: 'Meta & Google Ads Monster',
+        description: 'Generates angles, hooks, headlines, and compliant direct response ad copy designed to win auctions.',
         icon: 'tabler:ad',
       },
       {
-        title: 'Brand Consistency Reviewer',
-        description: 'Helps review drafts against documented brand principles, voice, and supporting evidence.',
+        title: 'High-Ticket Funnel Architect',
+        description: 'Maps multi-step qualification questionnaires, application pages, and consultation booking copy.',
+        icon: 'tabler:route',
+      },
+      {
+        title: 'Objection & Friction Killer',
+        description: 'Analyzes buyer hesitations and drafts preemptive FAQ modules, guarantees, and risk-reversal collateral.',
         icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Brand DNA Custodian',
+        description: 'Continuously audits all draft copy against your 12-block DNA rules to prevent drift and stylistic degradation.',
+        icon: 'tabler:dna',
       },
     ]}
   />
 
-  <!-- Content Widget (Why Multi-Agent) -->
-
+  <!-- Content Widget: Multi-Agent Orchestration -->
   <Content
     isReversed
-    tagline="Shared Brand Foundation"
-    title="Why Shared Context Matters Across Different Tasks"
+    tagline="Autonomous Throughput"
+    title="Multi-Agent Orchestration in Marketing"
     items={[
       {
-        title: 'Unified Positioning Across Channels',
-        description:
-          'When different marketing roles refer to the same Brand DNA, teams have a clearer basis for maintaining a consistent narrative.',
+        title: 'Sequential Agent Handoffs',
+        description: 'The strategy agent produces the offer architecture, the research agent finds market evidence, and the copy agent writes the page.',
         icon: 'tabler:arrows-join-2',
       },
       {
         title: 'Deep Domain Specialization',
-        description:
-          'Different tasks call for different perspectives; naming the role can help teams give an AI task clearer boundaries.',
+        description: 'Instead of forcing one general LLM to handle everything, specialized prompts ensure each task achieves peak performance.',
         icon: 'tabler:cpu',
       },
       {
-        title: 'Continuous Strategic Feedback',
-        description:
-          'Teams can review campaign learnings and decide whether those insights should inform future brand or messaging decisions.',
+        title: 'Continuous Performance Feedback',
+        description: 'Real-world conversion signals refine future outputs without degrading core brand guidelines.',
         icon: 'tabler:refresh',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Multi-Agent Collaboration',
-    }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Specialization With Shared Context</h3>
-      A conceptual agent roster separates kinds of work while keeping a shared Brand DNA as the common reference.
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Collaborative Agent Teams
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Autonomous orchestration means your agents communicate and pass structured context seamlessly, ensuring every campaign is cohesive from click to conversion.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Multi-agent%20orchestration%20in%20marketing%20%E2%80%94%20Orquestra%C3%A7%C3%A3o%20multi-agente%20no%20marketing.jpg"
+          alt="Multi-agent Orchestration in Marketing"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[var(--cm-secondary)]/30 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- CallToAction Widget *********** -->
+  <!-- Content Widget: Automated Funnel -->
+  <Content
+    tagline="End-to-End Execution"
+    title="Automated Sales Funnels Built in Hours, Not Weeks"
+    items={[
+      {
+        title: 'Complete Funnel Stacks',
+        description: 'Generate opt-in pages, thank-you pages, bridge pages, and sales pages with flawless narrative alignment.',
+        icon: 'tabler:layout-dashboard',
+      },
+      {
+        title: 'Open Source Transparency',
+        description: 'Audit prompts and inspect execution logs. CopyMonster is built with full transparency and MIT open core.',
+        icon: 'tabler:brand-github',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-default dark:text-white sm:text-3xl mb-2">
+        Speed Without Sacrificing Strategy
+      </h3>
+      <p class="text-default/80 dark:text-gray-300 leading-relaxed mb-6">
+        Replace disjointed copywriters and unpredictable freelance output with deterministic, high-converting funnel machines.
+      </p>
+      <div class="section-image-wrapper overflow-hidden rounded-xl border border-[var(--cm-border)] shadow-md">
+        <img
+          src="/images/site/Automated%20sales%20funnel%20with%20AI%20agents%20%E2%80%94%20Funil%20de%20vendas%20automatizado%20com%20agentes%20de%20IA.jpg"
+          alt="Automated Sales Funnel with AI Agents"
+          class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </Fragment>
+  </Content>
 
+  <!-- CallToAction Widget -->
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Start 7-Day Free Trial',
+        text: 'Free Trial',
         href: 'https://app.copymonster.co/',
         target: '_blank',
         icon: 'tabler:rocket',
       },
       {
-        text: 'See How It Works',
-        href: getPermalink('/dna'),
+        text: 'Explore Use Cases',
+        href: getPermalink('/use-cases'),
       },
     ]}
-  >
-    <Fragment slot="title">
-      Explore a Brand-Guided Workflow
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Use your Brand DNA as a shared reference for specialized marketing tasks.
-    </Fragment>
-  </CallToAction>
+    title="Deploy Your Direct Response Agents Today"
+    subtitle="Experience the speed and precision of AI agents governed by your immutable Brand DNA."
+  />
 </Layout>
