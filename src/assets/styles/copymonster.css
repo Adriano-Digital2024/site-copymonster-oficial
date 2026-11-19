@@ -1,0 +1,115 @@
+.cm-site {
+  --cm-surface: var(--cm-popover);
+  --cm-tint: color-mix(in srgb, var(--cm-primary) 12%, var(--cm-background));
+  --cm-ink: var(--cm-card-foreground);
+  --cm-radius: clamp(1.125rem, 2.5vw, 2rem);
+}
+
+.cm-site h1,
+.cm-site h2 {
+  text-wrap: balance;
+}
+
+.cm-site :where(a, button):focus-visible {
+  outline: 2px solid var(--cm-ring);
+  outline-offset: 4px;
+}
+
+.cm-site .btn-primary {
+  background: var(--cm-ink);
+  border-color: var(--cm-ink);
+  color: var(--cm-background);
+}
+
+.cm-site .btn-primary:hover {
+  background: var(--cm-secondary);
+  border-color: var(--cm-border);
+  color: var(--cm-ink);
+}
+
+.cm-site .btn-secondary {
+  background: var(--cm-surface);
+  border-color: var(--cm-border);
+  color: var(--cm-ink);
+}
+
+.cm-site .btn-secondary:hover {
+  background: var(--cm-tint);
+}
+
+.cm-header {
+  border-color: var(--cm-border);
+}
+
+.cm-header > div:first-child {
+  background: var(--cm-background);
+}
+
+@media (min-width: 48rem) {
+  .cm-header .cm-product-menu {
+    background: var(--cm-surface);
+    border: 1px solid var(--cm-border);
+    border-radius: 1.125rem;
+    min-width: 15rem;
+    padding: 0.5rem;
+  }
+
+  .cm-header .dropdown:is(:hover, :focus-within) > .cm-product-menu:has(> li:nth-child(5)) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(28rem, 52vw);
+  }
+
+  .cm-product-menu a {
+    border-radius: 0.75rem;
+  }
+}
+
+.cm-hero {
+  background: radial-gradient(ellipse at 78% 12%, var(--cm-tint), transparent 66%), var(--cm-background);
+  border-block-end: 1px solid var(--cm-border);
+}
+
+.cm-hero h1 {
+  color: var(--cm-ink);
+  font-size: clamp(2.55rem, 6vw, 5.6rem);
+  font-weight: 800;
+  letter-spacing: -0.067em;
+  line-height: 1.02;
+}
+
+.cm-eyebrow {
+  color: var(--cm-ink);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  margin-block-end: 1rem;
+}
+
+.cm-tile {
+  background: var(--cm-surface);
+  border: 1px solid var(--cm-border);
+  border-radius: var(--cm-radius);
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+}
+
+.cm-tile:nth-child(3n + 2),
+.cm-cta {
+  background: var(--cm-tint);
+}
+
+.cm-post-card {
+  padding: 1rem;
+}
+
+.cm-cta {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+
+.cm-price-grid > div {
+  border-radius: var(--cm-radius);
+}
+
+.cm-footer {
+  border-color: var(--cm-border);
+}
