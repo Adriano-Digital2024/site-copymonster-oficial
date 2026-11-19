@@ -27,7 +27,7 @@ export interface Props {
 const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose bg-[var(--cm-sidebar)] transition-colors duration-200']}>
+<footer class:list={[{ dark: theme === 'dark' }, 'cm-footer relative border-t border-gray-200 dark:border-slate-800 not-prose bg-[var(--cm-sidebar)] transition-colors duration-200']}>
   <div class="absolute inset-0 pointer-events-none bg-[var(--cm-sidebar)]" aria-hidden="true"></div>
   <div
     class="relative max-w-7xl mx-auto px-4 sm:px-6 text-default dark:text-gray-300 intersect-once intersect-quarter intersect-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
